@@ -9,9 +9,8 @@
       width: calc(100% - 2px);
       height: calc(100% - 2px);
       fill: #282a2b;
-      # stroke: rgb(4, 102, 214);
-      rx: 8px;
-      ry: 8px;
+      rx: 6px;
+      ry: 6px;
     }
     foreignObject {
       width: calc(100% - 40px);
