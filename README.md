@@ -1,4 +1,7 @@
 <div align="center">
+
+### Hi! I am future `developer`
+### You can check my `skills` here:
       
 <a class="header-badge" target="_blank" href="https://www.codewars.com/users/Trifonix"><img alt="Codewars badge" src="https://www.codewars.com/users/Trifonix/badges/large"></a>
      
@@ -6,4 +9,4 @@
 
 [![CodeForces stats](https://raw.githubusercontent.com/Trifonix/trifonix/main/cfbadge/output/badge_updated.svg)](https://codeforces.com/profile/Trifonix)
 
-<div>
+</div>
