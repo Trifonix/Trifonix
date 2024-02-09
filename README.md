@@ -1,7 +1,6 @@
 <div align="center">
 
-## Hi! I am future `developer`
-### You can check my `skills` here:
+## Hi! you can check my dev `skills` below:
       
 <a class="header-badge" target="_blank" href="https://www.codewars.com/users/Trifonix"><img alt="Codewars badge" src="https://www.codewars.com/users/Trifonix/badges/large"></a>
      
