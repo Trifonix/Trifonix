@@ -11,6 +11,6 @@
 
 #### And welcome to my `website`:
 
-<a href="https://trifonix.beget.tech/" target="_blank" style="color: whitesmoke">trifonix.beget.tech</a>
+<a href="https://trifonix.beget.tech/" target="_blank" style="color: whitesmoke;">trifonix.beget.tech</a>
 
 </div>
