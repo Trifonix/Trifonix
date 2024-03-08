@@ -9,4 +9,8 @@
 
 [![CodeForces stats](https://raw.githubusercontent.com/Trifonix/trifonix/main/cfbadge/output/badge_updated.svg)](https://codeforces.com/profile/Trifonix)
 
+#### And welcome to my `website`:
+
+<a href="https://trifonix.beget.tech/">trifonix.beget.tech</a>
+
 </div>
