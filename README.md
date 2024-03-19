@@ -11,7 +11,7 @@
 ### And welcome to my `website`:
 
 <a href="https://trifonix.beget.tech/">
-+ trifonix.beget.tech
+- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15` trifonix.beget.tech
 </a>
 
 </div>
