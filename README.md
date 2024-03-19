@@ -13,4 +13,6 @@
 <a href="https://trifonix.beget.tech/">trifonix.beget.tech</a>
 
 </div>
-$\color{red}{\textsf{lorem ipsum}}$
+<span style="color:red">
+Text content
+</span>
