@@ -10,9 +10,6 @@
 
 ### And welcome to my `website`:
 
-<a href="https://trifonix.beget.tech/">
-trifonix.beget.tech
-</a>
-@@ text in purple (and bold)@@
+<a href="https://trifonix.beget.tech/">trifonix.beget.tech</a>
+
 </div>
-@@ text in purple (and bold)@@
