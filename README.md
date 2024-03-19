@@ -6,8 +6,8 @@
 <img alt="Codewars badge" src="https://www.codewars.com/users/Trifonix/badges/large">
 </a>
      
-<!-- Что-то сломали на сайте ЛитКода 06.03.2024
-[![LeetCode stats](https://leetcode-stats-six.vercel.app/?username=Trifonix&theme=dark)](https://leetcode.com/Trifonix) -->
+Что-то сломали на сайте ЛитКода 06.03.2024
+[![LeetCode stats](https://leetcode-stats-six.vercel.app/?username=Trifonix&theme=dark)](https://leetcode.com/Trifonix)
 
 [![CodeForces stats](https://raw.githubusercontent.com/Trifonix/trifonix/main/cfbadge/output/badge_updated.svg)](https://codeforces.com/profile/Trifonix)
 
