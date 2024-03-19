@@ -13,6 +13,3 @@
 <a href="https://trifonix.beget.tech/">trifonix.beget.tech</a>
 
 </div>
-<span style="color:red">
-Text content
-</span>
