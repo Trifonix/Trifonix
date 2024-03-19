@@ -13,4 +13,4 @@
 <a href="https://trifonix.beget.tech/">trifonix.beget.tech</a>
 
 </div>
-$${\color{red}Welcome \space \color{lightblue}To \space \color{orange}Stackoverflow}$$
+$\color{red}{\textsf{lorem ipsum}}$
