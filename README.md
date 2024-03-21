@@ -13,6 +13,8 @@
 - [x] <a href="https://js.coderslang.com/">coderslang</a> `free part`
 - [ ] <a href="https://scrimba.com/">scrimba</a> `free part`
 - [ ] <a href="https://www.freecodecamp.org/">freeCodeCamp</a> `totally free`
+- [ ] <a href="https://ru.hexlet.io/">hexlet</a> `free part`
+- [ ] <a href="https://htmlacademy.ru/">htmlAcademy</a> `free part`
 
 ##### Read more about me on <a href="https://trifonix.beget.tech/">`my personal website`</a>
 
