@@ -12,7 +12,7 @@
 
 - [x] <a href="https://js.coderslang.com/">coderslang</a> `free part`
 - [ ] <a href="https://scrimba.com/">scrimba</a> `free part`
-- [ ] <a href="https://www.freecodecamp.org/">freeCodeCamp</a> `it's free`
+- [ ] <a href="https://www.freecodecamp.org/">freeCodeCamp</a> `totally free`
 
 ##### Read more about me on <a href="https://trifonix.beget.tech/">`my personal website`</a>
 
