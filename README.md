@@ -1,6 +1,6 @@
 <div align="center">
 
-#### Great day! You can check my `skills` below:
+##### Great day! You can check my `skills` below:
       
 <a class="header-badge" target="_blank" href="https://www.codewars.com/users/Trifonix"><img alt="Codewars badge" src="https://www.codewars.com/users/Trifonix/badges/large"></a>
 
@@ -8,8 +8,11 @@
 
 [![CodeForces stats](https://raw.githubusercontent.com/Trifonix/trifonix/main/cfbadge/output/badge_updated.svg)](https://codeforces.com/profile/Trifonix)
 
-### And welcome to my `website`:
+#### Done:
+- [x] <a href="https://js.coderslang.com/">coderslang</a> `free part`
+- [ ] <a href="https://scrimba.com/">scrimba</a> `free part`
+- [ ] <a href="https://www.freecodecamp.org/">freeCodeCamp</a> `it's free`
 
-<a href="https://trifonix.beget.tech/">trifonix.beget.tech</a>
+### And welcome to <a href="https://trifonix.beget.tech/">`my website!`</a>
 
 </div>
