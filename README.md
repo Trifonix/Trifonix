@@ -12,7 +12,7 @@
 -->
 - [x] <a href="https://js.coderslang.com/">coderslang</a> `free part | completed`
 - [ ] <a href="https://scrimba.com/">scrimba</a> `free part | almost graduated`
-- [ ] <a href="https://www.freecodecamp.org/">freeCodeCamp</a> `totally free | done web design && js still taking`
+- [ ] <a href="https://www.freecodecamp.org/">freeCodeCamp</a> `done web design && js still taking`
 <!--
 - [ ] <a href="https://ru.hexlet.io/">hexlet</a> `free part`
 - [ ] <a href="https://htmlacademy.ru/">htmlAcademy</a> `free part`
