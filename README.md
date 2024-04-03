@@ -16,7 +16,7 @@
 <!--
 - [ ] <a href="https://ru.hexlet.io/">hexlet</a> `free part`
 - [ ] <a href="https://htmlacademy.ru/">htmlAcademy</a> `free part`
--->
-##### Read more about me on <a href="https://trifonix.beget.tech/">`my personal website`</a>
 
+##### Read more about me on <a href="https://trifonix.beget.tech/">`my personal website`</a>
+-->
 </div>
