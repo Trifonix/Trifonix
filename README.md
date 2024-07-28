@@ -1,6 +1,6 @@
 <div align="center">
 
-# Great day! 
+## Great day! 
 
 ### You can track my `skills` below:
       
@@ -20,6 +20,5 @@
 ##### Read more about me on <a href="https://trifonix.beget.tech/">`my personal website`</a>
 -->
 
-##### My book about my studies: 
-<a href="https://github.com/Trifonix/my-main-book/blob/main/README.md">READ</a>
+##### Read my book about <a href="https://github.com/Trifonix/my-main-book/blob/main/README.md">my studies</a>
 </div>
