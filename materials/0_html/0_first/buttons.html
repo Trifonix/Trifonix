@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+</head>
+<body>
+    <h1>Buttons</h1>
+
+    <button disabled>click me</button>
+
+    <a href="https://google.com">
+        <button style="background-color: #333333; color: #00ff00; border-radius: 5px;">click me</button>
+    </a>
+
+    <button style="background-color: #114488; color: #ffffff; border-radius: 15px;" onclick="doSomething()">click me</button>
+
+    <p id="test">HELLO</p>
+
+    <script>
+        function doSomething() {
+            document.getElementById("test").innerHTML = "Goodbye!";
+        }
+    </script>
+</body>
+</html>
