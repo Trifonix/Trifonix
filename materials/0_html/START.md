@@ -16,9 +16,9 @@ ____
 
 ____
 
-Get live HTML Preview in VS Code (Live Server Tutorial) : https://www.youtube.com/watch?v=I2PlgSGT2Ls
+❎ Get live HTML Preview in VS Code (Live Server Tutorial) : https://www.youtube.com/watch?v=I2PlgSGT2Ls
 
-How to Set Up Live Server and Browser Auto Refresh In Visual Studio Code : https://www.youtube.com/shorts/Eav6jOTYYqQ
+❎ How to Set Up Live Server and Browser Auto Refresh In Visual Studio Code : https://www.youtube.com/shorts/Eav6jOTYYqQ
 
 ____
 
