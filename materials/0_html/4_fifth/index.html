@@ -4,8 +4,81 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      #blockly {
+        background-color: darkorange;
+      }
+      #linely {
+        background-color: lightgreen;
+      }
+    </style>
   </head>
   <body>
+    <a href="l2.html">Идти во второй урок</a>
+
+    <hr />
+
+    <div style="background-color: lightcoral;">Нейтральный блочный тег</div>
+
+    <span style="background-color: lightgreen;">Нейтральный строчный тег</span>
+
+    <hr />
+
+    <!--Семантика-->
+    <h1>Я главный заголовок страницы</h1>
+    <button>Я кнопка</button>
+    <a href="index.html">Я ссылка</a>
+    <p>Я параграф</p>
+    <ul>
+      <li>Я элемент списка</li>
+      <li>Я элемент списка</li>
+      <li>Я элемент списка</li>
+    </ul>
+
+    <hr />
+
+    <!--НЕвалидная разметка-->
+    <p style="color: red">
+      Параграф с
+      <b
+        >жирным и
+        <i
+          >курсивным текстом
+          <p style="color: red">и внезапным параграфом внутри</p></i
+        ></b
+      >
+    </p>
+
+    <hr />
+
+    <!--Валидная разметка-->
+    <p style="color: green">
+      Параграф с <b>жирным и <i>курсивным текстом</i></b>
+    </p>
+
+    <hr />
+
+    <!--МОЖНО строчный в блочный-->
+    <p>
+      блочный
+      <b>строчный (МОЖНО)</b>
+    </p>
+
+    <!--НЕЛЬЗЯ блочный в строчный-->
+    <b
+      >строчный
+      <p>блочный (НЕЛЬЗЯ)</p>
+    </b>
+
+    <hr />
+
+    <p id="blockly">
+      (БЛОЧНЫЙ ЭЛЕМЕНТ) Параграф с каким-то текстом, а
+      <b id="linely">(строчный элемент) эта часть текста</b> выделена жирным
+    </p>
+
+    <hr />
+
     <h1>Привет, мир!</h1>
   </body>
 </html>
