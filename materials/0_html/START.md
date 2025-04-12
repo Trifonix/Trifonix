@@ -22,7 +22,7 @@ ____
 
 ____
 
-3_fourth --- Изучение HTML5 для новичков с нуля : https://www.youtube.com/playlist?list=PLDyJYA6aTY1nlkG0gBj96XDmDSC4Fy1TO
+✅ 3_fourth --- Изучение HTML5 для новичков с нуля : https://www.youtube.com/playlist?list=PLDyJYA6aTY1nlkG0gBj96XDmDSC4Fy1TO
 
 ____
 
