@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="l11.html">Идти в урок 11</a>
+    <hr />
+    <label for="comment">Ваш комментарий:</label>
+    <textarea name="user-comment" id="comment">
+      Статья - топ! Автор, пиши ещё!
+    </textarea>
+    <hr />
+    <form>
+      <label for="city">Ваш город:</label>
+      <select name="user-city" id="city" required>
+        <option value="" disabled selected>Не выбрано</option>
+        <option value="moscow">Москва</option>
+        <option value="spb">СПб</option>
+        <option value="ekb">ЕКБ</option>
+        <option value="samara">Самара</option>
+        <!-- ... -->
+      </select>
+      <button>Send</button>
+    </form>
+    <hr />
+    <label for="office">Выберите офис:</label>
+    <select name="office" id="office">
+      <optgroup label="Центральный район">
+        <option value="center-1">ул. Пушкинская, д. 24</option>
+        <option value="center-2">ул. Ломоносова, д. 1</option>
+        <option value="center-3">ул. Есенина, д. 3</option>
+      </optgroup>
+      <optgroup label="Южный район">
+        <option value="south-1">ул. Ленина, д. 55</option>
+        <option value="south-2">ул. Революции, д. 10</option>
+      </optgroup>
+    </select>
+    <hr />
+    <form>
+      <p>
+        <label for="request-number">Ваш номер обращения:</label>
+        <input
+          id="request-number"
+          name="user-request-number"
+          value="123123123"
+          readonly
+        />
+      </p>
+    </form>
+    <hr />
+    <p>
+      <label for="field-3">Экранная клавиатура с цифрами:</label>
+      <input id="field-3" name="field-3" inputmode="numeric" />
+    </p>
+    <hr />
+    <button>Button 1</button>
+    <button autofocus>Button 2</button>
+    <hr />
+    <button onclick="alert('Хватит на меня нажимать!');">Нажми меня</button>
+    <hr />
+    <a href="l11.html">Идти в урок 11</a>
+  </body>
 </html>
