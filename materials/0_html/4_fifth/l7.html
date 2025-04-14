@@ -6,6 +6,7 @@
   <title>Document</title>
 </head>
 <body>
+  <a href="l8.html">Перейти к уроку 8</a>
   <table>
     <tr><!--...--></tr>
     <tr><!--...--></tr>
@@ -32,17 +33,39 @@
     </tr>
   </table>
   <hr>
-  <table>
+  <table border=1>
     <caption>Рассчетный лист услуг ЖКХ</caption>
-    <tr>
-      <td>Холодная вода</td>
-      <td>Куб м.</td>
-      <td>7</td>
-      <td>1000.00</td>
-    </tr>
-    <tr>
-      <!-- ... -->
-    </tr>
-  </table>
+    <thead>
+      <tr>
+        <th rowspan="2">Вид услуги</th>
+        <th rowspan="2">Ед. изм.</th>
+        <th colspan="2">Объем коммунальных услуг</th>
+        <th rowspan="2">Размер платы</th>
+      </tr>
+      <tr>
+        <th>На индив. потреб.</th>
+        <th>На общедом. нужды</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Холодная вода</td>
+        <td>Куб м.</td>
+        <td>3</td>
+        <td>4</td>
+        <td>1000.00</td>
+      </tr>
+      <tr>
+        <!-- ... -->
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Итого к оплате за расчетный период</td>
+        <td colspan="4">9999.00</td>
+      </tr>
+    </tfoot>
+  </table><br>
+  <a href="l8.html">Перейти к уроку 8</a>
 </body>
 </html>
