@@ -26,10 +26,12 @@ ____
 
 ____
 
-4_fifth --- HTML курс 2025 : https://www.youtube.com/playlist?list=PL0MUAHwery4ot0KmgGxlBSB7rXssLeA6h
+✅ 4_fifth --- HTML курс 2025 : https://www.youtube.com/playlist?list=PL0MUAHwery4ot0KmgGxlBSB7rXssLeA6h
 
 ____
 
-Stop Using div for Everything! Use These Instead : https://www.youtube.com/watch?v=VeVhtRKC1fg
+✅ 5_stop-using-div --- Stop Using div for Everything! Use These Instead : https://www.youtube.com/watch?v=VeVhtRKC1fg
+
+____
 
 Как называть переменные, методы и классы? Чистый код (Clean Code) : https://www.youtube.com/watch?v=5vsfYifNqzk
