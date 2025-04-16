@@ -34,4 +34,4 @@ ____
 
 ____
 
-Как называть переменные, методы и классы? Чистый код (Clean Code) : https://www.youtube.com/watch?v=5vsfYifNqzk
+❎ Как называть переменные, методы и классы? Чистый код (Clean Code) : https://www.youtube.com/watch?v=5vsfYifNqzk
