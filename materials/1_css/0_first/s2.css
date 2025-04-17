@@ -1,0 +1,56 @@
+p {
+  color: red;
+}
+
+a {
+  color: peru;
+}
+
+li {
+  color: purple;
+}
+
+.my-super-text {
+  color: gold;
+  font-size: 22px;
+}
+
+.not-super-text {
+  color: grey;
+}
+
+.big {
+  font-size: 24px;
+}
+
+.small {
+  font-size: 10px;
+}
+
+.red {
+  color: indianred;
+}
+
+.blue {
+  color: deepskyblue;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.thin {
+  font-weight: 100;
+}
+
+#my-first-unique-text {
+  color: indianred;
+}
+
+#my-second-unique-text {
+  color: seagreen;
+}
+
+#my-third-unique-text {
+  color: deepskyblue;
+}

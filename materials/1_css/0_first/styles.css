@@ -1,0 +1,26 @@
+h1 {
+  color: blue;
+}
+
+header {
+  background-color: bisque;
+}
+
+section {
+  height: 50px;
+  margin-bottom: 5px;
+  background-color: deepskyblue;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  color: purple;
+  letter-spacing: 2px;
+}
+
+/*
+body {
+  color: red;
+}
+*/
