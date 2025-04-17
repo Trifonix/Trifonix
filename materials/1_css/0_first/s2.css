@@ -54,3 +54,29 @@ li {
 #my-third-unique-text {
   color: deepskyblue;
 }
+
+[placeholder] {
+  border: 3px solid darkturquoise;
+}
+
+[type="number"] {
+  box-shadow: 3px 3px 3px 3px indianred;
+}
+
+[type="tel"] {
+  box-shadow: 3px 3px 3px 3px #5c7ccd;
+}
+
+[type=email] {
+  box-shadow: 3px 3px 3px 3px #7bf178;
+}
+
+[href*="hh.ru"] {
+  padding-left: 1.2em;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/7/79/HeadHunter_logo.png) 0 50%/1em no-repeat;
+}
+
+[href*="habr.ru"] {
+  padding-left: 1.2em;
+  background: url(https://habrastorage.org/storage2/ebf/ded/334/ebfded3341c46c05625c8990cb4c5e8e.png) 0 50%/1em no-repeat;
+}
