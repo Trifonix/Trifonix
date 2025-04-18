@@ -80,3 +80,43 @@ li {
   padding-left: 1.2em;
   background: url(https://habrastorage.org/storage2/ebf/ded/334/ebfded3341c46c05625c8990cb4c5e8e.png) 0 50%/1em no-repeat;
 }
+
+[href^="http://"] {
+  color: red;
+}
+
+[href^="https://"] {
+  color: green;
+}
+
+[href$=".ruru"] {
+  background-image: linear-gradient(
+    white 33%,
+    blue 33%,
+    blue 66%,
+    red 66%
+  );
+}
+
+[href$=".frfr"] {
+  background-image: linear-gradient(
+    to right,
+    blue 33%,
+    white 33%,
+    white 66%,
+    red 66%
+  );
+}
+
+[href$=".dede"] {
+  background-image: linear-gradient(
+    black 33%,
+    red 33%,
+    red 66%,
+    yellow 66%
+  );
+}
+
+[alt~="кот"] {
+  border: 10px dashed forestgreen;
+}
