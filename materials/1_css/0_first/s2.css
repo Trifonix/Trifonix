@@ -120,3 +120,90 @@ li {
 [alt~="кот"] {
   border: 10px dashed forestgreen;
 }
+
+[class|="warning"] {
+  color: orange;
+}
+
+[alt*="cat" i] {
+  border: 10px dashed cornflowerblue;
+}
+
+* {
+  border: 1px dotted black;
+}
+
+/*Не делать так*/
+* {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/*ДЕЛАТЬ так*/
+* {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+section p {
+  color: seagreen;
+}
+
+section p span {
+  color: darkred;
+}
+
+.orange-text {
+  color: orange;
+}
+
+.purple-text {
+  color: purple;
+}
+
+h1, h2, h3 {
+  color: rgb(255, 132, 132);
+  background-color: #0f0c4d;
+}
+
+.button {
+  background-color: lightgray;
+}
+
+.button.is-active {
+  background-color: coral;
+}
+
+section > h2 {
+  color: rgb(32, 255, 3);
+}
+
+h2 + p {
+  background-color: rgb(14, 14, 5);
+  color: khaki;
+}
+
+.error-message {
+  color: red;
+  visibility: hidden;
+}
+
+.input.is-invalid + .error-message {
+  visibility: visible;
+}
+
+h4 ~ p {
+  color: hotpink;
+}
+
+h5 {
+  color: blue;
+  color: darkslateblue;
+}
+
+.text {
+  color: greenyellow;
+}
+
+#my-super-text {
+  color: rgb(0, 0, 0);
+  background-color: #109910;
+}
