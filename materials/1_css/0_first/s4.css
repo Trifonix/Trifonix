@@ -70,3 +70,41 @@ body {
   margin-inline: auto;
   background-color: seagreen;
 }
+
+.box-11 {
+  width: 200px;
+  height: 200px;
+  /*
+  margin: 0;
+  (значение по умолчанию)
+  */
+  background-color: palevioletred;
+}
+
+.box-12 {
+  width: 150px;
+  height: 150px;
+  margin-top: -50px;
+  background-color: sandybrown;
+}
+
+.box-21 {
+  margin-bottom: 50px;
+  background-color: coral;
+}
+
+.box-22 {
+  margin-top: 100px;
+  background-color: lightblue;
+}
+
+.box31 {
+  margin-bottom: 100px;
+  padding: 50px;
+  background-color: coral;
+}
+
+.box32 {
+  background-color: purple;
+  color: white;
+}
