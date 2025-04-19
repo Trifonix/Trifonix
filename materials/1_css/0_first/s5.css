@@ -1,0 +1,19 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style-type: none;
+} */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  border: 10px solid salmon;
+}
