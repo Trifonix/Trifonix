@@ -1,0 +1,70 @@
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  padding: 30px;
+  border: 5px solid indianred;
+}
+
+.box2 {
+  /*
+  display: block;
+  (задавать не обязательно, тег div - блочный по-умолчанию)
+  */
+  border: 5px solid goldenrod;
+}
+
+.box3 {
+  width: 200px;
+  border: 5px solid green;
+}
+
+span {
+  /*
+  display: inline;
+  (задавать не обязательно, тег span - строчный по-умолчанию)
+  */
+  border: 5px solid rebeccapurple;
+
+  width: 200px; /*не будет работать со строчным элементом*/
+  height: 500px; /*не будет работать со строчным элементом*/
+}
+
+.span2 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 5px solid firebrick;
+}
+
+.box-1 {
+  display: block;
+  background-color: palevioletred;
+}
+
+.box-2 {
+  display: inline;
+  background-color: darkturquoise;
+}
+
+.box-3 {
+  display: inline-block;
+  background-color: tomato;
+}
+
+.box-4 {
+  display: none;
+}
+
+.box5 {
+  width: 200px;
+  height: 200px;
+  padding: 15px 40px;
+  background-color: moccasin;
+
+  border: 10px solid red;
+}
+
+.normal-size {
+  box-sizing: border-box;
+}

@@ -1,0 +1,72 @@
+div {
+  width: 200px;
+  height: 200px;
+}
+
+.box-1 {
+  padding: 30px;
+  background-color: palevioletred;
+  margin: 30px;
+}
+
+.box-2 {
+  padding: 10px 50px;
+  background-color: sandybrown;
+  margin: 10px 50px;
+}
+
+.box-3 {
+  margin: 50px 100px 150px;
+  background-color: lightseagreen;
+}
+
+.box-4 {
+  margin: 50px 100px 150px 200px;
+  background-color: blueviolet;
+}
+
+.box-5 {
+  padding-top: 60px;
+  background-color: forestgreen;
+}
+
+.box-6 {
+  padding-right: 60px;
+  background-color: cornflowerblue;
+}
+
+.box-7 {
+  padding-bottom: 60px;
+  background-color: bisque;
+}
+
+.box-8 {
+  padding-left: 60px;
+  background-color: darkcyan;
+}
+
+.box-9 {
+  padding-block: 100px;
+  background-color: grey;
+}
+
+.box-10 {
+  padding-inline: 100px;
+  background-color: darkolivegreen;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bordered-wrapper {
+  width: 300px;
+  border: 2px dashed black;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  margin-inline: auto;
+  background-color: seagreen;
+}
