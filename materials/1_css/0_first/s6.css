@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* body {
+  font-family: Inter;
+} */
+
+body {
+  font: 700 italic normal normal 16px/1.6 Inter, Arial, sans-serif;
+  line-height: 1.2;
+}
+
+.small-text {
+  font-size: 12px;
+}
+
+.big-text {
+  font-size: 32px;
+}
