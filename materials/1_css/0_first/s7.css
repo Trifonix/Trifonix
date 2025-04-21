@@ -3,6 +3,8 @@ body {
   height: 400px;
   font-size: 2em;
   font-weight: 700;
+
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .red-text {
@@ -23,4 +25,52 @@ body {
 
 .blue-shadow {
   box-shadow: 0 0 0 5px lightskyblue;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.rgb-color {
+  color: rgb(0, 0, 255);
+}
+
+.hex-color {
+  color: #63C20E;
+}
+
+.hsl-color {
+  color: hsl(0, 70%, 63%);
+}
+
+.hwb-color {
+  color: hwb(265deg 8% 0%);
+}
+
+.lch-color {
+  color: lch(50% 110 325);
+}
+
+.lab-color {
+  color: lab(85% 8.8 113.4);
+}
+
+.oklab-color {
+  color: oklab(0.79 -0.15 -0.11);
+}
+
+.display-p3-color {
+  color: color(display-p3 1 0.5 0.1);
+}
+
+.color-mix {
+  color: color-mix(
+    in lch,
+    magenta 80%,
+    #00E0AA
+  );
+}
+
+.magenta-color {
+  color: magenta;
 }
