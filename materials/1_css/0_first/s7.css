@@ -74,3 +74,59 @@ p {
 .magenta-color {
   color: magenta;
 }
+
+.red-color {
+  color: rgb(255 0 0);
+}
+.green-color {
+  color: rgb(0 255 0);
+}
+.blue-color {
+  color: rgb(0 0 255);
+}
+.yellow-color {
+  color: rgb(255 255 0);
+}
+
+.red-color-opacity {
+  color: rgb(255 0 0 / 0.5);
+}
+.green-color-opacity {
+  color: rgb(0 255 0 / 0.5);
+}
+.blue-color-opacity {
+  color: rgb(0 0 255 / 0.25);
+}
+
+.red-color2 {
+  color: rgb(255, 0, 0);
+}
+.blue-color-opacity2 {
+  color: rgba(0, 0, 255, 0.5);
+}
+
+.red-color3 {
+  color: #FF0000;
+}
+.green-color3 {
+  color: #00FF00;
+}
+.blue-color3 {
+  color: #0000FF;
+}
+.dirty-yellow-color3 {
+  color: #999900;
+}
+
+.red-color4 {
+  color: #F00;
+}
+.green-color4 {
+  color: #0F0;
+}
+.blue-color4 {
+  color: #00F;
+}
+.dirty-yellow-color4 {
+  color: #990;
+}
