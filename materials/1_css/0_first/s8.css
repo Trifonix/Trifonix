@@ -1,7 +1,7 @@
 .box {
   width: 500px;
   height: 500px;
-  background: lightcoral url(https://png.pngtree.com/png-clipart/20230511/ourmid/pngtree-isolated-cat-on-white-background-png-image_7094927.png) repeat-x 0 0/300px fixed padding-box;
+  background: lightcoral url('https://png.pngtree.com/png-clipart/20230511/ourmid/pngtree-isolated-cat-on-white-background-png-image_7094927.png') repeat-x 0 0/300px fixed padding-box;
   /* Свойства по отдельности
   background-color: lightcoral;
   background-image: url();
@@ -28,4 +28,84 @@
 }
 .box-4 {
   background-color: hsl(30deg 100% 50%);
+}
+
+.box2 {
+  width: 600px;
+  height: 600px;
+  background-image: url('https://png.pngtree.com/png-clipart/20230511/ourmid/pngtree-isolated-cat-on-white-background-png-image_7094927.png');
+}
+
+.box3 {
+  width: 500px;
+  height: 500px;
+  background-color: lightskyblue;
+  background-image: 
+    url('https://png.pngtree.com/png-clipart/20230511/ourmid/pngtree-isolated-cat-on-white-background-png-image_7094927.png'),
+    url('https://t3.ftcdn.net/jpg/02/36/99/22/360_F_236992283_sNOxCVQeFLd5pdqaKGh8DRGMZy7P4XKm.jpg'),
+    url('https://media.istockphoto.com/id/1361394182/photo/funny-british-shorthair-cat-portrait-looking-shocked-or-surprised.jpg?s=612x612&w=0&k=20&c=6yvVxdufrNvkmc50nCLCd8OFGhoJd6vPTNotl90L-vo=');
+}
+
+.box4 {
+  width: 1000px;
+  height: 1060px;
+  background-color: lightcyan;
+  background-image: url('https://media.istockphoto.com/id/1361394182/photo/funny-british-shorthair-cat-portrait-looking-shocked-or-surprised.jpg?s=612x612&w=0&k=20&c=6yvVxdufrNvkmc50nCLCd8OFGhoJd6vPTNotl90L-vo=');
+  background-repeat: round;
+}
+
+.box5 {
+  width: 500px;
+  height: 500px;
+  background-image: url('https://t3.ftcdn.net/jpg/02/36/99/22/360_F_236992283_sNOxCVQeFLd5pdqaKGh8DRGMZy7P4XKm.jpg');
+  background-repeat: repeat-x;
+  background-color: lightyellow;
+}
+
+.box6 {
+  width: 800px;
+  height: 600px;
+  background-color: gray;
+  background-image: url('https://media.istockphoto.com/id/1361394182/photo/funny-british-shorthair-cat-portrait-looking-shocked-or-surprised.jpg?s=612x612&w=0&k=20&c=6yvVxdufrNvkmc50nCLCd8OFGhoJd6vPTNotl90L-vo=');
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+
+.box7 {
+  width: 400px;
+  height: 400px;
+  background-color: lightcoral;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8fX1IfpbxG_dYB3-XQ4V-vskVWivgkmx9oej7W4q23A&s&ec=72940544');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
+.box81, .box82, .box83, .box84 {
+  width: 500px;
+  height: 600px;
+  margin-bottom: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.box81 {
+  background-color: lightblue;
+  background-image: url('https://cdn.britannica.com/18/218318-050-66A1F9B3/European-wildcat-Felis-silvestris-snow.jpg');
+  background-size: contain;
+}
+.box82 {
+  background-color: lightgreen;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Walking_tiger_female.jpg/1200px-Walking_tiger_female.jpg');
+  background-size: contain;
+}
+.box83 {
+  background-color: lightsalmon;
+  background-image: url('https://nationalzoo.si.edu/sites/default/files/styles/wide/public/animals/lowlandgorilla-004.jpg');
+  background-size: contain;
+}
+.box84 {
+  background-color: lightseagreen;
+  background-image: url('https://images.pexels.com/photos/20376039/pexels-photo-20376039/free-photo-of-funny-orangutan-with-cloth-on-head.jpeg');
+  background-size: contain;
 }
