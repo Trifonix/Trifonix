@@ -130,3 +130,49 @@ p {
 .dirty-yellow-color4 {
   color: #990;
 }
+
+.red-color-opacity1 {
+  color: #FF0000C7;
+}
+.green-color-opacity1 {
+  color: #00FF0080;
+}
+.blue-color-opacity1 {
+  color: #0000FF3D;
+}
+
+.red-color1 {
+  color: hsl(0 100% 50%);
+}
+.green-color1 {
+  color: hsl(120 100% 50%);
+}
+.blue-color1 {
+  color: hsl(240 100% 50%);
+}
+
+.red-color-opacity2 {
+  color: hsl(0 100% 50% / 0.75);
+}
+.green-color-opacity2 {
+  color: hsl(120 100% 50% / 0.5);
+}
+.blue-color-opacity2 {
+  color: hsl(240 100% 50% / 0.25);
+}
+
+.transparent-color {
+  color: transparent
+}
+
+.current-color-border {
+  color: orange;
+  border: 2px solid currentColor;
+}
+
+.button {
+  color: tomato;
+}
+svg * {
+  fill: currentColor;
+}
