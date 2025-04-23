@@ -83,3 +83,48 @@
   /* border-color: deepskyblue tomato slateblue; */
   border-color: deepskyblue tomato slateblue cadetblue;
 }
+
+.box6 {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+
+  border-width: 10px;
+  border-style: solid;
+
+  /* border-top-color: red;
+  border-right-color: blue;
+  border-bottom-color: green;
+  border-left-color: yellow; */
+  border-block-color: red;
+  border-inline-color: blue;
+}
+
+.box7 {
+  width: 120px;
+  height: 140px;
+  background-color: grey;
+
+  border: 10px solid magenta;
+  /* Тоже самое, что и набор свойств 
+  border-width: 10px;
+  border-style: solid;
+  border-color: deepskyblue;  
+  */
+  box-sizing: border-box;
+}
+
+.box8 {
+  width: 120px;
+  height: 100px;
+  background-color: darkred;
+  border: 10px solid deepskyblue;
+
+  outline: 5px solid goldenrod;
+  
+  /* То же самое, что и набор свойств
+  outline-width: 5px;
+  outline-style: solid;
+  outline-color: goldenrod;
+  */
+}
