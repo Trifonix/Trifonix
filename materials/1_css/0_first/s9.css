@@ -1,0 +1,85 @@
+.box1 {
+  width: 100px;
+  height: 100px;
+  background-color: lightpink;
+
+  /* border: 10px solid deepskyblue; */
+  /* Тоже самое, что и набор свойств
+  border-width: 10px;
+  border-style: solid;
+  border-color: deepskyblue;
+  */
+
+  /* border-top: 15px dotted blue;
+  border-right: 15px dotted red;
+  border-bottom: 10px solid green;
+  border-left: 20px dashed salmon; */
+
+  /* border-block: 20px solid deepskyblue; */
+  border-inline: 20px solid deepskyblue;
+}
+
+.box2 {
+  width: 120px;
+  height: 120px;
+  background-color: salmon;
+
+  border-style: solid;
+  border-color: deepskyblue;
+
+  /* border-width: 10px; */
+  /* border-width: thin; */
+  /* border-width: medium; */
+  /* border-width: thick; */
+
+  border-width: 16px 8px 42px 30px;
+}
+
+.box3 {
+  width: 80px;
+  height: 80px;
+  background-color: lightgreen;
+
+  border-width: 6px;
+  border-color: dimgray;
+
+  /* border-style: solid;
+  border-style: none;
+  border-style: dashed;
+  border-style: dotted;
+  border-style: double;
+  border-style: groove;
+  border-style: ridge;
+  border-style: inset; */
+  border-style: outset;
+}
+
+.box4 {
+  width: 160px;
+  height: 160px;
+  background-color: lightsalmon;
+  
+  border-width: 6px;
+  border-color: brown;
+
+  /* border-top-style: solid;
+  border-right-style: dashed;
+  border-left-style: dotted;
+  border-bottom-style: inset; */
+  border-block-style: outset;
+  border-inline-style: groove;
+}
+
+.box5 {
+  width: 100px;
+  height: 200px;
+  background-color: whitesmoke;
+
+  border-width: 10px;
+  border-style: solid;
+
+  /* border-color: goldenrod; */
+  /* border-color: deepskyblue tomato; */
+  /* border-color: deepskyblue tomato slateblue; */
+  border-color: deepskyblue tomato slateblue cadetblue;
+}
