@@ -109,3 +109,134 @@
   background-image: url('https://images.pexels.com/photos/20376039/pexels-photo-20376039/free-photo-of-funny-orangutan-with-cloth-on-head.jpeg');
   background-size: contain;
 }
+
+.banner {
+  width: 100%;
+  height: 600px;
+  margin-block: 30px;
+  overflow-y: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://ybis.ru/wp-content/uploads/2023/09/krasota-prirody-10.webp');
+  background-attachment: local;
+}
+
+.box9 {
+  font-size: 2em;
+  font-weight: 900;
+  width: 500px;
+  height: 500px;
+  padding: 50px;
+  color: transparent;
+  border: 20px dashed salmon;
+
+  background-image: url('https://ybis.ru/wp-content/uploads/2023/09/krasota-prirody-10.webp');
+  background-position: center;
+  background-size: cover;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.box11, .box12, .box13 {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+.box11 {
+  background-image: linear-gradient(indianred, cornflowerblue);
+}
+.box12 {
+  background-image: radial-gradient(slateblue, darkorange);
+}
+.box13 {
+  background-image: conic-gradient(deepskyblue, lightpink);
+}
+
+.box14, .box15, .box16 {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+.box14 {
+  background-image: repeating-linear-gradient(
+    indianred 0,
+    indianred 10px,
+    cornflowerblue 10px,
+    cornflowerblue 20px
+  );
+}
+.box15 {
+  background-image: repeating-radial-gradient(
+    slateblue 0,
+    slateblue 10px,
+    darkorange 10px,
+    darkorange 20px
+  );
+}
+.box16 {
+  background-image: repeating-conic-gradient(
+    deepskyblue 8deg 15deg,
+    lightpink 15deg 30deg,
+    deepskyblue 30deg 45deg
+  );
+}
+
+.box17 {
+  width: 500px;
+  height: 500px;
+  background-image: linear-gradient(0.75turn, indianred, cornflowerblue, palegreen)
+}
+
+.box-square {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+.box18 {
+  background-image: linear-gradient(to top, indianred, cornflowerblue)
+}
+.box19 {
+  background-image: linear-gradient(to top right, indianred, cornflowerblue)
+}
+.box20 {
+  background-image: linear-gradient(to right, indianred, cornflowerblue)
+}
+.box21 {
+  background-image: linear-gradient(to right bottom, indianred, cornflowerblue)
+}
+.box22 {
+  background-image: linear-gradient(to bottom, indianred, cornflowerblue)
+}
+.box23 {
+  background-image: linear-gradient(to bottom left, indianred, cornflowerblue)
+}
+.box24 {
+  background-image: linear-gradient(to left, indianred, cornflowerblue)
+}
+.box25 {
+  background-image: linear-gradient(to left top, indianred, cornflowerblue)
+}
+
+.box26 {
+  width: 400px;
+  height: 400px;
+
+  background-image: linear-gradient(
+    indianred 30%,
+    cornflowerblue 30% 50%,
+    lightgreen 80%
+  )
+}
+
+.box27 {
+  width: 300px;
+  height: 300px;
+  
+  /* Неправильно */
+  background: red;
+  
+  /* Правильно */
+  /* background-color: red; */
+}
