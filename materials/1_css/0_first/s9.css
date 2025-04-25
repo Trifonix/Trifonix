@@ -128,3 +128,73 @@
   outline-color: goldenrod;
   */
 }
+
+.box9 {
+  width: 100px;
+  height: 100px;
+  background-color: lightpink;
+  border: 10px solid deepskyblue;
+
+  outline: 5px solid gold;
+
+  outline-offset: -25px;
+}
+
+.box10 {
+  width: 120px;
+  height: 120px;
+  background-color: lightpink;
+  border-radius: 15px;
+}
+
+.box11 {
+  width: 100px;
+  height: 100px;
+  background-color: cornflowerblue;
+
+  border-radius: 0 30px 80% 30px;
+}
+
+.box12 {
+  width: 120px;
+  height: 120px;
+  background-color: crimson;
+
+  border-radius: 60% 20% / 10% 50%;
+
+  /* То же самое, что и
+  border-top-left-radius: 60% 10%;
+  border-top-right-radius: 20% 50%;
+  border-bottom-right-radius: 60% 10%;
+  border-bottom-left-radius: 20% 50%;
+  */
+}
+
+.box13 {
+  width: 100px;
+  height: 100px;
+  background-color: lightseagreen;
+  outline: 5px solid deeppink;
+  border-radius: 15px;
+}
+
+.box14 {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: 120px;
+  height: 120px;
+  background-color: lawngreen;
+  box-shadow: -5px 10px 5px -5px rgb(0 0 255 / 0.5) inset, 5px 5px 5px red;
+}
+
+body {
+  background-color: lightyellow;
+}
+
+img {
+  /* filter: blur(10px); */
+  /* filter: brightness(1.5); */
+  /* filter: contrast(300); */
+  filter: drop-shadow(15px 15px 15px rgb(60, 30, 233));
+  filter: grayscale(74%);
+}
