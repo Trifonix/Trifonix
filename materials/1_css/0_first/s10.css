@@ -161,3 +161,153 @@ button {
   bottom: 0;
   left: 0;
 }
+
+.modal {
+  padding: 50px;
+  color: whitesmoke;
+  background-color: black;
+
+  /* position: fixed; */
+  /* position: absolute; */
+  top: 100px;
+  left: 100px;
+}
+
+main {
+  display: flex;
+  column-gap: 20px;
+}
+
+section {
+  width: 100%;
+}
+
+li {
+  background-color: blue;
+  display: inline-block;
+  height: 100px;
+}
+
+aside {
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  background-color: palegreen;
+
+  position: sticky;
+  top: 10px;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid > div {
+  width: 150px;
+  height: 150px;
+}
+
+.box41 {
+  background-color: palegoldenrod;
+}
+
+.box42 {
+  background-color: palegreen;
+}
+
+.box43 {
+  background-color: lightcoral;
+
+  position: relative;
+  top: -100px;
+  left: 50%;
+}
+
+.box44 {
+  background-color: lightsalmon;
+}
+
+.boxx {
+  width: 200px;
+  height: 200px;
+  background-color: lightseagreen;
+
+  position: relative;
+}
+.innerr {
+  background-color: lightcoral;
+
+  position: absolute;
+  /* top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; */
+  inset: 0 0 0 10px;
+}
+
+.box51, .box52 {
+  width: 200px;
+  height: 200px;
+}
+
+.box51 {
+  background-color: lightblue;
+  position: relative;
+  z-index: 100;
+}
+
+.box52 {
+  position: relative;
+  background-color: limegreen;
+
+  top: -50px;
+  left: 50px;
+  z-index: 99;
+}
+
+.box61, .box62, .inner1, .inner2 {
+  width: 150px;
+  height: 150px;
+  background-color: rosybrown;
+}
+
+.box61 {
+  background-color: lawngreen;
+  position: relative;
+  z-index: 100;
+}
+
+.inner1 {
+  background-color: sienna;
+  position: relative;
+  top: 30px;
+  left: 80px;
+}
+
+.box62 {
+  background-color: lightcoral;
+  position: relative;
+  z-index: 200;
+}
+
+.inner2 {
+  background-color: lightseagreen;
+  position: absolute;
+  top: -30px;
+  left: 110px;
+}
+
+:root {
+  --layer-tooltip: 100;
+  --layer-menu: 200;
+  --layer-modal: 300;
+  --layer-admin-panel: 1000;
+}
+
+.tooltip {
+  z-index: var(--layer-tooltip);
+}
+
+.between-tooltip-and-menu {
+  z-index: calc((var(--layer-modal) + var(--layer-menu)) / 2);
+}
