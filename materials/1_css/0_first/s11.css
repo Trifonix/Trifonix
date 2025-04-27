@@ -1,0 +1,123 @@
+.box-1 {
+  background-color: lightskyblue;
+  width: 50vw;
+  height: 100px;
+}
+.box-2 {
+  background-color: lightpink;
+  font-size: 30px;
+  width: 15em;
+  height: 100px;
+}
+.box-3 {
+  background-color: lightgreen;
+  width: 200px;
+  height: 100px;
+}
+.box-4 {
+  background-color: lightsalmon;
+  width: 30mm;
+  height: 50px;
+}
+
+.box21 {
+  background-color: lightskyblue;
+  width: 100px;
+  height: 100px;
+}
+.box22 {
+  background-color: lightpink;
+  width: 200px;
+  height: 200px;
+}
+.box23 {
+  background-color: lawngreen;
+  width: 50px;
+  height: 50px;
+}
+
+/* .button {
+  width: 50px;
+} */
+
+.box31 {
+  background-color: lightskyblue;
+  width: 33%;
+  height: 100px;
+}
+.box32 {
+  background-color: lightpink;
+  width: 50%;
+  height: 100px;
+}
+.inner {
+  background-color: lawngreen;
+  width: 70%;
+}
+
+.wrapper {
+  height: 200px;
+  background-color: lightpink;
+}
+.box41 {
+  background-color: limegreen;
+  height: 50%;
+  margin-top: 400px;
+}
+
+.box51 {
+  background-color: lightskyblue;
+  height: 50%;
+  position: absolute;
+}
+
+h1 {
+  font-size: 40px;
+}
+h1 span {
+  font-size: 0.5em;
+}
+
+.box61 {
+  font-size: 24px;
+  width: 4em;   /* 24px*4=96px */
+  height: 3em;  /* 24px*3=72px */
+  background-color: lightpink;
+}
+
+.small-font-size {
+  font-size: 0.75rem;
+}
+.base-font-size {
+  font-size: 1.6rem;
+}
+.big-font-size {
+  font-size: 2.5rem;
+}
+
+.h1 {
+  font-size: 10rem; /* 100px */
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30vw;
+  height: 100vh;
+  background-color: cornsilk;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.banner {
+  height: 100vh;
+  background: url("https://png.pngtree.com/png-clipart/20220125/ourmid/pngtree-leaves-spring-green-decorative-border-png-image_4364434.png") center/cover no-repeat;
+}
