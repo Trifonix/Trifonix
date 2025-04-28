@@ -1,0 +1,26 @@
+.flex-container {
+  display: flex;
+  column-gap: 10px;
+  padding: 10px;
+  background-color: lightskyblue;
+}
+.flex-element {
+  background-color: lightgreen;
+  padding: 10px;
+}
+
+.flex-container2, .inline-flex-container {
+  column-gap: 10px;
+  padding: 10px;
+  background-color: lightpink;
+}
+.flex-container2 {
+  display: flex;
+}
+.inline-flex-container {
+  display: inline-flex;
+}
+.flex-element2 {
+  background-color: lightcyan;
+  padding: 10px;
+}
