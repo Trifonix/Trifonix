@@ -102,5 +102,150 @@
   padding: 10px;
   background-color: seashell;
 
-  flex-grow: 1; /*Значение по умолчанию*/
+  flex-grow: 0; /*Значение по умолчанию*/
+}
+.wide {
+  flex-grow: 1;
+}
+
+.flex-container5 {
+  gap: 10px;
+  height: 400px;
+  padding: 10px;
+  background-color: rgb(223, 104, 193);
+  display: flex;
+}
+.flex-element5 {
+  width: 400px;
+  height: 100px;
+  padding: 10px;
+  background-color: rgb(75, 37, 211);
+  color: white;
+  flex-shrink: 1; /*Значение по умолчанию*/
+}
+/* .narrow {
+  flex-shrink: 2;
+} */
+.real-size {
+  flex-shrink: 0;
+}
+
+.flex-container6 {
+  gap: 10px;
+  padding: 10px;
+  background-color: lightskyblue;
+  display: flex;
+}
+.flex-element6 {
+  width: 200px;
+  height: 200px;
+  background-color: lightsalmon;
+  flex-basis: 100px;
+}
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.flex-container7 {
+  gap: 10px;
+  padding: 10px;
+  background-color: lightseagreen;
+  display: flex;
+}
+.flex-element7 {
+  width: 300px;
+  height: 200px;
+  background-color: lightgoldenrodyellow;
+
+  /* Значение по умолчанию */
+  flex: 0 1 auto;
+}
+.fixed-sizes {
+  flex: 0 0 50%;
+}
+
+.flex-container8 {
+  gap: 10px;
+  padding: 10px;
+  background-color: lightskyblue;
+  display: flex;
+}
+.flex-element8 {
+  width: 300px;
+  height: 100px;
+  padding: 10px;
+  background-color: lightgreen;
+}
+.order-last {
+  order: 1;
+  background-color: orange;
+}
+.order-first {
+  order: -1;
+  background-color: tomato;
+}
+.order-1 { order: 1 }
+.order-2 { order: 2 }
+.order-3 { order: 3 }
+.order-4 { order: 4 }
+
+.flex-container9 {
+  gap: 5px;
+  padding: 5px;
+  background-color: rgb(15, 22, 198);
+  display: flex;
+  flex-direction: column;
+  height: 555px;
+}
+.flex-element9 {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  background-color: tomato;
+  border-radius: 10px;
+}
+.justify-content-flex-start {
+  justify-content: flex-start;
+}
+.justify-content-flex-end {
+  justify-content: flex-end;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-space-between {
+  justify-content: space-between;
+}
+.justify-content-space-around {
+  justify-content: space-around;
+}
+.justify-content-space-evenly {
+  justify-content: space-evenly;
+}
+
+.flex-container10 {
+  height: 80px;
+  gap: 5px;
+  padding: 5px;
+  background-color: lightgray;
+  display: flex;
+  /* Значение по умолчанию */
+  align-items: stretch;
+}
+.flex-element10 {
+  width: 100px;
+  padding: 10px;
+  background-color: slateblue;
+}
+.align-items-stretch {
+  align-items: stretch;
+}
+.align-items-flex-start {
+  align-items: flex-start;
+}
+.align-items-flex-end {
+  align-items: flex-end;
+}
+.align-items-center {
+  align-items: center;
 }
