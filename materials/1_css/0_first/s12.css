@@ -24,3 +24,83 @@
   background-color: lightcyan;
   padding: 10px;
 }
+
+.flex-container1 {
+  gap: 10px;
+  padding: 10px;
+  background-color: lightskyblue;
+  display: flex;
+  /* Значение по умолчанию
+  flex-direction: row; */
+}
+.flex-element1 {
+  background-color: lawngreen;
+  padding: 10px;
+}
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.flex-container2 {
+  gap: 10px;
+  padding: 10px;
+  background-color: lightseagreen;
+  display: flex;
+  /* Значение по умолчанию
+  flex-wrap: nowrap; */
+}
+.flex-element2 {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  background-color: lightsalmon;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.flex-container3 {
+  gap: 10px;
+  height: 400px;
+  padding: 10px;
+  background-color: lightsalmon;
+  display: flex;
+}
+.flex-element3 {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  background-color: blueviolet;
+  color: white;
+}
+.flex-container-first {
+  flex-flow: row wrap-reverse;
+}
+.flex-container-second {
+  flex-flow: column wrap;
+}
+
+.flex-container4 {
+  gap: 10px;
+  height: 400px;
+  padding: 10px;
+  background-color: lightseagreen;
+  display: flex;
+}
+.flex-element4 {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  background-color: seashell;
+
+  flex-grow: 1; /*Значение по умолчанию*/
+}
