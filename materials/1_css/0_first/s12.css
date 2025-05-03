@@ -269,3 +269,59 @@
 .align-items-baseline {
   align-items: baseline;
 }
+
+.flex-container12 {
+  height: 200px;
+  padding: 10px;
+  background-color: salmon;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.flex-element12 {
+  width: 200px;
+  padding: 10px;
+  background-color: cadetblue;
+  align-content: stretch;
+}
+.align-content-flex-start {
+  align-content: flex-start;
+}
+.align-content-flex-end {
+  align-content: flex-end;
+}
+.align-content-center {
+  align-content: center;
+}
+.align-content-space-between {
+  align-content: space-between;
+}
+.align-content-space-around {
+  align-content: space-around;
+}
+.align-content-space-evenly {
+  align-content: space-evenly;
+}
+
+.flex-container13 {
+  padding: 10px;
+  background-color: lightgreen;
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-element13 {
+  background-color: whitesmoke;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border: 5px solid palevioletred;
+}
+.gap-50 {
+  gap: 50px 50px;
+}
+.column-gap-50 {
+  column-gap: 50px;
+}
+.row-gap-50 {
+  row-gap: 50px;
+}
