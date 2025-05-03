@@ -249,3 +249,23 @@
 .align-items-center {
   align-items: center;
 }
+
+.flex-container11 {
+  padding: 10px;
+  background-color: lightskyblue;
+  display: flex;
+  gap: 10px;
+  /* Значение по умолчанию */
+  align-items: stretch;
+}
+.flex-element11 {
+  width: 100px;
+  padding: 10px;
+  background-color: lightgreen;
+}
+.align-items-flex-start {
+  align-items: flex-start;
+}
+.align-items-baseline {
+  align-items: baseline;
+}
