@@ -1,0 +1,110 @@
+.with-before::before {
+  content: "(-:";
+  color: cornflowerblue;
+}
+.with-after::after {
+  content: ":-)";
+  color: green;
+}
+.with-red-placeholder::placeholder {
+  color: red;
+}
+.with-file-selector-button::file-selector-button {
+  background-color: lawngreen;
+  font-weight: 700;
+  border: 2px solid darkblue;
+}
+.with-first-letter::first-letter {
+  font-size: 3em;
+}
+.with-first-line::first-line {
+  text-decoration: underline;
+}
+.with-selection::selection {
+  background-color: pink;
+}
+#marked::marker {
+  color: gold;
+}
+
+.input1::placeholder {
+  color: red;
+  background-color: lightgray;
+}
+.textarea1::placeholder {
+  color: green;
+  font-weight: 700;
+}
+
+.with-custom-file-button::file-selector-button {
+  height: 32px;
+  padding-inline: 12px;
+  color: teal;
+  background-color: goldenrod;
+  border: 3px dashed #132954;
+  border-radius: 10px;
+}
+
+.special-first-letter::first-letter {
+  margin-right: 15px;
+  padding: 12px 24px;
+  font-size: 3em;
+  color: indianred;
+  background-color: skyblue;
+  border: 3px solid cadetblue;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 0.75);
+}
+
+.special-first-line::first-line {
+  text-transform: uppercase;
+  color: indianred;
+  background-color: skyblue;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 0.75);
+}
+
+.custom-selection::selection {
+  color: whitesmoke;
+  background-color: coral;
+  text-shadow: 2px 2px 2px black;
+  text-decoration: underline;
+}
+
+.red-marker::marker {
+  color: red;
+}
+.smile-marker::marker {
+  content: "😂 ";
+}
+
+.emoji-pseudo::before {
+  content: "👉";
+}
+.emoji-pseudo::after {
+  content: "👈";
+}
+.gray-box-pseudo {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: lightskyblue;
+}
+.gray-box-pseudo::after {
+  content: "";
+  position: absolute;
+  left: 90%;
+  top: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: greenyellow;
+}
+.image-pseudo::after {
+  content: url('https://images.stockcake.com/public/6/0/f/60f007a6-743e-4fe4-9b64-7765295c43b0_medium/playful-kitten-playing-stockcake.jpg');
+}
+.attr-pseudo::after {
+  content: attr(data-example);
+  color: red;
+}
+.quote-pseudo::before {
+  content: open-quote;
+}

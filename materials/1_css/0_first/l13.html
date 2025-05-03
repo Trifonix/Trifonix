@@ -7,6 +7,106 @@
   <link rel="stylesheet" href="s13.css">
 </head>
 <body>
-  
+  <a href="l14.html">Идти в урок 14</a>
+  <hr>
+  <p class="emoji-pseudo">
+    Текст с псевдоэлементами
+    before и after
+    и эмодзи в content
+  </p>
+  <div class="gray-box-pseudo">
+    Элемент с псевдоэлементом
+    с пустой строкой в content
+  </div>
+  <p class="image-pseudo">
+    Текст с псевдоэлементом after
+    и изображением в content
+  </p>
+  <p 
+    class="attr-pseudo"
+    data-example="Я значение из атрибута"
+  >
+    Текст с псевдоэлементом after
+    и значением атрибута
+    data-example в content:
+  </p>
+  <p class="quote-pseudo">
+    Текст с псевдоэлементом before
+    и заданным типом кавычек в content
+  </p>
+  <hr>
+  <ul>
+    <li>Элемент списка</li>
+    <li>Элемент списка</li>
+    <li class="red-marker">Элемент списка</li>
+    <li class="smile-marker">Элемент списка</li>
+    <li>Элемент списка</li>
+    <li>Элемент списка</li>
+  </ul>
+  <hr>
+  <p>
+    Текст без кастомного ::selection
+  </p>
+  <p class="custom-selection">
+    Текст с кастомным ::selection
+  </p>
+  <hr>
+  <p>
+    Lorem ipsum dolor sit amet.<br/>
+    Lorem ipsum dolor sit amet.<br/>
+    Lorem ipsum dolor sit amet.
+  </p>
+  <p class="special-first-line">
+    Lorem ipsum dolor sit amet.<br/>
+    Lorem ipsum dolor sit amet.<br/>
+    Lorem ipsum dolor sit amet.
+  </p>
+  <hr>
+  <p>Lorem ipsum dolor sit amet.</p>
+  <p class="special-first-letter">
+    Lorem ipsum dolor sit amet.
+  </p>
+  <hr>
+  <input type="file" />
+  <input type="file" class="with-custom-file-button" />
+  <hr>
+  <input class="input1"
+    placeholder="Красный placeholder на сером фоне"
+  />
+  <br/>
+  <textarea class="textarea1" placeholder="Зеленый жирный placeholder">
+  </textarea>
+  <hr>
+  <p class="with-before">
+    Элемент с псевдоэлементом ::before
+  </p>
+  <p class="with-after">
+    Элемент с псевдоэлементом ::after
+  </p>
+  <input 
+    class="with-red-placeholder"
+    placeholder="Красный placeholder"
+  />
+  <input 
+    class="with-file-selector-button"
+    type="file"
+  />
+  <p class="with-first-letter">
+    Элемент с псевдоэлементом ::first-letter
+  </p>
+  <p class="with-first-line">
+    Элемент<br/>
+    с псевдоэлементом<br/>
+    ::first-line
+  </p>
+  <p class="with-selection">
+    Элемент с псевдоэлементом
+    ::selection
+  </p>
+  <ul>
+    <li>Элемент списка</li>
+    <li id="marked">Элемент списка с псевдоэлементом ::marker</li>
+    <li>Элемент списка</li>
+  </ul>
 </body>
 </html>
