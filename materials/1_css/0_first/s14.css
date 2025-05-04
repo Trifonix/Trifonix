@@ -59,3 +59,71 @@ li:not(:last-child) {
 .tooltip:not(.is-active) {
   display: none;
 }
+
+button {
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.hover-effect:hover {
+  background-color: pink;
+}
+.focus-effect:focus {
+  box-shadow:
+    0 0 10px 10px rgb(255 0 0 / 0.5);
+}
+.focus-visible-effect:focus-visible {
+  box-shadow:
+    0 0 10px 10px rgb(0 255 0 / 0.5);
+}
+.active-effect:active {
+  color: indigo;
+  background-color: yellow;
+}
+
+button:disabled {
+  /*  */
+  color: red;
+}
+
+input:checked {
+  /*  */
+  box-shadow: 0 0 0 4px gold;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+}
+.checkbox {
+  display: flex;
+  column-gap: 0.5em;
+  user-select: none;
+}
+.checkbox-control:not(:checked) + .checkbox-emulator::after {
+  display: none;
+}
+.checkbox-emulator {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 1em;
+  height: 1em;
+  border: 2px solid lightskyblue;
+  border-radius: 5px;
+  background-color: paleturquoise;
+}
+.checkbox-emulator::after {
+  content: "✔";
+  color: green;
+}
