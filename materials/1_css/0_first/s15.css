@@ -1,0 +1,175 @@
+body {
+  /* display: flex; */
+  flex-direction: column;
+  font-family: 'Arial', sans-serif;
+}
+.header {
+  background-color: lightblue;
+}
+.content {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 25% auto;
+  background-color: palegoldenrod;
+}
+.aside-menu {
+  background-color: lawngreen;
+}
+.catalog-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.catalog-item {
+  list-style-type: none;
+  background-color: burlywood;
+  padding: 20px;
+}
+.footer {
+  background-color: lightcoral;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.grid-element {
+  min-height: 50px;
+  background-color: lightslategray;
+  color: whitesmoke;
+  padding: 5px;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.inline-grid-container {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.grid-element2 {
+  background-color: lightcoral;
+}
+
+.grid-container3 {
+  display: grid;
+  gap: 10px;
+  /* grid-template-columns: auto auto auto; */
+  /* grid-template-columns: 50px 70% auto; */
+  /* grid-template-columns: 
+    [first] 50px [second] 70% [third] auto [forth]; */
+  /* grid-template-columns: repeat(3, 150px); */
+
+  /* grid-template-columns: repeat(2, 150px) repeat(3, 50px); */
+  /* Аналогично записи
+  grid-template-columns: 150px 150px 50px 50px 50px; */
+
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* grid-template-columns: 2fr 1fr 50px; */
+
+  grid-template-columns: minmax(200px, 35%) 1fr 50px;
+}
+.grid-element3 {
+  background-color: lightsteelblue;
+}
+
+.grid-container4 {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 100px auto;
+  grid-template-rows: 40px 80px;
+  grid-auto-rows: 42px 24px;
+}
+.grid-element4 {
+  background-color: lightgoldenrodyellow;
+  border: 1px solid;
+  padding: 4px;
+}
+
+.grid-container5 {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 30%;
+  grid-auto-columns: 50px 100px;
+  grid-auto-flow: column;
+}
+.grid-element5 {
+  background-color: lightseagreen;
+}
+
+.content1 {
+  min-height: 50vh;
+  display: grid;
+  grid-template-columns: 25% auto 15%;
+  grid-template-areas: 
+    "menu catalog advertisement"
+    "menu catalog advertisement"
+    "menu catalog ."
+    "menu order order"
+  ;
+  /* gap: 30px 60px; */
+  gap: 50px;
+}
+.menu1 {
+  grid-area: menu;
+  background-color: lightskyblue;
+}
+.catalog {
+  grid-area: catalog;
+  background-color: lightpink;
+}
+.advertisement {
+  grid-area: advertisement;
+  background-color: palevioletred;
+}
+.order {
+  grid-area: order;
+  background-color: cadetblue;
+}
+
+.grid-container6 {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: repeat(5, 50px);
+  border: 1px solid;
+
+  /* justify-content: normal; */
+  /* justify-content: start; */
+  /* justify-content: end; */
+  /* justify-content: center; */
+  /* justify-content: stretch; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+
+  /* align-items: normal; */
+  /* align-items: start; */
+  /* align-items: end; */
+  /* align-items: center; */
+  /* align-items: stretch; */
+
+  /* То же самое, что и:
+  align-items: center;
+  justify-content: end; */
+  /* place-items: center end; */
+  place-items: center;
+}
+.grid-element6 {
+  background-color: lightsalmon;
+}
+
+.grid-container7 {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 50px;
+  align-items: normal;
+}
+.grid-element7 {
+  background-color: lightskyblue;
+}
