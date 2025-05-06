@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      display: grid;
+      /* grid-template-columns: 50px; */
+      /* grid-template-columns: 50px 50px 50px; */
+      /* grid-template-columns: 50% 50%; */
+      /* grid-template-columns: 25% 50% 25%; */
+      /* grid-template-columns: 1fr 2fr; */
+      /* grid-template-columns: repeat(10, 1fr); */
+      /* grid-template-columns: repeat(10, 1fr 2fr); */
+      /* grid-template-columns: repeat(10, 100px 200px); */
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 100px 200px 300px 10px;
+    }
+    .item {
+      padding: 10px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item item_1">1</div>
+    <div class="item item_2">2</div>
+    <div class="item item_3">3</div>
+    <div class="item item_4">4</div>
+    <div class="item item_5">5</div>
+    <div class="item item_6">6</div>
+    <div class="item item_7">7</div>
+    <div class="item item_8">8</div>
+  </div>
+  <hr>
+  <p>.item.item_${$}*8 + TAB</p>
+</body>
+</html>
