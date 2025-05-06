@@ -12,6 +12,72 @@
 }
 
 .box2 {
-  /* overflow: hidden; */
-  overflow: clip;
+  overflow: hidden;
+  /* overflow: clip; */
+}
+
+.box3 {
+  width: 100px;
+  height: 100px;
+  border: 3px solid purple;
+  /* overflow: visible visible; */
+  /* Аналогично
+  overflow-x: visible;
+  overflow-y: visible; */
+  /* overflow: visible hidden; */
+  overflow: visible clip;
+}
+
+.box21, .box22, .box23 {
+  margin-bottom: 5px;
+  color: yellowgreen;
+  background-color: darkblue;
+  font-weight: 700;
+}
+.box22 {
+  /* opacity: 1; Значение по умолчанию */
+  /* opacity: 0.5; */
+  opacity: 0;
+}
+
+.btn1 {
+  height: 30px;
+  padding-inline: 20px;
+  color: pink;
+  font: inherit;
+  background-color: black;
+  border: none;
+  border-radius: 10px;
+  /* Значение по умолчанию */
+  /* opacity: 1; */
+  /* opacity: 0; */
+visibility: visible;
+/* visibility: hidden; */
+}
+.btn1:active {
+  background-color: lemonchiffon;
+  color: black;
+}
+
+.img {
+  width: 400px;
+  /* Значение по умолчанию */
+  /* clip-path: none; */
+  /* clip-path: circle(50%); */
+  /* clip-path: circle(200px); */
+  /* clip-path: circle(50% at 50% 50%); */
+  /* clip-path: circle(50% at 180px 80px); */
+
+  /* clip-path: ellipse(); */
+  /* clip-path: ellipse(50% 50%); */
+  /* clip-path: ellipse(50% 50% at 50px 10px); */
+
+  /* clip-path: polygon(25% 0%, 75% 0, 100% 100%, 0% 100%); */
+
+  clip-path: path('M253.1,6.7c-32.4-14.4-73.7,1.4-97.7,26.6c-24-25.2-65.3-41-97.7-26.6c-33.2,15.7-45.2,49-32.2,75.1c12.9,26.1,43.6,43.3,68.3,64.4c23.5,19.8,46.3,37.4,46.3,37.4s22.8-17.6,46.3-37.4c24.7-21.1,55.4-38.3,68.3-64.4c13-26.1,0.9-59.4-32.2-75.1z');
+}
+
+.img1 {
+  width: 400px;
+  clip-path: url(#shape);
 }

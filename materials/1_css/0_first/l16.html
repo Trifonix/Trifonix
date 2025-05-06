@@ -7,21 +7,59 @@
   <link rel="stylesheet" href="s16.css">
 </head>
 <body>
+  <a href="l17.html">Идти в урок 17</a>
+  <hr>
+  <img class="img1" src="https://images.squarespace-cdn.com/content/v1/66ec3b49803ab81bf84f89e4/1737302786938-NHV26O70KJ7D0OO2YLIP/Genie-Sandcat-2025.jpg" alt="some more cat">
+  <svg width="0" height="0">
+    <defs>
+      <clipPath id="shape">
+        <path d="M8.6342913,129 C86.6318679,137.611315 85,146.865086 85,156.5 C85,200.767808 119.448105,236.989829 163,239.821749 L163,300 L300,300 L300,163 L251.750745,163 C251.915896,160.855015 252,158.687329 252,156.5 C252,110.384223 214.615777,73 168.5,73 C146.712501,73 126.873981,81.3445721 112.006052,95.0121046 L64.5,0 L0,129 L89.6342881,129 Z">
+        </path>
+      </clipPath>
+    </defs>
+  </svg>
+  <hr>
+  <img class="img" src="https://www.webbox.co.uk/wp-content/uploads/2019/05/shutterstock_429276766.jpg" alt="some cat">
+  <hr>
+  <button class="btn1">Клик</button>
+  <div class="counter">0</div>
+  <hr>
+  <div class="box21">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+  </div>
+  <div class="box22">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque?
+  </div>
+  <div class="box23">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, temporibus.</div>
+  <hr>
+  <div class="box3">
+    <h2>Заголовок</h2>
+    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae debitis assumenda officiis!</span>
+  </div>
+  <hr>
   <div class="box2">
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ducimus, cumque quod ex voluptatum incidunt ipsam nobis perspiciatis vel nesciunt voluptates nisi magnam dignissimos exercitationem voluptatem esse minus a iste molestias recusandae id tempore impedit. Harum quo cum et? Molestias, tempore iusto?
   </div>
-  <button>Прокрутить блок на 10 пикселей</button>
+  <button class="btn">Прокрутить блок на 10 пикселей</button>
   <hr>
   <div class="box">
     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, sit nobis laudantium esse, ad voluptatum corrupti laboriosam non cupiditate quis maxime quae? Necessitatibus harum voluptas nihil atque distinctio? Impedit, nostrum.
   </div>
   <script>
     const boxElement = document.querySelector('.box2')
-    const buttonElement = document.querySelector('button')
+    const buttonElement = document.querySelector('.btn')
 
     buttonElement.addEventListener('click', () => {
       boxElement.scrollTop += 10
     })
+
+    const button2Element = document.querySelector('.btn1')
+    const counterElement = document.querySelector('.counter')
+
+    button2Element.onclick = () => {
+      const value = Number(counterElement.textContent)
+      counterElement.textContent = value + 1
+    }
   </script>
 </body>
 </html>
