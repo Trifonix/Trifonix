@@ -16,4 +16,4 @@ ____
 
 ____
 
-2_third --- Grid CSS полный курс за 13 минут. Все свойства : https://www.youtube.com/watch?v=MEOR2b69Pl4
+✅ 2_third --- Grid CSS полный курс за 13 минут. Все свойства : https://www.youtube.com/watch?v=MEOR2b69Pl4

@@ -5,9 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    .container {
+    .container2 {
+      display: grid;
+      grid-template-areas: 
+        'header header'
+        'sidebar content';
+      grid-gap: 10px;
+      grid-template-columns: 150px 1fr;
+      grid-template-rows: 50px 1fr;
+    }
+    .container1 {
       display: grid;
       /* grid-template-columns: 50px; */
+      /* grid-template-columns: 150px 150px; */
       /* grid-template-columns: 50px 50px 50px; */
       /* grid-template-columns: 50% 50%; */
       /* grid-template-columns: 25% 50% 25%; */
@@ -15,21 +25,86 @@
       /* grid-template-columns: repeat(10, 1fr); */
       /* grid-template-columns: repeat(10, 1fr 2fr); */
       /* grid-template-columns: repeat(10, 100px 200px); */
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 100px 200px 300px 10px;
+      /* grid-template-columns: 1fr 1fr; */
+      /* grid-template-rows: 100px 200px 300px 10px; */
+      /* grid-column-gap: 10px; */
+      /* grid-column-gap: 10%; */
+      /* grid-row-gap: 10px; */
+      /* grid-gap: 10px; */
+      /* grid-auto-rows: 100px; */
+      /* grid-auto-rows: minmax(100px, auto);
+      grid-auto-rows: minmax(0, auto); */
+      /* grid-auto-rows: minmax(50px, auto); */
+      /* justify-content: center; */
+      /* justify-content: start; */
+      /* justify-content: end; */
+      /* align-content: end; */
+      /* align-items: start; */
+      /* align-items: center; */
+      /* align-items: end; */
+      /* justify-items: center; */
+      /* justify-items: start; */
+      /* justify-items: end;
+      align-items: end; */
     }
     .item {
+      /* font-size: 24px; */
       padding: 10px;
       border: 1px solid black;
+      /* overflow: scroll; */
+      background-color: lavender;
+    }
+    .item2 {
+      background-color: salmon;
+    }
+    /* .item_3 { */
+      /* justify-self: end; */
+      /* justify-self: start; */
+      /* justify-self: center;
+      align-self: end; */
+      /* grid-column-start: 1;
+      grid-column-end: 3; */
+      /* grid-row-start: 1;
+      grid-row-end: 5; */
+      /* grid-column: 1/3; */
+      /* grid-row: 2/5; */
+    /* } */
+    /* .item_7 {
+      grid-row-start: 1;
+      grid-column-start: 2;
+    } */
+    .header {
+      grid-area: header;
+    }
+    .sidebar {
+      grid-area: sidebar;
+      align-self: start;
+    }
+    .content {
+      grid-area: content;
     }
   </style>
 </head>
 <body>
+  <div class="container2">
+    <div class="item item2 header">header</div>
+    <div class="item item2 sidebar">
+      <div class="link">link</div>
+      <div class="link">link</div>
+      <div class="link">link</div>
+      <div class="link">link</div>
+      <div class="link">link</div>
+    </div>
+    <div class="item item2 content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit odio amet, illum illo doloribus, tenetur molestiae similique qui ipsum saepe odit corrupti laboriosam nostrum assumenda fugit. Ab corporis impedit nam, quam totam laborum quo sunt! Unde inventore vel, fugiat perspiciatis aspernatur accusamus quas vitae quos impedit nostrum obcaecati. Nulla nobis dolore molestiae ut quasi laboriosam officiis, odit eum architecto maxime eius ipsa natus rerum suscipit itaque? Repellendus quasi assumenda sit iure delectus ad labore consectetur non provident. Culpa earum rem dicta laudantium eos, voluptatibus maxime, repellat iusto deleniti fugit assumenda ullam a sit dolore corporis ut at aliquid harum quisquam accusamus commodi! Dicta sunt reprehenderit ipsa amet et mollitia cum consectetur doloribus porro, voluptatum ea eos qui harum laboriosam quidem, repudiandae, corporis libero modi. Sint aliquam iure saepe sit quam cum quo ullam id aspernatur. Sapiente libero recusandae ipsum. Natus, ducimus dolorem exercitationem rem laborum animi ad provident repudiandae ipsam tenetur ullam sed nostrum voluptatem modi quidem, itaque maiores veritatis praesentium! Sint, nostrum aliquam doloremque, error ipsum laboriosam vitae dolorem quibusdam repellendus aspernatur accusamus atque, excepturi non dolore quam ratione maxime eum deleniti! Ad placeat neque, asperiores porro maxime voluptate delectus ratione iusto vel quibusdam libero sint magni rem amet illum, aliquid dolorem earum ab est quas eveniet, quos commodi. Accusantium quam rem nemo harum quisquam, excepturi eaque neque eligendi enim doloremque quas qui esse voluptate facilis minus veritatis ducimus repellat odio facere nobis incidunt a officia, ut eveniet! Cupiditate facilis nesciunt a, nostrum saepe dolorum ipsum, quos nam obcaecati nobis necessitatibus sunt, odit sapiente officiis harum voluptatum mollitia. Deserunt eum unde neque ducimus iure vitae sunt ullam. Doloribus sequi optio porro commodi aut saepe natus unde odio nostrum, minus veniam quasi delectus tempora beatae consectetur autem enim architecto? Eum esse nostrum repellendus alias! Eligendi nisi praesentium aliquid est aspernatur ipsa modi tempora fugiat cum ratione velit, non officiis asperiores quisquam labore! Odio, perspiciatis adipisci earum asperiores optio, voluptas autem nisi, eveniet voluptate esse aut. Maxime officiis voluptatibus voluptate, repellendus nemo suscipit, quaerat accusantium consequuntur id veritatis laboriosam facere sapiente, architecto dolorum delectus nisi. Eum odit laudantium porro nisi laborum, velit autem aspernatur architecto, in repellat harum sit asperiores natus provident reiciendis cupiditate nobis soluta tempore voluptas excepturi quis eaque exercitationem molestiae enim! Maiores delectus cumque aperiam. Nesciunt id reprehenderit, corrupti itaque quas dicta consequuntur, nostrum omnis sunt dignissimos minus perspiciatis odio. Voluptates eum cum iusto necessitatibus totam repudiandae temporibus, quos maiores magni fuga earum atque eveniet quisquam porro, laboriosam maxime id eaque. Reiciendis quis fuga pariatur sint iusto doloribus eius perferendis ad, autem saepe totam odit veritatis, eligendi velit molestiae facilis amet tenetur laudantium unde. Molestiae, non voluptatibus. Perferendis quisquam reiciendis, numquam iure a nisi quia dolorum sed laborum repudiandae, dolor eligendi laudantium tenetur unde sit assumenda beatae quos quod possimus libero cum? Dignissimos repellendus, eos accusamus perspiciatis sapiente nam nostrum? Reprehenderit saepe soluta aliquam aliquid magnam accusantium optio commodi veritatis, quam non ut at sit officia laborum quaerat maxime iure et numquam ipsum animi a adipisci, eligendi laudantium?</div>
+  </div>
+  <hr>
   <div class="container">
-    <div class="item item_1">1</div>
+    <div class="item item_1">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia eaque obcaecati harum, perferendis provident perspiciatis sint consectetur aut necessitatibus ab sequi quam, dolor, dignissimos quos similique temporibus quasi voluptas nulla.
+    </div>
     <div class="item item_2">2</div>
     <div class="item item_3">3</div>
-    <div class="item item_4">4</div>
+    <div class="item item_4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae iure illo vitae, quaerat distinctio enim, soluta ipsam ipsum autem ratione eos quam accusantium exercitationem mollitia omnis? Ratione sed at animi?</div>
     <div class="item item_5">5</div>
     <div class="item item_6">6</div>
     <div class="item item_7">7</div>
