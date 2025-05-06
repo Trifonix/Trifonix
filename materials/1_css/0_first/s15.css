@@ -166,10 +166,37 @@ body {
 .grid-container7 {
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns:
+    [start] 1fr [middle-before] 1fr [middle-after] 1fr [end];
   grid-auto-rows: 50px;
   align-items: normal;
 }
 .grid-element7 {
   background-color: lightskyblue;
+}
+.big {
+  /* grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3; */
+
+  /* grid-column: middle-before / end; */
+  grid-column: span 2;
+  grid-row: 1 / 3;
+}
+
+.grid-container8 {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: normal;
+}
+.grid-element8 {
+  background-color: plum;
+}
+.wide {
+  grid-column: -1 / 1;
+  /* order: -1; */
+  order: 1;
 }

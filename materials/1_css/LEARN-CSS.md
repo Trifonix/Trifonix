@@ -13,3 +13,7 @@ ____
 ____
 
 ✅ 1_second --- Flexbox CSS практический курс за 6 минут. Все свойства : https://www.youtube.com/watch?v=eVZEwEQg4pg
+
+____
+
+2_third --- Grid CSS полный курс за 13 минут. Все свойства : https://www.youtube.com/watch?v=MEOR2b69Pl4
