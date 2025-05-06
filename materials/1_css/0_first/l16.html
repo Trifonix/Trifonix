@@ -7,6 +7,21 @@
   <link rel="stylesheet" href="s16.css">
 </head>
 <body>
-  
+  <div class="box2">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ducimus, cumque quod ex voluptatum incidunt ipsam nobis perspiciatis vel nesciunt voluptates nisi magnam dignissimos exercitationem voluptatem esse minus a iste molestias recusandae id tempore impedit. Harum quo cum et? Molestias, tempore iusto?
+  </div>
+  <button>Прокрутить блок на 10 пикселей</button>
+  <hr>
+  <div class="box">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, sit nobis laudantium esse, ad voluptatum corrupti laboriosam non cupiditate quis maxime quae? Necessitatibus harum voluptas nihil atque distinctio? Impedit, nostrum.
+  </div>
+  <script>
+    const boxElement = document.querySelector('.box2')
+    const buttonElement = document.querySelector('button')
+
+    buttonElement.addEventListener('click', () => {
+      boxElement.scrollTop += 10
+    })
+  </script>
 </body>
 </html>

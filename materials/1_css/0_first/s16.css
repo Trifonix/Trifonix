@@ -1,0 +1,17 @@
+.box, .box2 {
+  width: 100px;
+  height: 100px;
+  border: 2px solid indianred;
+  /* Значение по умолчанию */
+  /* overflow: visible; */
+  /* overflow: hidden; */
+  /* overflow: scroll; */
+  /* overflow: auto; */
+  overflow: clip;
+  margin-bottom: 10px;
+}
+
+.box2 {
+  /* overflow: hidden; */
+  overflow: clip;
+}
