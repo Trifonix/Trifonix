@@ -1,0 +1,177 @@
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  background-color: tomato;
+  height: 100px;
+  width: 50%;
+  min-width: 200px;
+  max-width: 500px;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: salmon;
+  min-height: 100vh;
+}
+
+.modal {
+  /* position: fixed; */
+  z-index: 100;
+
+  inset: 0;
+  /* То же самое, что и
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: rgb(0 0 0 / 0.3);
+}
+.modal-inner {
+  padding: 30px;
+  background-color: whitesmoke;
+  border-radius: 30px;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.catalog-title {
+  font-size: 64px;
+}
+.catalog-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.catalog-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightskyblue;
+  min-height: 100px;
+}
+
+@media (max-width: 700px) {
+  .catalog-title {
+    font-size: 36px;
+  }
+  .catalog-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .catalog-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.catalog-title1 {
+  font-size: 36px;
+}
+.catalog-list1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.catalog-item1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgreen;
+  min-height: 100px;
+}
+
+@media (min-width: 401px) {
+  .catalog-list1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 701px) {
+  .catalog-title1 {
+    font-size: 64px;
+  }
+  .catalog-list1 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.banner1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  background-color: lightsalmon;
+}
+.banner-title1 {
+  font-size: 100px;
+  text-transform: uppercase;
+}
+@media (min-height: 900px) {
+  .banner-title1 {
+    color: green;
+  }
+}
+@media (min-height: 400px) {
+  .banner-title1 {
+    color: red;
+  }
+}
+@media (orientation: portrait) {
+  .banner-title1 {
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+  }
+}
+@media (orientation: landscape) {
+  /*  */
+}
+
+a {
+  text-decoration: none;
+  color: orangered
+}
+@media print {
+  body {
+    font-size: 36px;
+  }
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+}
+
+button {
+  background-color: palegreen;
+}
+/* button:hover {
+  background-color: crimson;
+} */
+@media (hover: hover) {
+  button:hover {
+    background-color: crimson;
+  }
+}
+
+.box11 {
+  background-color: palegreen;
+  width: 50%;
+}
+.box12 {
+  background-color: pink;
+  width: 30vw;
+}
+.box13 {
+  background-color: lightskyblue;
+  width: 80%;
+}
