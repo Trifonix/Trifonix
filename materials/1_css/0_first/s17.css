@@ -1,0 +1,58 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: lightskyblue;
+  /* Значение по умолчанию */
+  /* cursor: auto; */
+  /* cursor: none; */
+  /* cursor: default; */
+  /* cursor: text; */
+  cursor: pointer;
+}
+
+.div {
+  height: 50px;
+  background-color: lightgreen;
+  display: inline-block;
+  margin: 15px 15px 0 0;
+  padding: 5px;
+}
+
+.box1, button {
+  /* Значение по умолчанию */
+  /* user-select: auto; */
+  user-select: none;
+}
+
+.box2 {
+  padding: 10px;
+  background-color: lightskyblue;
+  /* Значение по умолчанию */
+  /* pointer-events: auto; */
+  pointer-events: none;
+}
+.btn {
+  pointer-events: auto;
+}
+
+textarea {
+  /* Значение по умолчанию */
+  /* resize: both; */
+  /* resize: horizontal; */
+  resize: vertical;
+}
+.box3 {
+  width: 90px;
+  height: 90px;
+  background-color: lightcoral;
+  overflow: hidden;
+  /* Значение по умолчанию */
+  /* resize: none; */
+  resize: both;
+}
+
+html {
+  /* Значение по умолчанию */
+  /* scroll-behavior: auto; */
+  scroll-behavior: smooth;
+}
