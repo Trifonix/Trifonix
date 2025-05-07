@@ -1,0 +1,80 @@
+@keyframes move-to-right {
+  /* from  */
+  /* 0% {
+    translate: 0;
+  } */
+  50% {
+    rotate: 45deg;
+  }
+  /* to */
+  100% {
+    translate: 75vw;
+  }
+}
+@keyframes move-to-right2 {
+  0% {
+    translate: 0;
+  }
+  100% {
+    translate: 100vw;
+  }
+}
+.box {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  /* animation: move-to-right 1s; */
+  /* animation: move-to-right 1s ease-in 0.5s infinite reverse both running; */
+  animation-name: move-to-right;
+  /* animation-duration: 1s; */
+  /* animation-duration: 0; */
+  animation-duration: 1000ms;
+  animation-delay: 0.5s;
+  /* animation-delay: - 0.5s; */
+  /* animation-iteration-count: 3; */
+  /* animation-iteration-count: infinite; */
+  /* animation-iteration-count: 1; */
+  animation-iteration-count: 6;
+  /* Значение по умолчанию */
+  /* animation-direction: normal; */
+  /* animation-direction: reverse; */
+  /* animation-direction: alternate; */
+  animation-direction: alternate-reverse;
+}
+
+.line {
+  border: 2px solid yellowgreen;
+}
+.label {
+  position: absolute;
+}
+.box1 {
+  width: 50px;
+  height: 50px;
+  background-color: lightskyblue;
+  translate: -100%;
+  animation-name: move-to-right2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+.ease-in {
+  animation-timing-function: ease-in;
+}
+.ease-out {
+  animation-timing-function: ease-out;
+}
+.ease-in-out {
+  animation-timing-function: ease-in-out;
+}
+.linear {
+  animation-timing-function: linear;
+}
+.cubic-bezier {
+  animation-timing-function: cubic-bezier(0.1, 0.7, 0.165, 1);
+}
+
+.line:hover .box1 {
+  /* animation-play-state: running; */
+  animation-play-state: paused;
+}
