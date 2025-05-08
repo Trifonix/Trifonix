@@ -1,0 +1,102 @@
+.box, .box1 {
+  width: 100px;
+  height: 100px;
+  background-color: lightskyblue;
+  margin-bottom: 10px;
+
+  /* Устаревшее */
+  grid-column-gap: 30px; 
+  /* Актуальное */
+  column-gap: 30px;
+
+  /* Устаревшее */
+  grid-row-gap: 30px;
+  /* Актуальное */
+  row-gap: 30px;
+  
+  /* Устаревшее */
+  offset-block-end: 5px;
+  /* Актуальное */
+  inset-block-end: 5px;
+
+  /* Устаревшее */
+  offset-block-start: 5px;
+  /* Актуальное */
+  inset-block-start: 5px;
+
+  /* Устаревшее */
+  offset-inline-end: 5px;
+  /* Актуальное */
+  inset-inline-end: 5px;
+
+  /* Устаревшее */
+  offset-inline-start: 5px;
+  /* Актуальное */
+  inset-inline-start: 5px;
+  
+  /* Устаревшие */
+  ime-mode: active;
+  rest-before: x-weak;
+  pause-before: x-strong;
+  cue-before: url('example.mp3');
+  rest: weak medium;
+}
+
+.box1 {
+  background-color: salmon;
+
+  /* Вендорные префиксы для свойства */
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -ms-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease;
+
+  /* Вендорные префиксы для значения */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Вендорные префиксы для псевдокласса */
+input::-webkit-input-placeholder { color: brown }
+input::-moz-placeholder { color: red }
+input::-ms-input-placeholder { color: blueviolet }
+input::placeholder { color: blue }
+
+/* Вендорные префиксы для директивы */
+@-webkit-keyframes some-animation {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+@keyframes some-animation {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+html {
+  /* Экспериментальное свойство */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* https://autoprefixer.github.io/ru/ */
+/* https://preset-env.cssdb.org/playground/ */
+/* https://www.w3schools.com/howto/howto_css_placeholder.asp */
+/* https://caniuse.com/ */
+/* https://www.the-art-of-web.com/css/css-animation/ */
+/* https://ishadeed.com/article/css-masking/ */
+
+/* Запасное значение (фоллбэк) */
+body {
+  background: url('...') center/cover no-repeat #eeeeee;
+}
+/* Если браузер поддерживает свойство mask-clip... */
+@supports (mask-clip: view-box) {
+  /* ...то применятся внутренние стили */
+  body {
+    /* mask-image: url('masks.svg#mask1'); */
+    mask-clip: view-box;
+  }
+}
