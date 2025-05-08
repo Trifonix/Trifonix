@@ -1,0 +1,184 @@
+body {
+  --color-main: red;
+  --цвет-акцентный: rgb(245, 245, 255);
+  --😅: 100px;
+}
+.button1 {
+  color: var(--color-main);
+  background-color: var(--цвет-акцентный);
+  border-radius: var(--😅);
+}
+
+body {
+  --color-main: violet;
+  --colorAccent: pink;
+  --BORDER_RADIUS: 1em;
+}
+.button2 {
+  color: var(--color-main);
+  background-color: var(--colorAccent);
+  border-radius: var(--BORDER_RADIUS);
+}
+
+body {
+  --color-main: #20855e;
+  --color-accent: #ffc67c;
+  --border-radius: 4px;
+}
+.button3 {
+  color: var(--color-main);
+  background-color: var(--color-accent);
+  border-radius: var(--border-radius);
+
+  box-shadow: var(--undefined-variable, 2px 2px 2px green);
+}
+
+.box-1, .box-2, .box-3 {
+  padding: 10px;
+}
+.box-2, .box-3 {
+  margin: 10px 20px;
+}
+.box-1 {
+  background-color: lightsalmon;
+  /* Использовать --custom-border не получается */
+  border: var(--custom-border);
+}
+.box-2 {
+  background-color: lightskyblue;
+  /* 
+  Доступна в текущем 
+  и во внутренних элементах
+  */
+  --custom-border: 2px solid red;
+  border: var(--custom-border);
+}
+.box-3 {
+  background-color: lightgreen;
+  border: var(--custom-border)
+}
+
+.box-21, .box-22, .box-23 {
+  padding: 10px;
+}
+.box-22, .box-23 {
+  margin: 10px 20px;
+}
+.box-21 {
+  background-color: lightsalmon;
+  --custom-border: 2px solid red;
+  border: var(--custom-border);
+}
+.box-22 {
+  /* Переопределяем переменную
+  из верхней области видимости
+  */
+  --custom-border: 5px solid blue;
+  background-color: lightskyblue;
+  border: var(--custom-border);
+}
+.box-23 {
+  background-color: lightgreen;
+  border: var(--custom-border);
+}
+
+body {
+  --color-main: #0c136e;
+  --color-accent: #64c7bf;
+  background-color: var(--color-main);
+}
+.btn {
+  --buttonTextColor: var(--color-main); /* #0c136e */
+  --buttonBgColor: var(--color-accent); /* #64c7bf */
+
+  display: inline-flex;
+  align-items: center;
+  height: 40px;
+  padding-inline: 24px;
+  color: var(--buttonTextColor); /* #0c136e */
+  background-color: var(--buttonBgColor); /* #64c7bf */
+}
+
+:root {
+  --color-light: #FFFFFF;
+  --color-dark: #171717;
+  /* --color-main: #20855e; */
+  --color-main: lightskyblue;
+  --color-accent: #ffc67c;
+  --color-gray: #FAFAFA;
+  --color-success: #7dbd6d;
+  --color-error: #a41b1b;
+  --color-secondary: #fff300;
+
+  --box-shadow-1: 0 0 2px 4px rgb(0 0 0 / 0.5);
+  --box-shadow-2: 12 12 2px 2px rgb(0 0 0 / 0.25);
+
+  --font-family-base: 'Roboto', sans-serif;
+  --font-family-accent: 'Montserrat', sans-serif;
+
+  --container-width: 1200px;
+  --container-padding-x: 15px;
+  --section-gap-y: 80px;
+
+  --transition-timing-function: ease-in;
+  --transition-duration: 0.2s;
+  
+  --layer-default: 0;
+  --layer-tooltip: 50;
+  --layer-tooltip-control: 75;
+  --layer-modal: 100;
+  --layer-modal-control: 150;
+  --layer-overlay-menu: 200;
+  --layer-overlay-control: 250;
+  --layer-admin-panel: 500;
+  --layer-preloader: 1000;
+}
+
+.button {
+  --buttonTextColor: var(--color-main);
+  --buttonBgColor: var(--color-accent);
+  --buttonBorderColor: transparent;
+
+  padding: 10px;
+  border-radius: 5px;
+  color: var(--buttonTextColor);
+  background-color: var(--buttonBgColor);
+  border: 4px solid var(--buttonBorderColor);
+}
+.button.yellow {
+  --buttonBgColor: var(--color-secondary);
+}
+.button.transparent {
+  --buttonTextColor: var(--color-dark);
+  --buttonBgColor: transparent;
+  --buttonBorderColor: var(--color-dark);
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* background: url() center/cover no-repeat; */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: var(--bgImg);
+}
+.banner-title {
+  color: white;
+  border: 5px solid white;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 4em;
+  backdrop-filter: blur(3px);
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+:root {
+  --color-main-main: lightskyblue;
+}
+body {
+  background-color: var(--color-main-main);
+}

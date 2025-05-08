@@ -7,6 +7,57 @@
   <link rel="stylesheet" href="s22.css">
 </head>
 <body>
-  
+  <button class="button42">Изменить значение --color-main</button>
+  <hr>
+  <section class="banner" style="--bgImg: url('https://static.vecteezy.com/system/resources/previews/050/808/481/non_2x/a-panoramic-view-of-the-mountains-and-lake-beautiful-landscape-stunning-natural-landscape-photo.jpeg');">
+    <h1 class="banner-title">Banner title</h1>
+  </section>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste similique voluptates consectetur, qui dolores ab quia adipisci minus voluptate? Ratione, mollitia id earum saepe ex consectetur inventore ab qui porro!</p>
+  <hr>
+  <button class="button transparent">Прозрачная кнопка</button>
+  <hr>
+  <button class="button yellow">Желтая кнопка</button>
+  <hr>
+  <button class="button">СУПЕР КНОПКА</button>
+  <hr>
+  <button class="btn" type="button">Click me</button>
+  <hr>
+  <div class="box-21">
+    1
+    <div class="box-22">
+      2
+      <div class="box-23">
+        3
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="box-1">
+    1
+    <div class="box-2">
+      2
+      <div class="box-3">
+        3
+      </div>
+    </div>
+  </div>
+  <hr>
+  <button class="button3">КНОПКА</button>
+  <hr>
+  <button class="button2">КНОПКА</button>
+  <hr>
+  <button class="button1">КНОПКА</button>
+  <script>
+    const htmlElement = document.documentElement
+    const buttonElement = document.querySelector('.button42')
+
+    buttonElement.addEventListener('click', () => {
+      htmlElement.style.setProperty('--color-main-main', 'burlywood')
+
+      const currentMainColor = htmlElement.style.getPropertyValue('--color-main-main')
+
+      console.debug('currentMainColor:', currentMainColor)
+    })
+  </script>
 </body>
 </html>
