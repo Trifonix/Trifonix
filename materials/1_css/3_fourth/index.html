@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .item {
+      width: 200px;
+      height: 200px;
+      background: lightgray;
+      font-size: 50px;
+    }
+    * {
+      margin-top: 10px;
+    }
+    .inline .item {
+      display: inline;
+    }
+    .inline-block .item {
+      display: inline-block;
+    }
+    .flex {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+  <div class="inline">
+    <h3>inline</h3>
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <div class="block">
+    <h3>block</h3>
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <div class="inline-block">
+    <h3>inline-block</h3>
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <div class="flex">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+</body>
+</html>
