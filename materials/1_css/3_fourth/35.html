@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 95vh;
+      width: 95vw;
+    }
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: limegreen;
+      position: relative;
+    }
+    div:hover::after {
+      content: attr(data-description);
+      position: absolute;
+      top: 100%;
+      background-color: lightskyblue;
+    }
+  </style>
+</head>
+<body>
+  <div data-description="Какое-то описание"></div>
+</body>
+</html>
