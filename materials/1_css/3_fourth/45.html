@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      display: flex;
+      background-color: black;
+      justify-content: center;
+      align-items: center;
+      height: 95vh;
+      perspective: 500px;
+      gap: 10px;
+    }
+    div {
+      width: 250px;
+      height: 250px;
+      background-color: gold;
+      transition: 1s all;
+    }
+    div:hover {
+      transform: rotateX(45deg);
+    }
+    #div2 {
+      background-color: lime;
+    }
+    #div2:hover {
+      transform: rotateY(45deg);
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+  <div id="div2"></div>
+</body>
+</html>
