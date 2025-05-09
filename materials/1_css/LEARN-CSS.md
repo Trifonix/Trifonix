@@ -20,4 +20,12 @@ ____
 
 ____
 
-3_fourth --- 50 вопросов по CSS. Собеседование на HTML верстальщика. Проверь свои знания! : https://www.youtube.com/watch?v=4YRG6cMAASI
+✅ 3_fourth --- 50 вопросов по CSS. Собеседование на HTML верстальщика. Проверь свои знания! : https://www.youtube.com/watch?v=4YRG6cMAASI
+
+____
+
+4_fifth --- CSS : https://www.youtube.com/playlist?list=PL0MUAHwery4ojFkcq8PD-6ylUalMGqXfs
+
+____
+
+5_sixth --- Адаптивная верстка сайта с нуля для начинающих | HTML, CSS, Figma практика | Пошаговое подробное объяснение | Разработка сайта с 0 до результата : https://www.youtube.com/playlist?list=PL0MUAHwery4rqkzKF1mDBCIH_eZgjY6uN
