@@ -4,8 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    .square {
+      /* width: 100px; */
+      /* width: 1vw; */
+      width: 100vw;
+      /* height: 100px; */
+      /* height: 1vh; */
+      height: 100vh;
+      /* height: 50vmin; */
+      height: 50vmax;
+      background-color: lightgreen;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    /* html, body {
+      height: 100%;
+    } */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    section {
+      display: grid;
+      place-items: center;
+      padding: 20px;
+      border: 10px groove indianred;
+      /* height: 100%; */
+      /* height: 100vh; */
+      /* height: 100svh; */
+      /* height: 100lvh; */
+      height: 100dvh;
+      transition: height 0.2s linear;
+    }
+    section:nth-child(1) {
+      background-color: lightgreen;
+    }
+    section:nth-child(2) {
+      background-color: khaki;
+    }
+    section:nth-child(3) {
+      background-color: powderblue;
+    }
+  </style>
 </head>
 <body>
-  
+  <section>Секция 1</section>
+  <section>Секция 2</section>
+  <section>Секция 3</section>
+  <hr>
+  <div class="square"></div>
 </body>
 </html>
