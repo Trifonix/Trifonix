@@ -32,7 +32,11 @@
       display: grid;
       align-items: start;
       column-gap: 1rem;
-      grid-template-columns: 250px auto;
+      /* grid-template-columns: 250px auto; */
+      grid-template-columns: 15.625rem auto;
+    }
+    aside {
+      background-color: orange;
     }
     aside,
     main {
@@ -43,16 +47,26 @@
       font-size: 1.5rem;
     }
     main {
-      font-size: 1.5rem;
+      font-size: 1rem;
+    }
+
+    /* (width < 1024px) */
+    @media (width < 64rem) {
+      body {
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+      }
     }
   </style>
 </head>
 <body>
+  <a href="l2.html">Идти в урок 2</a>
+  <hr>
   <aside>
     У этого бокового меню <b>font-size: 1.5rem</b> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
   </aside>
   <main>
-    У этого текста <b>font-size: 1rem</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    У этого текста <b>font-size: 1rem</b> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores ut doloremque nulla quo facere illum similique molestiae, ratione nam, sit blanditiis culpa aut possimus maxime neque quis quia quaerat perferendis in vel quam nemo dignissimos! Molestias, fuga quam ut, unde, repellat voluptates quod accusamus explicabo suscipit accusantium voluptatem? Eos alias nam sit quibusdam iure blanditiis dicta officiis distinctio fugiat natus? Ullam perferendis voluptate delectus accusamus doloribus in inventore sequi reiciendis tempore laboriosam dolorem facilis, veniam officia temporibus! Accusantium aperiam expedita nemo quas obcaecati ipsum inventore nam illum rerum impedit? Deleniti aliquam harum illo atque sed inventore ut ea necessitatibus ipsa corrupti, mollitia tempora dolore exercitationem dicta voluptas rem quidem quos cum asperiores, dolorum a odit vel. Eveniet eaque libero ad minus, magnam aut repellat ipsum ipsam soluta nam earum cupiditate sunt culpa recusandae dolores saepe ullam vitae perferendis? Velit neque facilis, tempora doloribus asperiores quas explicabo non voluptas blanditiis laboriosam ducimus, corporis dignissimos quaerat voluptatibus sequi commodi! Et temporibus dolore accusamus, voluptates velit at fuga autem eligendi earum quod nobis ab id corporis quam numquam. Ad reiciendis esse neque iure repudiandae iste totam tempore reprehenderit distinctio natus, nostrum tenetur ducimus itaque dignissimos placeat excepturi quo debitis voluptatum sunt voluptates saepe!
   </main>
   <hr>
   <main>
