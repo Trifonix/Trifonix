@@ -17,14 +17,44 @@
     }
     main {
       font-size: 1.5rem; /* 24px */
-      padding: 1.875rem; /* 30px */
-      border-radius: 1.875rem; /* 30px */
+      padding: 1.25em; /* 30px */
+      border-radius: 1.25em; /* 30px */
       background-color: lavenderblush;
       color: blue;
+    }
+    @media (width < 1000px) {
+      main {
+        font-size: 1rem; /* 16px */
+      }
+    }
+
+    body {
+      display: grid;
+      align-items: start;
+      column-gap: 1rem;
+      grid-template-columns: 250px auto;
+    }
+    aside,
+    main {
+      border-radius: 1em;
+      padding: 1em;
+    }
+    aside {
+      font-size: 1.5rem;
+    }
+    main {
+      font-size: 1.5rem;
     }
   </style>
 </head>
 <body>
+  <aside>
+    У этого бокового меню <b>font-size: 1.5rem</b> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+  </aside>
+  <main>
+    У этого текста <b>font-size: 1rem</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+  </main>
+  <hr>
   <main>
     У этого элемента <span>font-size: 1.5rem, padding: 30px и border-radius: 30px</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam blanditiis nostrum unde aliquid incidunt quod natus ipsum repellendus minima quia ea dolor deserunt dicta corporis esse totam dolores error ex, libero id. Voluptate ipsum hic dicta. Ducimus magnam placeat corrupti ipsam autem. Error explicabo sit corporis quibusdam repellat optio ea, perferendis dolore iste impedit praesentium ut! Recusandae, debitis. Ipsum quibusdam nihil, at cumque enim, vero officiis accusantium magni expedita doloremque nemo pariatur id. Illum, quos alias quod neque fuga sapiente reiciendis, nam voluptatibus, qui aperiam nisi molestias odio sint. Dolorem consequatur voluptates nisi similique non voluptatem inventore quia qui nemo.
   </main>
