@@ -236,6 +236,22 @@ body {
   background-color: var(--color-dark);
 }
 
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  color: var(--color-light);
+}
+
+a:hover {
+  color: var(--color-light-gray);
+}
+
 .container {
   max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
   margin-inline: auto;
@@ -245,4 +261,51 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  height: 38px;
+  padding-inline: 26px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  background-color: var(--color-light);
+  border: none;
+  border-radius: var(--border-radius);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.header-menu-list {
+  display: flex;
+  column-gap: 50px;
+}
+
+.header-menu-link {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 7px;
+  height: 90px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+}
+
+.header-menu-link.is-current::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: currentColor;
+  border-radius: 50px;
 }
