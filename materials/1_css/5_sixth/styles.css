@@ -209,6 +209,7 @@ svg * {
 
 :root {
   --color-dark: #000000;
+  --color-dark-alternate: #131619;
   --color-light: #ffffff;
   --color-dark-gray: #404040;
   --color-light-gray: #c4c4c4;
@@ -258,6 +259,19 @@ a:hover {
   padding-inline: var(--container-padding-x);
 }
 
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   text-transform: uppercase;
@@ -290,6 +304,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   column-gap: 20px;
   padding-inline: 32px;
+  background-color: var(--color-dark-alternate);
 }
 
 .header-logo {
@@ -318,7 +333,7 @@ h1, h2, h3, h4, h5, h6 {
 .header-menu-link.is-current::after {
   content: "";
   width: 5px;
-  height: 5px;
+  aspect-ratio: 1;
   background-color: currentColor;
   border-radius: 50px;
 }
@@ -335,11 +350,11 @@ h1, h2, h3, h4, h5, h6 {
   row-gap: 4px;
   padding-left: 8px;
   width: 40px;
-  height: 40px;
+  aspect-ratio: 1;
   color: var(--color-light);
   background-color: transparent;
   border: var(--border);
-  border-radius: var(--border-radius);
+  border-radius: 50%;
 }
 
 .header-burger-button:hover {
@@ -352,6 +367,65 @@ h1, h2, h3, h4, h5, h6 {
   height: 1px;
   background-color: currentColor;
   box-shadow: 16px 0 0 currentColor;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  min-height: 985px;
+  padding: 36px 70px;
+  color: var(--color-light);
+  background-color: var(--color-dark-alternate);
+}
+
+.banner-body {
+  text-transform: uppercase;
+}
+
+.banner-info {
+  display: flex;
+  align-items: end;
+  font-size: 38px;
+  line-height: 1.27;
+  font-weight: 700;
+}
+
+.banner-info::before {
+  content: '';
+  width: 194px;
+  aspect-ratio: 1;
+  margin-right: 30px;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/1/10/ISO_3864_-_Arrow_D_-_Movement_of_Persons_-_45_Degree.svg') center/contain no-repeat;
+  filter: invert(1);
+}
+
+.banner-title {
+  font-size: 360px;
+  line-height: 1;
+}
+
+.banner-pagination-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 14px;
+}
+
+.banner-pagination-item {
+  display: flex;
+}
+
+.banner-pagination-button {
+  width: 10px;
+  aspect-ratio: 1;
+  padding: 0;
+  background-color: transparent;
+  border: var(--border);
+  border-radius: 50%;
+}
+
+.banner-pagination-button.is-current {
+  background-color: var(--color-light);
 }
 
 @media (max-width: 1024px) {
