@@ -273,9 +273,15 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 2;
   letter-spacing: 1.2px;
   text-transform: uppercase;
+  white-space: nowrap;
   background-color: var(--color-light);
   border: none;
   border-radius: var(--border-radius);
+}
+
+.button:hover {
+  background-color: var(--color-light-gray);
+  cursor: default;
 }
 
 .header {
@@ -283,6 +289,10 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   align-items: center;
   column-gap: 20px;
+}
+
+.header-logo {
+  flex-shrink: 0;
 }
 
 .header-menu-list {
@@ -308,4 +318,20 @@ h1, h2, h3, h4, h5, h6 {
   height: 5px;
   background-color: currentColor;
   border-radius: 50px;
+}
+
+.header-actions {
+  display: flex;
+  column-gap: 40px;
+}
+
+.header-burger-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: var(--border);
+  border-radius: var(--border-radius);
 }
