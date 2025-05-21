@@ -293,9 +293,23 @@ h1, h2, h3, h4, h5, h6 {
 .backdrop-title::before {
   content: '';
   display: block;
-  width: 26px;
+  position: absolute;
+  right: calc(100% + -16px);
+  bottom: calc(100% + -48px);
+  width: 72px;
   aspect-ratio: 1;
-  background: url();
+  background: url('https://upload.wikimedia.org/wikipedia/commons/9/9e/Plus_symbol.svg') center/contain no-repeat;
+  filter: invert(1);
+}
+
+.backdrop-title::after {
+  content: attr(data-title);
+  position: absolute;
+  font-size: 2.8em;
+  font-family: var(--font-family-accent);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--color-light-gray);
 }
 
 .button {
