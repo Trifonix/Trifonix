@@ -28,18 +28,7 @@ body,
   Убираем внешние отступы вертикали нужным тегам,
   у которых есть атрибут class
 */
-:where(
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  ul,
-  ol,
-  dl
-):where([class]) {
+:where(h1, h2, h3, h4, h5, h6, p, ul, ol, dl):where([class]) {
   margin-block: 0;
 }
 
@@ -83,7 +72,6 @@ p {
 p:where(:not([class]):not(:last-child)) {
   margin-bottom: var(--paragraphMarginBottom);
 }
-
 
 /**
   Упрощаем работу с изображениями и видео
@@ -138,6 +126,9 @@ body {
   line-height: 1.5;
 }
 
+svg *[fill] { fill: currentColor }
+svg *[stroke] { fill: currentColor }
+
 /**
   Нормализация высоты элемента ссылки при его инспектировании в DevTools
 */
@@ -158,10 +149,7 @@ label {
   (за исключением тех, у которых уже указан
   атрибут fill со значением 'none' или начинается с 'url')
 */
-:where([fill]:not(
-  [fill="none"],
-  [fill^="url"]
-)) {
+:where([fill]:not([fill="none"], [fill^="url"])) {
   fill: currentColor;
 }
 
@@ -170,10 +158,7 @@ label {
   (за исключением тех, у которых уже указан
   атрибут stroke со значением 'none')
 */
-:where([stroke]:not(
-  [stroke="none"],
-  [stroke^="url"]
-)) {
+:where([stroke]:not([stroke="none"], [stroke^="url"])) {
   stroke: currentColor;
 }
 
@@ -217,8 +202,8 @@ svg * {
   --border-radius: 30px;
   --border: 1px solid var(--color-light);
 
-  --font-family-base: 'Heebo', sans-serif;
-  --font-family-accent: 'Yantramanav', sans-serif;
+  --font-family-base: "Heebo", sans-serif;
+  --font-family-accent: "Yantramanav", sans-serif;
 
   --input-height: 54px;
 
@@ -287,10 +272,15 @@ p:not(:last-child) {
   overflow: hidden !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--color-light)
+  color: var(--color-light);
 }
 
 .title-medium {
@@ -316,15 +306,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .backdrop-title::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   right: calc(100% + -16px);
   bottom: calc(100% + -48px);
   width: 72px;
   aspect-ratio: 1;
-  background: url('https://upload.wikimedia.org/wikipedia/commons/9/9e/Plus_symbol.svg') center/contain no-repeat;
-  filter: invert(1); 
+  background: url("https://upload.wikimedia.org/wikipedia/commons/9/9e/Plus_symbol.svg")
+    center/contain no-repeat;
+  filter: invert(1);
 }
 
 .backdrop-title::after {
@@ -338,7 +329,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-family-accent);
   color: transparent;
   -webkit-text-stroke: 1px var(--color-light-gray);
-  /* text-stroke: 1px var(--color-light-gray); */ 
+  /* text-stroke: 1px var(--color-light-gray); */
 }
 
 .backdrop-title.centered::after {
@@ -380,12 +371,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .button.transparent::after {
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   height: 100%;
   aspect-ratio: 1;
-  background: url('https://www.svgrepo.com/show/348033/arrow-right-top.svg') center/70% no-repeat;
+  background: url("https://www.svgrepo.com/show/348033/arrow-right-top.svg") center/70% no-repeat;
   border: var(--border);
   border-color: black;
   border-radius: 50%;
@@ -529,11 +520,12 @@ input::-webkit-inner-spin-button {
 }
 
 .banner-info::before {
-  content: '';
+  content: "";
   width: clamp(60px, 10.1vw, 194px);
   aspect-ratio: 1;
   margin-right: 30px;
-  background: url('https://upload.wikimedia.org/wikipedia/commons/1/10/ISO_3864_-_Arrow_D_-_Movement_of_Persons_-_45_Degree.svg') center/contain no-repeat;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/1/10/ISO_3864_-_Arrow_D_-_Movement_of_Persons_-_45_Degree.svg")
+    center/contain no-repeat;
   filter: invert(1);
 }
 
@@ -562,7 +554,7 @@ input::-webkit-inner-spin-button {
 }
 
 .banner-pagination-button::after {
-  content: '';
+  content: "";
   width: 10px;
   aspect-ratio: 1;
   border: var(--border);
@@ -577,8 +569,6 @@ input::-webkit-inner-spin-button {
 .banner-pagination-button:not(.is-current):hover::after {
   border-color: var(--color-light-gray);
 }
-
-
 
 .motivation-item:nth-child(even) {
   background-color: var(--color-dark-alternate);
@@ -636,7 +626,8 @@ input::-webkit-inner-spin-button {
   align-items: center;
   row-gap: 32px;
   padding-top: var(--trainingTypesItemBgIconSize);
-  background: url('https://upload.wikimedia.org/wikipedia/commons/8/82/Down_arrow_left.svg') 100% 0/var(--trainingTypesItemBgIconSize) no-repeat;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/8/82/Down_arrow_left.svg")
+    100% 0 / var(--trainingTypesItemBgIconSize) no-repeat;
 }
 
 .training-types-item-title {
@@ -653,7 +644,8 @@ input::-webkit-inner-spin-button {
   justify-content: center;
   align-items: center;
   padding: 150px 30px;
-  background: url('https://4kwallpapers.com/images/walls/thumbs_3t/17344.png') center/cover no-repeat var(--color-dark-alternate);
+  background: url("https://4kwallpapers.com/images/walls/thumbs_3t/17344.png")
+    center/cover no-repeat var(--color-dark-alternate);
 }
 
 .join-us-video {
@@ -683,10 +675,11 @@ input::-webkit-inner-spin-button {
 }
 
 .join-us-video-play-button::after {
-  content: '';
+  content: "";
   width: 26px;
   aspect-ratio: 1;
-  background: url('https://www.svgrepo.com/show/348033/arrow-right-top.svg') center/contain no-repeat;
+  background: url("https://www.svgrepo.com/show/348033/arrow-right-top.svg")
+    center/contain no-repeat;
   filter: invert();
   transition-duration: var(--transition-duration);
 }
@@ -713,12 +706,13 @@ input::-webkit-inner-spin-button {
 }
 
 .join-us-title::after {
-  content: '';
+  content: "";
   display: inline-block;
   height: 0.7em;
   aspect-ratio: 1;
   margin-left: 0.14em;
-  background: url('https://upload.wikimedia.org/wikipedia/commons/1/10/ISO_3864_-_Arrow_D_-_Movement_of_Persons_-_45_Degree.svg') center/contain no-repeat;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/1/10/ISO_3864_-_Arrow_D_-_Movement_of_Persons_-_45_Degree.svg")
+    center/contain no-repeat;
   filter: invert();
   scale: 1 -1;
 }
@@ -856,7 +850,7 @@ input::-webkit-inner-spin-button {
 }
 
 .calculate-table-wrapper::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -880,7 +874,7 @@ input::-webkit-inner-spin-button {
   padding-left: 30px;
 }
 
-.calculate-table :is(td, th):not(:last-child){
+.calculate-table :is(td, th):not(:last-child) {
   border-right: 1px solid var(--color-light-gray);
 }
 
@@ -893,7 +887,7 @@ input::-webkit-inner-spin-button {
 }
 
 .calculate-table tbody tr:last-child td:first-child::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   right: 0;
@@ -920,6 +914,121 @@ input::-webkit-inner-spin-button {
 .calculate-table tfoot td {
   padding-top: 33px;
   padding-bottom: 0;
+}
+
+.footer {
+  --footerLogoWidth: 20.77%;
+}
+
+.footer-main {
+  padding-top: 140px;
+  padding-bottom: 160px;
+}
+
+.footer-header,
+.footer-body {
+  display: grid;
+  column-gap: 62px;
+}
+
+.footer-header {
+  grid-template-columns: var(--footerLogoWidth) auto;
+}
+
+.footer-header:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.footer-logo-image {
+  height: auto;
+}
+
+.footer-description {
+  text-align: left;
+}
+
+.footer-body {
+  grid-template-columns: var(--footerLogoWidth) repeat(3, 1fr);
+}
+
+.footer-column-title {
+  font-size: clamp(18px, 1.15vw, 22px);
+}
+
+.footer-column-title:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.footer-schedule:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.footer-address {
+  font-style: normal;
+}
+
+.footer-address:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.footer-column-title.has-arrow::after {
+  content: "";
+  display: inline-block;
+  height: 0.74em;
+  aspect-ratio: 1;
+  margin-left: 0.5em;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/1/10/ISO_3864_-_Arrow_D_-_Movement_of_Persons_-_45_Degree.svg")
+    center/contain no-repeat;
+  filter: invert();
+  scale: -1 1;
+}
+
+.footer-subscribe {
+  position: relative;
+}
+
+.footer-subscribe:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.footer-subscribe-input {
+  padding-right: 70px;
+}
+
+.footer-subscribe-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  aspect-ratio: 1;
+  background: url("https://www.svgrepo.com/show/348033/arrow-right-top.svg") center/70% no-repeat;
+  border: var(--border);
+  border-color: black;
+  border-radius: 50%;
+  filter: invert(1);
+}
+
+.footer-subscribe-button:hover {
+  background-color: var(--color-light-gray);
+}
+
+.footer-soc1als-list {
+  display: flex;
+  column-gap: 18px;
+}
+
+.footer-soc1als-link {
+  display: flex;
+  width: 26px;
+}
+
+.footer-extra {
+  padding-block: 15px;
+  background-color: var(--color-dark-alternate);
+}
+
+.footer-copyright {
+  font-size: 14px;
 }
 
 @media (max-width: 1919px) {
@@ -989,6 +1098,19 @@ input::-webkit-inner-spin-button {
   }
   .calculate-table :is(td, th) {
     padding-block: 10px;
+  }
+  .footer-main {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+  .footer-header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .footer-body {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
   }
 }
 
@@ -1079,5 +1201,17 @@ input::-webkit-inner-spin-button {
   }
   .calculate-table-wrapper::before {
     display: none;
+  }
+  .footer-body {
+    grid-template-columns: 1fr;
+  }
+  .footer-main {
+    padding-top: 50px;
+  }
+  .footer-header:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .footer-subscribe:not(:last-child) {
+    margin-bottom: 40px;
   }
 }
