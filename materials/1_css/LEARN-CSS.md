@@ -28,4 +28,8 @@ ____
 
 ____
 
-5_sixth --- Адаптивная верстка сайта с нуля для начинающих | HTML, CSS, Figma практика | Пошаговое подробное объяснение | Разработка сайта с 0 до результата : https://www.youtube.com/playlist?list=PL0MUAHwery4rqkzKF1mDBCIH_eZgjY6uN
+✅ 5_sixth --- Адаптивная верстка сайта с нуля для начинающих | HTML, CSS, Figma практика | Пошаговое подробное объяснение | Разработка сайта с 0 до результата : https://www.youtube.com/playlist?list=PL0MUAHwery4rqkzKF1mDBCIH_eZgjY6uN
+
+____
+
+6_seventh --- CSS для Профи : https://www.youtube.com/playlist?list=PLMB6wLyKp7lW8plyS_VDlVOt0vphrMl0A
