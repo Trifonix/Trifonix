@@ -211,6 +211,84 @@
         <img width="414" height="479" src="https://media.istockphoto.com/id/508260256/photo/preparing-for-a-deadlift.jpg?s=612x612&w=0&k=20&c=2ZK4WYf62dVvFmGWwA9g5NkS-0w9mlcq6BFxIVf28dk=" alt="Training people" class="family-image">
       </div>
     </section>
+    <section class="calculate">
+      <div class="calculate-inner container">
+        <div class="calculate-body">
+          <h2 data-title="BMI" class="calculate-title title-medium backdrop-title">
+            Input your BMI
+          </h2>
+          <div class="calculate-description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure cumque eum velit voluptatum!</p>
+          </div>
+          <form class="calculate-form">
+            <div class="calculate-form-body">
+              <label class="visually-hidden" for="height">Height</label>
+              <input placeholder="Height / cm" id="height" class="calculate-input input" type="number">
+              <label class="visually-hidden" for="weight">Weight</label>
+              <input placeholder="Weight / kg" id="weight" class="calculate-input input" type="number">
+              <label class="visually-hidden" for="age">Age</label>
+              <input placeholder="Age" id="age" class="calculate-input input" type="number">
+              <label class="visually-hidden" for="gender">Gender</label>
+              <select class="calculate-input input" id="gender" required>
+                <option value="" disabled selecte>Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+              <label class="visually-hidden" for="activity-factor">Activity factor</label>
+              <select class="calculate-input input wide" id="activity-factor" required>
+                <option value="" disabled selecte>Select an activity factor</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+              </select>
+            </div>
+            <button class="calculate-button button transparent" type="submit"></button>
+          </form>
+        </div>
+        <div class="calculate-table-wrapper">
+          <table class="calculate-table">
+            <thead>
+              <tr>
+                <th>BMI</th>
+                <th>Weight status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Below 18.5</td>
+                <td>Underweight</td>
+              </tr>
+              <tr>
+                <td>18.5 - 24.9</td>
+                <td>Healty</td>
+              </tr>
+              <tr>
+                <td>25.0 - 29.9</td>
+                <td>Overweight</td>
+              </tr>
+              <tr>
+                <td>30.0 - and Above</td>
+                <td>Obese</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2"><b>BMR</b> Metabolic Rate / <b>BMI</b> Body Mass Index</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </section>
   </main>
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="footer-main-inner container">
+        <header class="footer-body"></header>
+      </div>
+    </div>
+    <div class="footer-extra">
+      <div class="footer-extra-inner container"></div>
+    </div>
+  </footer>
 </body>
 </html>
