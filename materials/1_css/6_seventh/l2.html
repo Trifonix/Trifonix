@@ -10,12 +10,14 @@
     }
     h1 {
       color: red;
+      font: 44px Tahoma, sans-serif
     }
     article {
       color: rgb(20, 150, 150);
     }
     .some-div {
       font-size: 38px;
+      display: initial;
     }
     /* НАСЛЕДУЕМЫЕ СВОЙСТВА
     color, font, font-family, font-size, line-height
@@ -25,6 +27,25 @@
     a:link {
       color: blue;
       text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    a:active {
+      color: red;
+    }
+    .footer {
+      color: #666;
+      /* background-color: #ccc; */
+      background: #ccc;
+      padding: 15px 0;
+      text-align: center;
+      font-size: 14px;
+    }
+    .footer a {
+      text-decoration: underline;
+      /* color: inherit; */
+      color: initial;
     }
   </style>
 </head>
