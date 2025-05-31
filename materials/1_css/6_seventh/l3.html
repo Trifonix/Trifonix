@@ -4,8 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Относительные единицы измерения</title>
+  <style>
+    /* mm, cm, in, pt, pc, px - Абсолютные */
+    /* em, rem - Относительные */
+    .padded {
+      font-size: 16px;
+      /* padding: 1em; */
+      /* padding: 2em; */
+      padding: 32px;
+    }
+
+    body {
+      margin: 1.5em;
+      font-size: 12px;
+    }
+    .box {
+      padding: 1em;
+      border-radius: 1em;
+      background-color: lightgray;
+    }
+    .box-small {
+      /* font-size: 12px; */
+      font-size: 1.2em;
+    }
+    .box-large {
+      font-size: 18px;
+    }
+
+    .slogan {
+      font-size: 1.3em;
+      padding: 1.3em; /* padding: 20.28px */
+      background: #cc3;
+    }
+  </style>
 </head>
 <body>
+  <p class="slogan">Нам нравится учиться верстать</p>
+  <hr>
+  <span class="box box-small">Small</span>
+  <span class="box box-large">Large</span>
+  <hr>
   <h1>Работа с относительными единицами</h1>
   <div class="padded">
     При указании значений CSS предоставляет широкий спектр возможностей
@@ -13,6 +51,8 @@
     самых простых для работы являются пиксели. Это абсолютные единицы -
     5 пикселей всегда означают одно и то же.
     <a href="#">Ссылка</a>
+    <!-- mm, cm, in, pt, pc, px -->
+    <!-- retina -->
   </div>
 </body>
 </html>
