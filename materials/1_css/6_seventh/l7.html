@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox-верстка 2</title>
+  <style>
+    /* * {
+      display: flex;
+    } */
+     body {
+      background: rgb(207, 216, 225);
+     }
+    .container {
+      max-width: 768px;
+      margin: 0 auto;
+    }
+    .site-nav {
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      padding: .5em;
+      background: #5966ed;
+      list-style-type: none;
+    }
+    .site-nav > li > a {
+      background: #340d87;
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      padding: .5em .7em;
+    }
+    .site-nav > li + li {
+      margin-left: 1.3em;
+    }
+    .site-nav > .nav-right {
+      margin-left: auto;
+    }
+    .tile {
+      background: #faf4f4;
+      padding: 1.4em;
+    }
+    .flex {
+      display: flex;
+      /* flex-direction: row-reverse; */
+    }
+    .flex > * + * {
+      margin-top: 0;
+      margin-left: 2em;
+    }
+    .column-main {
+      flex: 1;
+    }
+    .column-sidebar {
+      flex: 0 0 260px;
+    }
+    .login-form h3 {
+      margin: 0;
+      font-size: 0.9em;
+      font-weight: bold;
+      text-align: right;
+      text-transform: uppercase;
+    }
+    .login-form input:not([type=checkbox]):not([type=radio]) {
+      display: block;
+      margin-top: 0;
+      width: 100%;
+    }
+    .login-form button {
+      margin-top: 1em;
+      border: 2px solid #8f1365;
+      background-color: white;
+      padding: .5em 1em;
+      cursor: pointer;
+    }
+    /*
+    flex-direction
+    row / row-reverse
+    column / column-reverse
+    */
+    .flex-row {
+      display: flex;
+      flex-direction: row;
+      /* flex-wrap: nowrap; */
+      flex-wrap: wrap;
+      /* flex-wrap: wrap-reverse; */
+      /* justify-content: flex-start; */
+      /* justify-content: flex-end; */
+      /* justify-content: center; */
+      /* justify-content: space-between; */
+      justify-content: space-around;
+      /* align-items: flex-start; */
+      /* align-items: flex-end; */
+      /* align-items: center; */
+      /* align-items: stretch; */
+      align-items: baseline;
+    }
+    .flex-row .box {
+      margin: 0.5em;
+      border: 1px solid red;
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <a href="l8.html">Идти в урок 8</a>
+  <hr>
+  <div class="container">
+    <header>
+      <h1>Flex-box верстка</h1>
+    </header>
+    <nav>
+      <ul class="site-nav">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Услуги</a></li>
+        <li><a href="#">Цена</a></li>
+        <li class="nav-right">
+          <a href="#">О нас</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="flex">
+      <div class="column-main tile">
+        <h2>Принципы flexbox-верстки</h2>
+        <p>Flexbox-разметка начинается со знакомого свойства display. В результате применения свойства display: flex элемент превращается во flex-контейнер, а его потомки - во flex-элементы.</p>
+        <div class="flex-row">
+          <div class="box">
+            <p>1</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur.
+          </div>
+          <div class="box">
+            <p>2</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </div>
+          <div class="box">
+            <p>3</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </div>
+          <div class="box">
+            <p>4</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </div>
+          <div class="box">
+            <p>5</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </div>
+        </div>
+      </div>
+      <div class="column-sidebar">
+        <div class="tile">
+          <form class="login-form">
+            <h3>Логин</h3>
+            <p>
+              <label for="name">Имя</label>
+              <input name="username" type="text" id="name">
+            </p>
+            <p>
+              <label for="pass">Пароль</label>
+              <input name="pass" id="pass" type="password">
+            </p>
+            <button type="submit">Войти</button>
+          </form>
+        </div>
+        <div class="tile centered">
+          <small>Начало в</small>
+          <div class="cost">
+            <span class="cost-currency">$</span>
+            <span class="cost-dollars">20</span>
+            <span class="cost-cents">.00</span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

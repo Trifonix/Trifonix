@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox-верстка</title>
+  <style>
+    /* * {
+      display: flex;
+    } */
+     body {
+      background: #abc;
+     }
+    .container {
+      max-width: 768px;
+      margin: 0 auto;
+    }
+    .site-nav {
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      padding: .5em;
+      background: #54b454;
+      list-style-type: none;
+    }
+    .site-nav > li > a {
+      background: #5741d0;
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      padding: .5em .7em;
+    }
+    .site-nav > li + li {
+      margin-left: 1.3em;
+    }
+    .site-nav > .nav-right {
+      margin-left: auto;
+    }
+    .tile {
+      background: #fff;
+      padding: 1.4em;
+    }
+    .flex {
+      display: flex;
+    }
+    .flex > * + * {
+      margin-top: 0;
+      margin-left: 2em;
+    }
+    .column-main {
+      /* flex: 3; */
+      /* flex: 60%; */
+      flex: 1;
+    }
+    .column-sidebar {
+      /* flex: 1; */
+      /* flex: 40%; */
+      flex: 0 0 260px;
+      /* 
+      flex-grow
+      flex-shrink
+      flex-basis
+      */
+    }
+  </style>
+</head>
+<body>
+  <a href="l7.html">Идти в урок 7</a>
+  <hr>
+  <div class="container">
+    <header>
+      <h1>Flex-box верстка</h1>
+    </header>
+    <nav>
+      <ul class="site-nav">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Услуги</a></li>
+        <li><a href="#">Цена</a></li>
+        <li class="nav-right">
+          <a href="#">О нас</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="flex">
+      <div class="column-main tile">
+        <h2>Принципы flexbox-верстки</h2>
+        <p>Flexbox-разметка начинается со знакомого свойства display. В результате применения свойства display: flex элемент превращается во flex-контейнер, а его потомки - во flex-элементы.</p>
+      </div>
+      <div class="column-sidebar">
+        <div class="tile">
+          <form class="login-form">
+            <h3>Логин</h3>
+            <p>
+              <label for="name">Имя</label>
+              <input name="username" type="text" id="name">
+            </p>
+            <p>
+              <label for="pass">Пароль</label>
+              <input name="pass" id="pass" type="password">
+            </p>
+            <button type="submit">Войти</button>
+          </form>
+        </div>
+        <div class="tile centered">
+          <small>Начало в</small>
+          <div class="cost">
+            <span class="cost-currency">$</span>
+            <span class="cost-dollars">20</span>
+            <span class="cost-cents">.00</span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

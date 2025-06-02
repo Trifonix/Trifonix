@@ -3,9 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Относительные единицы измерения</title>
+  <style>
+    body {
+      font-size: 18px;
+    }
+    ul {
+      /* font-size: 1.2em; */
+      font-size: 1.2rem;
+    }
+    /* DOM */
+    /* Селектор псевдокласса (:root) */
+    /* 14px / 16px = 0.875em */
+    /* vh - 1/100 высоты области экрана */
+    /* vw - 1/100 ширины области экрана */
+    /* vmin - 1/100 наименьших высоты или ширины */
+    /* vmax - 1/100 наибольших высоты или ширины */
+    :root {
+      font-size: calc(0.5em + 1vw);
+    }
+    body {
+      font-family: Helvetica, Arial, sans-serif;
+    }
+    .panel {
+      font-size: 1rem;
+      padding: 1em;
+      border: 1px solid #999;
+      border-radius: 0.5em;
+      font-weight: 400;
+      line-height: 0.9;
+    }
+    .panel > h2 {
+      margin-top: 0;
+      font-size: 0.8em;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .panel.large {
+      font-size: 1.2em;
+    }
+    /* line-height, z-index, font-weight */
+  </style>
 </head>
 <body>
-  
+  <a href="l5.html">Идти в урок 5</a>
+  <hr>
+  <div class="panel">
+    <h2>Единицы vw для указания размеров шрифта</h2>
+    <div class="body">
+      Один из аспектов применения единиц, относящихся к размеру области просмотра, не всегда очевидный, - это указание размера шрифта.
+      На самом деле я считаю его более практичным, чем задействование
+      единиц vh и vw для задания высоты и ширины элемента.
+    </div>
+  </div>
+  <hr>
+  <ul>
+    <li>Top level
+      <ul>
+        <li>Second level
+          <ul>
+            <li>Third level
+              <ul>
+                <li>Fourth level
+                  <ul>
+                    <li>Fifth level</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
 </body>
 </html>

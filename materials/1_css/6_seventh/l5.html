@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пользовательские свойства (или CSS-переменные)</title>
+  <style>
+    :root {
+      --base-font: Helvetica, Arial, sans-serif;
+      --base-color: #370;
+    }
+    .some {
+      font-family: var(--base-font);
+      color: var(--base-color, #377);
+    }
+    .main {
+      font-family: var(--base-font);
+      color: var(--base-color);
+    }
+    aside{
+      --base-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <a href="l6.html">Идти в урок 6</a>
+  <hr>
+  <div class="main">
+    <p>
+      В 2015 году долгожданная спецификация CSS "Пользовательские свойства для каскадных переменных" была опубликована в качестве кандидата в рекомендации. Она ввела понятие переменных в язык CSS, который теперь обеспечил новый уровень динамичности, основанных на контексте стилей.
+    </p>
+  </div>
+  <aside>
+    <div class="main">
+      <p>
+        В 2015 году долгожданная спецификация CSS "Пользовательские свойства для каскадных переменных" была опубликована в качестве кандидата в рекомендации. Она ввела понятие переменных в язык CSS, который теперь обеспечил новый уровень динамичности, основанных на контексте стилей.
+      </p>
+    </div>
+  </aside>
+  <hr>
+  <p class="some">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. In tenetur aut officiis non praesentium deleniti voluptate! Iusto excepturi corporis alias perspiciatis eius repellat tenetur molestias sint cum labore ab vitae ullam ratione officia, enim consequuntur est deserunt quisquam maiores similique. Cumque, non.
+  </p>
+  <p class="some2">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. In tenetur aut officiis non praesentium deleniti voluptate! Iusto excepturi corporis alias perspiciatis eius repellat tenetur molestias sint cum labore ab vitae ullam ratione officia, enim consequuntur est deserunt quisquam maiores similique. Cumque, non.
+  </p>
+</body>
+</html>
