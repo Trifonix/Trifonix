@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background: rgb(219, 240, 230);
+      font-family: Helvetica, Arial, sans-serif;
+    }
+    .portfolio {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-gap: 1em;
+      grid-auto-flow: dense;
+    }
+    .box {
+      max-width: 100%;
+      aspect-ratio: 1;
+      border-radius: 10px;
+    }
+    .box1 {
+      background-color: red;
+    }
+    .box2 {
+      background-color: orange;
+    }
+    .box3 {
+      background-color: yellow;
+    }
+    .box4 {
+      background-color: green;
+    }
+    .box5 {
+      background-color: aqua;
+    }
+    .box6 {
+      background-color: blue;
+    }
+    .box7 {
+      background-color: violet;
+    }
+    .portfolio figure {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .portfolio figcaption {
+      padding: 0.4em 1em;
+      background: #424242;
+      color: whitesmoke;
+      text-align: right;
+      border-radius: 10px;
+    }
+    .portfolio .big {
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+  </style>
+</head>
+<body>
+  <a href="l13.html">Идти в урок 13</a>
+  <hr>
+  <div class="portfolio">
+    <figure class="big">
+      <div class="box box1"></div>
+      <figcaption>Каждый</figcaption>
+    </figure>
+    <figure>
+      <div class="box box2"></div>
+      <figcaption>Охотник</figcaption>
+    </figure>
+    <figure class="big">
+      <div class="box box3"></div>
+      <figcaption>Желает</figcaption>
+    </figure>
+    <figure>
+      <div class="box box4"></div>
+      <figcaption>Знать</figcaption>
+    </figure>
+    <figure class="big">
+      <div class="box box5"></div>
+      <figcaption>Где</figcaption>
+    </figure>
+    <figure>
+      <div class="box box6"></div>
+      <figcaption>Сидит</figcaption>
+    </figure>
+    <figure>
+      <div class="box box7"></div>
+      <figcaption>Фазан</figcaption>
+    </figure>
+  </div>
+</body>
+</html>

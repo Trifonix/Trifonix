@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS-сетки (Гриды) 3</title>
+  <style>
+    .container {
+      display: grid;
+      max-width: 512px;
+      margin: 0 auto;
+      grid-template-areas:  "header header"
+                            "nav nav"
+                            "article aside1"
+                            "article aside2"
+                            "footer footer";
+    }
+    header, nav, article, .aside1, .aside2, footer {
+      border: 1px solid salmon;
+    }
+    header {
+      grid-area: header;
+    }
+    nav {
+      grid-area: nav;
+    }
+    article {
+      grid-area: article;
+    }
+    .aside1 {
+      grid-area: aside1;
+    }
+    .aside2 {
+      grid-area: aside2;
+    }
+    footer {
+      grid-area: footer;
+    }
+  </style>
+</head>
+<body>
+  <a href="l12.html">Идти в урок 12</a>
+  <hr>
+  <div class="container">
+    <header><p>header</p></header>
+    <nav><p>nav</p></nav>
+    <article><p>article</p></article>
+    <aside class="aside1"><p>aside 1</p></aside>
+    <aside class="aside2"><p>aside 2</p></aside>
+    <footer class="footer"><p>footer</p></footer>
+  </div>
+</body>
+</html>
