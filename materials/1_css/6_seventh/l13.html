@@ -4,8 +4,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Позиционирование</title>
+  <style>
+    body {
+      background-color: lavender;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    header {
+      padding: 1.2em 0;
+      background: #d198e6;
+    }
+    button {
+      padding: .2em .5em;
+      border: 1px solid #8d8d8d;
+      background: #fff;
+      font-size: 1.1em;
+      cursor: pointer;
+    }
+    nav {
+      width: 76%;
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+    .modal {
+      /* display: none; */
+    }
+    .modal-body {
+      position: fixed;
+      top: 4em;
+      /* bottom: 5em; */
+      right: 30%;
+      /* left: 20%; */
+      padding: 3em;
+      background-color: whitesmoke;
+      overflow: auto;
+    }
+  </style>
 </head>
 <body>
-  
+  <header>
+    <nav>
+      <p>Для того, чтобы залогиниться, нажмите на кнопку <em>вход</em></p>
+      <button id="open">Вход</button>
+    </nav>
+  </header>
+  <div class="modal" id="modal">
+    <div class="modal-body">
+      <h3>Данные для входа:</h3>
+      <form>
+        <p>
+          <label for="email">Email:</label>
+          <input type="email" name="email">
+        </p>
+        <p>
+          <label for="pass">Password:</label>
+          <input type="password" name="pass">
+        </p>
+        <p>
+          <button type="submit">Вход</button>
+        </p>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
