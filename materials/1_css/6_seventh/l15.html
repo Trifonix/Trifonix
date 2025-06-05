@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Адаптив</title>
+  <style>
+    :root {
+      box-sizing: border-box;
+      font-size: calc(1vw + 0.6em);
+    }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    /* Ссылки */
+    a:link {
+      color: #1476bb;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    a:visited {
+      color: #1414bb;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    a:active {
+      color: #b45514;
+    }
+    /* Шапка */
+    header {
+      padding: 0.5em 1em;
+      background: #fff;
+    }
+    .title > h1 {
+      color: #333;
+      text-transform: uppercase;
+      font-size: 1.5em;
+      margin: .25em 0;
+    }
+    .slogan {
+      color: #888;
+      font-size: .8em;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="title">
+      <h1>WOMBAT coffee ROASTERS</h1>
+    </div>
+    <div class="slogan">We love coffee</div>
+  </header>
+
+  <nav class="menu" id="main-menu">
+    <button class="menu-toggle" id="toogle-menu">close</button>
+    <div class="menu-dropdown">
+      <ul class="nav-menu">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Brew</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <aside id="hero" class="hero">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius molestias consequatur, explicabo vitae, non corrupti exercitationem sunt doloremque ducimus consequuntur quod eligendi perspiciatis autem deleniti magni est. Distinctio, enim laudantium?
+  </aside>
+
+  <main class="main">
+    <div class="row">
+      <section class="column">
+        <h2 class="subtitle">Single-origin</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ratione beatae tempora enim quam ea blanditiis odio at, unde velit quibusdam voluptatibus labore ad adipisci! <a href="#">Architecto</a> nam repellendus mollitia sapiente.</p>
+      </section>
+      <section class="column">
+        <h2 class="subtitle">Second-origin</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ratione beatae tempora enim quam ea blanditiis odio at, unde velit quibusdam voluptatibus labore ad adipisci! <a href="#">Architecto</a> nam repellendus mollitia sapiente.</p>
+      </section>
+      <section class="column">
+        <h2 class="subtitle">Third-origin</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ratione beatae tempora enim quam ea blanditiis odio at, unde velit quibusdam voluptatibus labore ad adipisci! <a href="#">Architecto</a> nam repellendus mollitia sapiente.</p>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
