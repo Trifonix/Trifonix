@@ -69,8 +69,8 @@
     }
     .menu-toggle {
       position: absolute;
-      top: -2em;
-      right: 0.5em;
+      top: -1.2em;
+      right: 0;
       border: 0;
       background-color: transparent;
       font-size: 2.3em;
@@ -99,6 +99,27 @@
     }
     .menu.is-open .menu-dropdown {
       display: block;
+    }
+    .nav-menu {
+      margin: 0;
+      padding: 0;
+      border: 1px solid #ccc;
+      background: #000;
+      color: #fff;
+    }
+    .nav-menu > li + li {
+      border-top: 1px solid #ccc;
+    }
+    .nav-menu > li > a {
+      display: block;
+      padding: 0.7em 1em;
+      color: #fff;
+      font-weight: normal;
+    }
+    @media (min-width: 560px) {
+      .title > h1 {
+        font-size: 2.2rem;
+      }
     }
   </style>
 </head>
