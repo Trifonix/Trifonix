@@ -44,6 +44,62 @@
       font-size: .8em;
       margin: 0;
     }
+    /* ASIDE */
+    .hero {
+      padding: 2em 1.5em;
+      text-align: center;
+      background: url('https://www.spectrumhealth.ie/wp-content/uploads/2017/11/steamingcupofcoffeewithspiltcoffeebeans.jpg');
+      background-size: 100%;
+      color: #fff;
+      text-shadow: 0.1em 0.1em 0.3em #000;
+    }
+    /* MAIN */
+    .main {
+      padding: 1.2em;
+    }
+    .subtitle {
+      margin-top: 1.2em;
+      margin-bottom: 1.2em;
+      font-size: 0.8em;
+      text-transform: uppercase;
+    }
+    /* MENU */
+    .menu {
+      position: relative;
+    }
+    .menu-toggle {
+      position: absolute;
+      top: -2em;
+      right: 0.5em;
+      border: 0;
+      background-color: transparent;
+      font-size: 2.3em;
+      width: 2em;
+      height: 2em;
+      line-height: 0.3em;
+      overflow: hidden;
+      white-space: nowrap;
+      text-indent: 5em;
+    }
+    .menu-toggle::after {
+      position: absolute;
+      top: 0.5em;
+      left: 0.1em;
+      display: block;
+      content: '\2261';
+      text-indent: 0;
+      cursor: pointer;
+    }
+    .menu-dropdown {
+      display: none;
+      position: absolute;
+      right: 0;
+      left: 0;
+      margin: 0;
+    }
+    .menu.is-open .menu-dropdown {
+      display: block;
+    }
   </style>
 </head>
 <body>
@@ -86,5 +142,15 @@
       </section>
     </div>
   </main>
+<script>
+  (function() {
+    var button = document.getElementById('toogle-menu');
+    button.addEventListener('click', function(event) {
+      event.preventDefault();
+      var menu = document.getElementById('main-menu');
+      menu.classList.toggle('is-open');
+    });
+  })();
+</script>
 </body>
 </html>
