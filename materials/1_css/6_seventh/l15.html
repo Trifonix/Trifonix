@@ -158,6 +158,26 @@
         margin-right: 0.75em;
       }
     }
+    @media (min-width: 35em) {
+      .hero {
+        padding: 5em 3em;
+        font-size: 1.2rem;
+      }
+    }
+    @media (min-width: 50em) {
+      .page-header {
+        padding: 1.2em 4em;
+      }
+      .hero {
+        padding: 7em 6em;
+      }
+      .main {
+        padding: 2em 4em;
+      }
+      :root {
+        font-size: 1.2em;
+      }
+    }
   </style>
 </head>
 <body>
@@ -200,6 +220,16 @@
       </section>
     </div>
   </main>
+
+  <footer>
+    <img alt="Белая чашка кофе" 
+      src="https://www.spectrumhealth.ie/wp-content/uploads/2017/11/steamingcupofcoffeewithspiltcoffeebeans.jpg" 
+      srcset="
+      https://www.spectrumhealth.ie/wp-content/uploads/2017/11/steamingcupofcoffeewithspiltcoffeebeans.jpg 560w,
+      https://www.spectrumhealth.ie/wp-content/uploads/2017/11/steamingcupofcoffeewithspiltcoffeebeans.jpg 780w,
+      https://www.spectrumhealth.ie/wp-content/uploads/2017/11/steamingcupofcoffeewithspiltcoffeebeans.jpg 1280w
+      ">
+  </footer>
 <script>
   (function() {
     var button = document.getElementById('toogle-menu');
