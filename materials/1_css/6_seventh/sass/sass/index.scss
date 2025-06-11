@@ -1,0 +1,11 @@
+$color-blue: #0088b3;
+$f-size-base: 1em;
+
+a:link {
+  color: $color-blue;
+}
+
+.page-some {
+  font-size: $f-size-base;
+  color: $color-blue;
+}

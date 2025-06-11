@@ -1,0 +1,24 @@
+/***************** 
+*******SASS******* 
+******************/
+/*
+body
+  font: Tahoma, sans-serif
+  color: red
+*/
+
+/***************** 
+*******SCSS******* 
+******************/
+/*
+body {
+  font: Tahoma, sans-serif;
+  color: red;
+}
+*/
+
+/* 
+npm init -y
+npm install --save-dev sass
+npm run sass
+*/
