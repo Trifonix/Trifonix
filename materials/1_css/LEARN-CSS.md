@@ -32,4 +32,4 @@ ____
 
 ____
 
-6_seventh --- CSS для Профи : https://www.youtube.com/playlist?list=PLMB6wLyKp7lW8plyS_VDlVOt0vphrMl0A
+✅ 6_seventh --- CSS для Профи : https://www.youtube.com/playlist?list=PLMB6wLyKp7lW8plyS_VDlVOt0vphrMl0A
