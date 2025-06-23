@@ -4,4 +4,8 @@
 
 ____
 
-0_first --- Git и GitHub для начинающих : https://www.youtube.com/playlist?list=PLuY6eeDuleIMtvOvJBAbakwcIdEt7IAXT
+❎ Git и GitHub для начинающих : https://www.youtube.com/playlist?list=PLuY6eeDuleIMtvOvJBAbakwcIdEt7IAXT
+
+____
+
+Установка и настройка Git в Windows 10 : https://www.youtube.com/watch?v=GsG5roSGha0
