@@ -16,7 +16,7 @@ ____
 
 ____
 
-How To Make Your Boring Mac Terminal So Much Better : https://www.youtube.com/watch?v=CF1tMjvHDRA
+❎ How To Make Your Boring Mac Terminal So Much Better : https://www.youtube.com/watch?v=CF1tMjvHDRA
 
 ____
 
