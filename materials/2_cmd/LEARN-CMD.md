@@ -12,7 +12,7 @@ ____
 
 ____
 
-Основы работы с терминалом за 20 минут! : https://www.youtube.com/watch?v=PMopSb1fxuw
+❎ Основы работы с терминалом за 20 минут! : https://www.youtube.com/watch?v=PMopSb1fxuw
 
 ____
 
