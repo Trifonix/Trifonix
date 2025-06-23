@@ -20,4 +20,4 @@ ____
 
 ____
 
-{L4Je17} Linux For Juniors: Идея прав в Linux. Используем команду chmod для их изменения : https://www.youtube.com/watch?v=Nk69dOG4gZw
+❎ {L4Je17} Linux For Juniors: Идея прав в Linux. Используем команду chmod для их изменения : https://www.youtube.com/watch?v=Nk69dOG4gZw
