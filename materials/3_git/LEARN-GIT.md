@@ -20,4 +20,36 @@ ___
 
 ___
 
-Что такое Git для Начинающих / GitHub за 30 минут / Git Уроки : https://www.youtube.com/watch?v=VJm_AjiTEEc
+❎ Что такое Git для Начинающих / GitHub за 30 минут / Git Уроки : https://www.youtube.com/watch?v=VJm_AjiTEEc
+
+___
+
+git clone
+
+git commit -m ""
+
+git add .
+
+git branch new-branch
+
+git checkout new-branch
+
+git push origin new-feature
+
+git pull origin new-feature
+
+git rebase main
+
+git revert nlkncs6
+
+___
+
+git config --global user.name ""
+
+git config --global user.email ""
+
+git init
+
+git status
+
+git log
