@@ -3,81 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="./bootstrap.min.css" rel="stylesheet">
+  <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAxwMAAP///wD/hAAA/4wAAD8AjAB9Ev8AVQC9AL8DAAD/MwAA/2oAAMWW/wDWLQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIiJmZiIAAAJmqqqqqkwADM6qqqqozMAMyIjRDIiMwAzIANEMgAzADMgE0QyATMAMyATMzIBMwAzIAqqogAzAKqqqpmqqqoAyqqpAJqqrAAJqpAACaqQAAmZAFcAmZAAAIAAawAIAAAAAAAAAAAAD//wAA//8AAOAHAADAAwAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIGBAADDwwAAxmMAAO53AAD//wAA" rel="icon" type="image/x-icon">
+  <link rel="stylesheet" href="./bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>Видео курс по верстке</title>
 </head>
 <body>
 
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <form class="row g-3 needs-validation" novalidate>
-          <div class="col-md-4">
-            <label for="validationCustom01" class="form-label">First name</label>
-            <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-            <div class="valid-feedback">
-              Looks good!
-            </div>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center text-white">
+            Видео курс по Scratch
+          </h1>
+          <div class="itd_play" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <div class="itd_triangle"></div>
           </div>
-          <div class="col-md-4">
-            <label for="validationCustom02" class="form-label">Last name</label>
-            <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-            <div class="valid-feedback">
-              Looks good!
-            </div>
-          </div>
-          <div class="col-md-4">
-            <label for="validationCustomUsername" class="form-label">Username</label>
-            <div class="input-group">
-              <span class="input-group-text" id="inputGroupPrepend">@</span>
-              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-              <div class="invalid-feedback">
-                Please choose a username.
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <label for="validationCustom03" class="form-label">City</label>
-            <input type="text" class="form-control" id="validationCustom03" required>
-            <div class="invalid-feedback">
-              Please provide a valid city.
-            </div>
-          </div>
-          <div class="col-md-3">
-            <label for="validationCustom04" class="form-label">State</label>
-            <select class="form-select" id="validationCustom04" required>
-              <option selected disabled value="">Choose...</option>
-              <option>...</option>
-            </select>
-            <div class="invalid-feedback">
-              Please select a valid state.
-            </div>
-          </div>
-          <div class="col-md-3">
-            <label for="validationCustom05" class="form-label">Zip</label>
-            <input type="text" class="form-control" id="validationCustom05" required>
-            <div class="invalid-feedback">
-              Please provide a valid zip.
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-              <label class="form-check-label" for="invalidCheck">
-                Agree to terms and conditions
-              </label>
-              <div class="invalid-feedback">
-                You must agree before submitting.
-              </div>
-            </div>
-          </div>
-          <div class="col-12">
-            <button class="btn btn-primary" type="submit">Submit form</button>
-          </div>
-        </form>
+          <a href="#footer" class="btn btn-itd btn-lg text-uppercase">Заказать</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <footer id="footer">
+    
+  </footer>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Трейлер видео</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe width="480" height="270" src="https://dzen.ru/embed/vf1SIFJ5leRU?from_block=partner&from=zen&mute=0&autoplay=0&tv=0" allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture; encrypted-media" data-testid="embed-iframe" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
   </div>
+  
 
   <script src="./bootstrap.bundle.min.js"></script>
 </body>
