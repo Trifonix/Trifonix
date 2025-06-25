@@ -48,7 +48,7 @@ header, footer {
   background-color: var(--color1);
 }
 /* О курсе */
-.about, .schedule {
+.about, .schedule, .author {
   background-color: #eee;
 }
 .about svg {
@@ -86,6 +86,13 @@ header, footer {
 .learning h5 {
   padding: 25px;
   border: 3px solid var(--color1);
+}
+/* Об авторе */
+.author {
+  padding-bottom: 0;
+}
+.itd_img {
+  max-width: 260px;
 }
 /* Цвет */
 .color1 {
