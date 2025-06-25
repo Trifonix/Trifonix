@@ -82,6 +82,11 @@ header, footer {
 .accordion-button:not(.collapsed)::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
 }
+/* Процесс обучения */
+.learning h5 {
+  padding: 25px;
+  border: 3px solid var(--color1);
+}
 /* Цвет */
 .color1 {
   color: var(--color1);
