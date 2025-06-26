@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TailwindCss</title>
   <link href="./output.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-white dark:bg-slate-900">
   <div class="max-w-screen-xl mx-auto">
     <!-- header -->
     <header class="px-2 border-b flex items-center justify-between h-14">
@@ -32,7 +32,7 @@
     <!-- breadcrumbs -->
     <div class="px-2 flex items-center">
       <div class="py-4 overflow-y-auto whitespace-nowrap flex items-center">
-        <a href="#" class="text-gray-600 hover:text-gray-900">
+        <a href="#" class="dark:text-slate-400 text-gray-600 hover:text-gray-900 transition-all duration-300">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
             <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
           </svg>                  
@@ -40,11 +40,11 @@
         <span class="mx-2 text-gray-300">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"> <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /> </svg>
         </span>
-        <a href="#" class="text-gray-600 hover:text-gray-900">News</a>
+        <a href="#" class="dark:text-slate-400 text-gray-600 hover:text-gray-900 transition-all duration-300">News</a>
         <span class="mx-2 text-gray-300">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"> <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /> </svg>
         </span>
-        <a href="#" class="text-gray-600 hover:text-gray-900">Tech</a>
+        <a href="#" class="dark:text-slate-400 text-gray-600 hover:text-gray-900 transition-all duration-300">Tech</a>
       </div>
     </div>
 
@@ -57,6 +57,13 @@
           <h2 class="text-4xl font-semibold text-gray-100 leading-tight">
             Lorem ipsum dolor sit amet consectetur.
           </h2>
+          <div class="flex mt-3">
+            <img src="https://www.shutterstock.com/image-vector/cute-cartoon-cat-profile-avatar-600nw-2432356437.jpg" alt="author" class="h-10 w-10 rounded-full mr-2 object-cover">
+            <div>
+              <p class="font-semibold text-gray-200 text-sm">Jane Doe</p>
+              <time class="text-gray-400 text-xs">15 March</time>
+            </div>
+          </div>
         </div>
       </a>
 
@@ -67,6 +74,13 @@
           <h2 class="text-4xl font-semibold text-gray-100 leading-tight">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </h2>
+          <div class="flex mt-3">
+            <img src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-512.png" alt="author" class="h-10 w-10 rounded-full mr-2 object-cover">
+            <div>
+              <p class="font-semibold text-gray-200 text-sm">John Doe</p>
+              <time class="text-gray-400 text-xs">14 March</time>
+            </div>
+          </div>
         </div>
       </a>
     </section>
@@ -77,30 +91,51 @@
         <section class="px-2">
           <a href="#" class="block w-full lg:flex mb-10">
             <img src="https://i.rtings.com/assets/products/tMO2Tk6W/keychron-q5-max-q1-max-q2-max-etc/design-medium.jpg" alt="img" class="w-full h-48 lg:w-48 opacity-80 object-cover lg:mr-4">
-            <div class="flex">
+            <div class="flex flex-col justify-between">
               <div>
                 <h3 class="mb-2 text-gray-700 font-bold text-2xl">Lorem ipsum dolor sit.</h3>
                 <p class="text-gray-700">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto porro debitis dicta labore, delectus neque non ipsa incidunt eum atque voluptatem maxime impedit vel nostrum distinctio rem alias, quae nesciunt!</p>
+              </div>
+              <div class="flex mt-3">
+                <img src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-512.png" alt="author" class="h-10 w-10 rounded-full mr-2 object-cover">
+                <div>
+                  <p class="font-semibold text-gray-400 text-sm">John Doe</p>
+                  <time class="text-gray-400 text-xs">14 March</time>
+                </div>
               </div>
             </div>
           </a>
 
           <a href="#" class="block w-full lg:flex mb-10">
             <img src="https://i.rtings.com/assets/products/aNuGpu9q/keychron-q6/design-medium.jpg" alt="img" class="w-full h-48 lg:w-48 opacity-80 object-cover lg:mr-4">
-            <div class="flex">
+            <div class="flex flex-col justify-between">
               <div>
                 <h3 class="mb-2 text-gray-700 font-bold text-2xl">Lorem, ipsum dolor.</h3>
                 <p class="text-gray-700">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto porro debitis dicta labore, delectus neque non ipsa incidunt eum atque voluptatem maxime impedit vel nostrum distinctio rem alias, quae nesciunt!</p>
+              </div>
+              <div class="flex mt-3">
+                <img src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-512.png" alt="author" class="h-10 w-10 rounded-full mr-2 object-cover">
+                <div>
+                  <p class="font-semibold text-gray-400 text-sm">John Doe</p>
+                  <time class="text-gray-400 text-xs">14 March</time>
+                </div>
               </div>
             </div>
           </a>
 
           <a href="#" class="block w-full lg:flex mb-10">
             <img src="https://i.rtings.com/assets/products/RODjFo4y/nuphy-air75-v2-air60-v2-air96-v2/design-medium.jpg" alt="img" class="w-full h-48 lg:w-48 opacity-80 object-cover lg:mr-4">
-            <div class="flex">
+            <div class="flex flex-col justify-between">
               <div>
                 <h3 class="mb-2 text-gray-700 font-bold text-2xl">Lorem ipsum dolor sit amet.</h3>
                 <p class="text-gray-700">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto porro debitis dicta labore, delectus neque non ipsa incidunt eum atque voluptatem maxime impedit vel nostrum distinctio rem alias, quae nesciunt!</p>
+              </div>
+              <div class="flex mt-3">
+                <img src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-512.png" alt="author" class="h-10 w-10 rounded-full mr-2 object-cover">
+                <div>
+                  <p class="font-semibold text-gray-400 text-sm">John Doe</p>
+                  <time class="text-gray-400 text-xs">14 March</time>
+                </div>
               </div>
             </div>
           </a>
@@ -112,7 +147,7 @@
             <li><a href="#" class="pagination-item rounded-l-lg">Previous</a></li>
             <li><a href="#" class="pagination-item">1</a></li>
             <li><a href="#" class="pagination-item">2</a></li>
-            <li><a href="#" class="pagination-item text-blue-500 hover:bg-blue-100 hover:text-blue-600">3</a></li>
+            <li><a href="#" class="pagination-item text-blue-500 hover:bg-blue-100 hover:text-blue-600 transition-all duration-300">3</a></li>
             <li><a href="#" class="pagination-item">4</a></li>
             <li><a href="#" class="pagination-item">5</a></li>
             <li><a href="#" class="pagination-item rounded-r-lg">Next</a></li>
@@ -170,7 +205,7 @@
               type="email" 
               placeholder="your email address" 
               class="text-gray-700 bg-gray-100 p-2 w-full border-2 border-gray-50 rounded-t hover:border-gray-600">
-            <button class="px-4 py-2 bg-indigo-600 text-white rounded-b w-full hover:bg-indigo-800">Subscribe</button>
+            <button class="px-4 py-2 bg-indigo-600 text-white rounded-b w-full hover:bg-indigo-800 transition-all duration-300">Subscribe</button>
           </div>
 
           <!-- divider -->
