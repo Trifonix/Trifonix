@@ -2,7 +2,7 @@
   --color1: #05b1b1;
   --color2: #52339a;
 }
-header, footer, section {
+section {
   padding: 100px 0;
 }
 header {
@@ -93,6 +93,13 @@ header, footer {
 }
 .itd_img {
   max-width: 260px;
+}
+/* Подвал */
+footer {
+  padding: 30px 0;
+}
+.smimg {
+  width: 50px;
 }
 /* Цвет */
 .color1 {
