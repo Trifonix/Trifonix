@@ -4,7 +4,7 @@
 
 ____
 
-Bootstrap 5 уроки для начинающих : https://www.youtube.com/playlist?list=PLuY6eeDuleINmJ4DV22gtPL4--HQ49Df3
+✅ Bootstrap 5 уроки для начинающих : https://www.youtube.com/playlist?list=PLuY6eeDuleINmJ4DV22gtPL4--HQ49Df3
 
 ___
 
