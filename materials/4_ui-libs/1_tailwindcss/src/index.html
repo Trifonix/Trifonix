@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +7,10 @@
   <link href="./output.css" rel="stylesheet">
 </head>
 <body class="bg-white dark:bg-slate-900">
-  <div class="max-w-screen-xl mx-auto">
+  <div class="max-w-screen-xl mx-auto h-screen grid grid-rows-[auto_1fr_auto]">
     <!-- header -->
     <header class="px-2 border-b flex items-center justify-between h-14">
-      <a href="#" class="uppercase font-bold text-purple-800">webDev</a>
+      <a href="#" class="uppercase font-bold text-purple-800 dark:text-purple-400">webDev</a>
       <nav class="hidden md:flex items-center">
         <ul class="inline-flex items-center">
           <li><a href="#" class="header-link">Home</a></li>
@@ -29,196 +29,201 @@
       </button>
     </header>
 
-    <!-- breadcrumbs -->
-    <div class="px-2 flex items-center">
-      <div class="py-4 overflow-y-auto whitespace-nowrap flex items-center">
-        <a href="#" class="dark:text-slate-400 text-gray-600 hover:text-gray-900 transition-all duration-300">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-          </svg>                  
+    <!-- content -->
+    <div>
+      <!-- breadcrumbs -->
+      <div class="px-2 flex items-center">
+        <div class="py-4 overflow-y-auto whitespace-nowrap flex items-center">
+          <a href="#" class="dark:text-slate-400 text-gray-600 hover:text-gray-900 transition-all duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+            </svg>                  
+          </a>
+          <span class="mx-2 text-gray-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"> <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /> </svg>
+          </span>
+          <a href="#" class="dark:text-slate-400 text-gray-600 hover:text-gray-900 transition-all duration-300">News</a>
+          <span class="mx-2 text-gray-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"> <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /> </svg>
+          </span>
+          <a href="#" class="dark:text-slate-400 text-gray-600 hover:text-gray-900 transition-all duration-300">Tech</a>
+        </div>
+      </div>
+
+      <!-- banners -->
+      <section class="px-2 lg:flex lg:space-x-2">
+        <a class="w-full lg:w-2/3 bg-gradient-to-tr bg-purple-300 h-96 mb-4 relative rounded inline-block overflow-hidden" href="#">
+          <div class="absolute left-0 top-0 w-full h-full z-10 bg-gradient-to-b from-black/10 to-black/70"></div>
+          <img src="https://www.montechpc.com/images/405573" alt="news" class="absolute left-0 top-0 w-full h-full z-0 object-cover">
+          <div class="p-4 absolute bottom-0 left-0 z-20">
+            <h2 class="text-4xl font-semibold text-gray-100 leading-tight">
+              Lorem ipsum dolor sit amet consectetur.
+            </h2>
+            <span class="bg-gradient-to-bl from-purple-800 to-indigo-600 text-white inline-flex items-center justify-center px-4 py-1 mb-2">React</span>
+            <div class="flex mt-3">
+              <img src="https://www.shutterstock.com/image-vector/cute-cartoon-cat-profile-avatar-600nw-2432356437.jpg" alt="author" class="h-10 w-10 rounded-full mr-2 object-cover">
+              <div>
+                <p class="font-semibold text-gray-200 text-sm">Jane Doe</p>
+                <time class="text-gray-400 text-xs">15 March</time>
+              </div>
+            </div>
+          </div>
         </a>
-        <span class="mx-2 text-gray-300">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"> <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /> </svg>
-        </span>
-        <a href="#" class="dark:text-slate-400 text-gray-600 hover:text-gray-900 transition-all duration-300">News</a>
-        <span class="mx-2 text-gray-300">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"> <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /> </svg>
-        </span>
-        <a href="#" class="dark:text-slate-400 text-gray-600 hover:text-gray-900 transition-all duration-300">Tech</a>
-      </div>
+
+        <a class="w-full lg:w-1/3 bg-indigo-300 h-96 mb-4 relative rounded inline-block overflow-hidden" href="#">
+          <div class="absolute left-0 top-0 w-full h-full z-10 bg-gradient-to-b from-black/10 to-black/70"></div>
+          <img src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25256597/246994_Keychron_Q1_Max_JPorter_0002.jpg" alt="news" class="absolute left-0 top-0 w-full h-full z-0 object-cover">
+          <div class="p-4 absolute bottom-0 left-0 z-20">
+            <h2 class="text-4xl font-semibold text-gray-100 leading-tight">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </h2>
+            <span class="bg-gradient-to-bl from-purple-800 to-indigo-600 text-white inline-flex items-center justify-center px-4 py-1 mb-2">Vue</span>
+            <div class="flex mt-3">
+              <img src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-512.png" alt="author" class="h-10 w-10 rounded-full mr-2 object-cover">
+              <div>
+                <p class="font-semibold text-gray-200 text-sm">John Doe</p>
+                <time class="text-gray-400 text-xs">14 March</time>
+              </div>
+            </div>
+          </div>
+        </a>
+      </section>
+
+      <main class="lg:flex">
+        <div class="w-full lg:w-2/3">
+          <!-- post cards -->
+          <section class="px-2">
+            <a href="#" class="block w-full lg:flex mb-10">
+              <img src="https://i.rtings.com/assets/products/tMO2Tk6W/keychron-q5-max-q1-max-q2-max-etc/design-medium.jpg" alt="img" class="w-full h-48 lg:w-48 opacity-80 object-cover lg:mr-4">
+              <div class="flex flex-col justify-between">
+                <div>
+                  <h3 class="dark:text-white mb-2 text-gray-700 font-bold text-2xl">Lorem ipsum dolor sit.</h3>
+                  <p class="text-gray-700 dark:text-slate-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto porro debitis dicta labore, delectus neque non ipsa incidunt eum atque voluptatem maxime impedit vel nostrum distinctio rem alias, quae nesciunt!</p>
+                </div>
+                <div class="flex mt-3">
+                  <img src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-512.png" alt="author" class="h-10 w-10 rounded-full mr-2 object-cover">
+                  <div>
+                    <p class="font-semibold text-gray-400 text-sm">John Doe</p>
+                    <time class="text-gray-400 text-xs">14 March</time>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="block w-full lg:flex mb-10">
+              <img src="https://i.rtings.com/assets/products/aNuGpu9q/keychron-q6/design-medium.jpg" alt="img" class="w-full h-48 lg:w-48 opacity-80 object-cover lg:mr-4">
+              <div class="flex flex-col justify-between">
+                <div>
+                  <h3 class="dark:text-white mb-2 text-gray-700 font-bold text-2xl">Lorem, ipsum dolor.</h3>
+                  <p class="text-gray-700 dark:text-slate-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto porro debitis dicta labore, delectus neque non ipsa incidunt eum atque voluptatem maxime impedit vel nostrum distinctio rem alias, quae nesciunt!</p>
+                </div>
+                <div class="flex mt-3">
+                  <img src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-512.png" alt="author" class="h-10 w-10 rounded-full mr-2 object-cover">
+                  <div>
+                    <p class="font-semibold text-gray-400 text-sm">John Doe</p>
+                    <time class="text-gray-400 text-xs">14 March</time>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="block w-full lg:flex mb-10">
+              <img src="https://i.rtings.com/assets/products/RODjFo4y/nuphy-air75-v2-air60-v2-air96-v2/design-medium.jpg" alt="img" class="w-full h-48 lg:w-48 opacity-80 object-cover lg:mr-4">
+              <div class="flex flex-col justify-between">
+                <div>
+                  <h3 class="dark:text-white mb-2 text-gray-700 font-bold text-2xl">Lorem ipsum dolor sit amet.</h3>
+                  <p class="text-gray-700 dark:text-slate-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto porro debitis dicta labore, delectus neque non ipsa incidunt eum atque voluptatem maxime impedit vel nostrum distinctio rem alias, quae nesciunt!</p>
+                </div>
+                <div class="flex mt-3">
+                  <img src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-512.png" alt="author" class="h-10 w-10 rounded-full mr-2 object-cover">
+                  <div>
+                    <p class="font-semibold text-gray-400 text-sm">John Doe</p>
+                    <time class="text-gray-400 text-xs">14 March</time>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </section>
+
+          <!-- pagination -->
+          <div class="mt-20 mb-10">
+            <ul class="flex justify-center">
+              <li><a href="#" class="pagination-item rounded-l-lg">Previous</a></li>
+              <li><a href="#" class="pagination-item">1</a></li>
+              <li><a href="#" class="pagination-item">2</a></li>
+              <li><a href="#" class="pagination-item text-blue-500 hover:bg-blue-100 hover:text-blue-600 transition-all duration-300">3</a></li>
+              <li><a href="#" class="pagination-item">4</a></li>
+              <li><a href="#" class="pagination-item">5</a></li>
+              <li><a href="#" class="pagination-item rounded-r-lg">Next</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="w-full lg:w-1/3 px-2 md:flex md:space-x-6 lg:block lg:space-x-0">
+          <!-- topics -->
+          <div class="w-full md:w-1/2 lg:w-full mb-5">
+            <h5 class="dark:text-white font-bold text-lg uppercase text-gray-700 mb-2">
+              Popular News
+            </h5>
+            <ul>
+              <li class="topics-li">
+                <a href="#" class="dark:text-slate-400 flex items-center text-gray-600">
+                  <span class="inline-block size-4 mr-3 bg-gradient-to-tr from-green-500 to-green-700"></span>
+                  Vue
+                  <span class="dark:text-slate-400 text-gray-500 ml-auto">23 articles</span>
+                </a>
+              </li>
+              <li class="topics-li">
+                <a href="#" class="dark:text-slate-400 flex items-center text-gray-600">
+                  <span class="inline-block size-4 mr-3 bg-gradient-to-tr from-orange-500 to-orange-700"></span>
+                  Svelte
+                  <span class="dark:text-slate-400 text-gray-500 ml-auto">20 articles</span>
+                </a>
+              </li>
+              <li class="topics-li">
+                <a href="#" class="dark:text-slate-400 flex items-center text-gray-600">
+                  <span class="inline-block size-4 mr-3 bg-gradient-to-tr from-red-500 to-red-700"></span>
+                  Angular
+                  <span class="dark:text-slate-400 text-gray-500 ml-auto">15 articles</span>
+                </a>
+              </li>
+              <li class="topics-li">
+                <a href="#" class="dark:text-slate-400 flex items-center text-gray-600">
+                  <span class="inline-block size-4 mr-3 bg-gradient-to-tr from-blue-500 to-blue-700"></span>
+                  React
+                  <span class="dark:text-slate-400 text-gray-500 ml-auto">7 articles</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="w-full md:w-1/2 lg:w-full">
+            <!-- divider -->
+            <div class="border-1 border-dotted md:hidden lg:block"></div>
+
+            <!-- subscribe -->
+            <div class="my-5 md:my-0 lg:my-5">
+              <h5 class="dark:text-white font-bold text-lg uppercase text-gray-700 mb-2">Subscribe</h5>
+              <p class="dark:text-slate-400 text-gray-600 mb-4">Subscribe to our newsletter</p>
+              <input
+                type="email" 
+                placeholder="your email address" 
+                class="text-gray-700 bg-gray-100 p-2 w-full border-2 border-gray-50 rounded-t hover:border-gray-600">
+              <button class="px-4 py-2 bg-indigo-600 text-white rounded-b w-full hover:bg-indigo-800 transition-all duration-300">Subscribe</button>
+            </div>
+
+            <!-- divider -->
+            <div class="border-1 border-dotted md:hidden lg:block"></div>
+          </div>
+        </div>
+      </main>
     </div>
-
-    <!-- banners -->
-    <section class="px-2 lg:flex lg:space-x-2">
-      <a class="w-full lg:w-2/3 bg-gradient-to-tr bg-purple-300 h-96 mb-4 relative rounded inline-block overflow-hidden" href="#">
-        <div class="absolute left-0 top-0 w-full h-full z-10 bg-gradient-to-b from-black/10 to-black/70"></div>
-        <img src="https://www.montechpc.com/images/405573" alt="news" class="absolute left-0 top-0 w-full h-full z-0 object-cover">
-        <div class="p-4 absolute bottom-0 left-0 z-20">
-          <h2 class="text-4xl font-semibold text-gray-100 leading-tight">
-            Lorem ipsum dolor sit amet consectetur.
-          </h2>
-          <div class="flex mt-3">
-            <img src="https://www.shutterstock.com/image-vector/cute-cartoon-cat-profile-avatar-600nw-2432356437.jpg" alt="author" class="h-10 w-10 rounded-full mr-2 object-cover">
-            <div>
-              <p class="font-semibold text-gray-200 text-sm">Jane Doe</p>
-              <time class="text-gray-400 text-xs">15 March</time>
-            </div>
-          </div>
-        </div>
-      </a>
-
-      <a class="w-full lg:w-1/3 bg-indigo-300 h-96 mb-4 relative rounded inline-block overflow-hidden" href="#">
-        <div class="absolute left-0 top-0 w-full h-full z-10 bg-gradient-to-b from-black/10 to-black/70"></div>
-        <img src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25256597/246994_Keychron_Q1_Max_JPorter_0002.jpg" alt="news" class="absolute left-0 top-0 w-full h-full z-0 object-cover">
-        <div class="p-4 absolute bottom-0 left-0 z-20">
-          <h2 class="text-4xl font-semibold text-gray-100 leading-tight">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </h2>
-          <div class="flex mt-3">
-            <img src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-512.png" alt="author" class="h-10 w-10 rounded-full mr-2 object-cover">
-            <div>
-              <p class="font-semibold text-gray-200 text-sm">John Doe</p>
-              <time class="text-gray-400 text-xs">14 March</time>
-            </div>
-          </div>
-        </div>
-      </a>
-    </section>
-
-    <main class="lg:flex">
-      <div class="w-full lg:w-2/3">
-        <!-- post cards -->
-        <section class="px-2">
-          <a href="#" class="block w-full lg:flex mb-10">
-            <img src="https://i.rtings.com/assets/products/tMO2Tk6W/keychron-q5-max-q1-max-q2-max-etc/design-medium.jpg" alt="img" class="w-full h-48 lg:w-48 opacity-80 object-cover lg:mr-4">
-            <div class="flex flex-col justify-between">
-              <div>
-                <h3 class="mb-2 text-gray-700 font-bold text-2xl">Lorem ipsum dolor sit.</h3>
-                <p class="text-gray-700">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto porro debitis dicta labore, delectus neque non ipsa incidunt eum atque voluptatem maxime impedit vel nostrum distinctio rem alias, quae nesciunt!</p>
-              </div>
-              <div class="flex mt-3">
-                <img src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-512.png" alt="author" class="h-10 w-10 rounded-full mr-2 object-cover">
-                <div>
-                  <p class="font-semibold text-gray-400 text-sm">John Doe</p>
-                  <time class="text-gray-400 text-xs">14 March</time>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <a href="#" class="block w-full lg:flex mb-10">
-            <img src="https://i.rtings.com/assets/products/aNuGpu9q/keychron-q6/design-medium.jpg" alt="img" class="w-full h-48 lg:w-48 opacity-80 object-cover lg:mr-4">
-            <div class="flex flex-col justify-between">
-              <div>
-                <h3 class="mb-2 text-gray-700 font-bold text-2xl">Lorem, ipsum dolor.</h3>
-                <p class="text-gray-700">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto porro debitis dicta labore, delectus neque non ipsa incidunt eum atque voluptatem maxime impedit vel nostrum distinctio rem alias, quae nesciunt!</p>
-              </div>
-              <div class="flex mt-3">
-                <img src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-512.png" alt="author" class="h-10 w-10 rounded-full mr-2 object-cover">
-                <div>
-                  <p class="font-semibold text-gray-400 text-sm">John Doe</p>
-                  <time class="text-gray-400 text-xs">14 March</time>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <a href="#" class="block w-full lg:flex mb-10">
-            <img src="https://i.rtings.com/assets/products/RODjFo4y/nuphy-air75-v2-air60-v2-air96-v2/design-medium.jpg" alt="img" class="w-full h-48 lg:w-48 opacity-80 object-cover lg:mr-4">
-            <div class="flex flex-col justify-between">
-              <div>
-                <h3 class="mb-2 text-gray-700 font-bold text-2xl">Lorem ipsum dolor sit amet.</h3>
-                <p class="text-gray-700">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto porro debitis dicta labore, delectus neque non ipsa incidunt eum atque voluptatem maxime impedit vel nostrum distinctio rem alias, quae nesciunt!</p>
-              </div>
-              <div class="flex mt-3">
-                <img src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-512.png" alt="author" class="h-10 w-10 rounded-full mr-2 object-cover">
-                <div>
-                  <p class="font-semibold text-gray-400 text-sm">John Doe</p>
-                  <time class="text-gray-400 text-xs">14 March</time>
-                </div>
-              </div>
-            </div>
-          </a>
-        </section>
-
-        <!-- pagination -->
-        <div class="mt-20 mb-10">
-          <ul class="flex justify-center">
-            <li><a href="#" class="pagination-item rounded-l-lg">Previous</a></li>
-            <li><a href="#" class="pagination-item">1</a></li>
-            <li><a href="#" class="pagination-item">2</a></li>
-            <li><a href="#" class="pagination-item text-blue-500 hover:bg-blue-100 hover:text-blue-600 transition-all duration-300">3</a></li>
-            <li><a href="#" class="pagination-item">4</a></li>
-            <li><a href="#" class="pagination-item">5</a></li>
-            <li><a href="#" class="pagination-item rounded-r-lg">Next</a></li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="w-full lg:w-1/3 px-2 md:flex md:space-x-6 lg:block lg:space-x-0">
-        <!-- topics -->
-        <div class="w-full md:w-1/2 lg:w-full mb-5">
-          <h5 class="font-bold text-lg uppercase text-gray-700 mb-2">
-            Popular News
-          </h5>
-          <ul>
-            <li class="px-1 py-4 border-y border-white hover:border-gray-200">
-              <a href="#" class="flex items-center text-gray-600">
-                <span class="inline-block size-4 mr-3 bg-gradient-to-tr from-green-500 to-green-700"></span>
-                Vue
-                <span class="text-gray-500 ml-auto">23 articles</span>
-              </a>
-            </li>
-            <li class="px-1 py-4 border-y border-white hover:border-gray-200">
-              <a href="#" class="flex items-center text-gray-600">
-                <span class="inline-block size-4 mr-3 bg-gradient-to-tr from-orange-500 to-orange-700"></span>
-                Svelte
-                <span class="text-gray-500 ml-auto">20 articles</span>
-              </a>
-            </li>
-            <li class="px-1 py-4 border-y border-white hover:border-gray-200">
-              <a href="#" class="flex items-center text-gray-600">
-                <span class="inline-block size-4 mr-3 bg-gradient-to-tr from-red-500 to-red-700"></span>
-                Angular
-                <span class="text-gray-500 ml-auto">15 articles</span>
-              </a>
-            </li>
-            <li class="px-1 py-4 border-y border-white hover:border-gray-200">
-              <a href="#" class="flex items-center text-gray-600">
-                <span class="inline-block size-4 mr-3 bg-gradient-to-tr from-blue-500 to-blue-700"></span>
-                React
-                <span class="text-gray-500 ml-auto">7 articles</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="w-full md:w-1/2 lg:w-full">
-          <!-- divider -->
-          <div class="border-1 border-dotted md:hidden lg:block"></div>
-
-          <!-- subscribe -->
-          <div class="my-5 md:my-0 lg:my-5">
-            <h5 class="font-bold text-lg uppercase text-gray-700 mb-2">Subscribe</h5>
-            <p class="text-gray-600 mb-4">Subscribe to our newsletter</p>
-            <input
-              type="email" 
-              placeholder="your email address" 
-              class="text-gray-700 bg-gray-100 p-2 w-full border-2 border-gray-50 rounded-t hover:border-gray-600">
-            <button class="px-4 py-2 bg-indigo-600 text-white rounded-b w-full hover:bg-indigo-800 transition-all duration-300">Subscribe</button>
-          </div>
-
-          <!-- divider -->
-          <div class="border-1 border-dotted md:hidden lg:block"></div>
-        </div>
-      </div>
-    </main>
 
     <!-- footer -->
     <footer class="border-t mt-10 py-10 px-2">
       <div class="md:flex">
         <div class="w-full mb-5 md:w-2/5">
-          <h6 class="font-semibold text-gray7-700 mb-3">Company</h6>
+          <h6 class="dark:text-white font-semibold text-gray-700 mb-3">Company</h6>
           <ul>
             <li><a href="#" class="footer-link">Team</a></li>
             <li><a href="#" class="footer-link">About Us</a></li>
@@ -226,7 +231,7 @@
         </div>
 
         <div class="w-full mb-5 md:w-2/5">
-          <h6 class="font-semibold text-gray7-700 mb-3">Content</h6>
+          <h6 class="dark:text-white font-semibold text-gray-700 mb-3">Content</h6>
           <ul>
             <li><a href="#" class="footer-link">Block</a></li>
             <li><a href="#" class="footer-link">Policy</a></li>
@@ -235,7 +240,7 @@
         </div>
 
         <div class="w-full md:w-1/5">
-          <h6 class="font-semibold text-gray7-700 mb-3">Contact Us</h6>
+          <h6 class="dark:text-white font-semibold text-gray-700 mb-3">Contact Us</h6>
           <ul class="flex">
             <li class="mr-2"><a href="#" class="footer-link">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7">

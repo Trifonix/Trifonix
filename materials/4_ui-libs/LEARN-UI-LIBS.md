@@ -8,4 +8,4 @@ ____
 
 ___
 
-TailwindCSS : https://www.youtube.com/playlist?list=PLNkWIWHIRwMFN8qKfZ5Lgr29L5BoJKFfa
+✅ TailwindCSS : https://www.youtube.com/playlist?list=PLNkWIWHIRwMFN8qKfZ5Lgr29L5BoJKFfa
