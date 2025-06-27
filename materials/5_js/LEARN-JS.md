@@ -5,3 +5,7 @@
 ____
 
 JavaScript c Нуля - Курс для начинающих С ПРАКТИКОЙ (2025) : https://www.youtube.com/watch?v=fcMcf_4PjfI
+
+___
+
+Современный учебник JavaScript : https://learn.javascript.ru/
