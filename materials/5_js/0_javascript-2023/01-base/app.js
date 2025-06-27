@@ -58,9 +58,41 @@ resultElement.textContent = 18;
 // resultElement.textContent = Number(input1.value) + +input2.value;
 
 const submitBtn = document.getElementById("submit");
+// submitBtn.onclick = function () {
+//   console.log("Hello, click!");
+//   const input1 = document.getElementById("input1");
+//   const input2 = document.getElementById("input2");
+//   resultElement.textContent = Number(input1.value) + +input2.value;
+// };
+
+const plusBtn = document.getElementById("plus");
+const minusBtn = document.getElementById("minus");
+let action = '+';
+
+plusBtn.onclick = function () {
+  action = '+';
+};
+
+minusBtn.onclick = function () {
+  action = '-';
+};
+
+function printResult(result) {
+  if (result < 0) {
+    resultElement.style.color = 'red';
+  } else {
+    resultElement.style.color = 'green';
+  }
+  resultElement.textContent = result;
+}
+
 submitBtn.onclick = function () {
-  // console.log("Hello, click!");
-  const input1 = document.getElementById("input1");
-  const input2 = document.getElementById("input2");
-  resultElement.textContent = Number(input1.value) + +input2.value;
+  let res = '';
+  if (action == '+') {
+    res = Number(input1.value) + +input2.value;
+    printResult(res);
+  } else if (action == '-') {
+    res = Number(input1.value) - +input2.value;
+    printResult(res);
+  }
 };
