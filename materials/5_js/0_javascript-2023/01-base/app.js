@@ -86,13 +86,26 @@ function printResult(result) {
   resultElement.textContent = result;
 }
 
+function computeNumbersWithAction(input1, input2, actionSymbol) {
+  const value1 = Number(input1.value);
+  const value2 = Number(input2.value);
+  // if (actionSymbol == '+') {
+  //   return value1 + value2;
+  // } else if (actionSymbol == '-') {
+  //   return value1 - value2;
+  // }
+  return (actionSymbol == '+') ? value1 + value2 : value1 - value2;
+}
+
 submitBtn.onclick = function () {
-  let res = '';
-  if (action == '+') {
-    res = Number(input1.value) + +input2.value;
-    printResult(res);
-  } else if (action == '-') {
-    res = Number(input1.value) - +input2.value;
-    printResult(res);
-  }
+  // let res = '';
+  // if (action == '+') {
+  //   res = Number(input1.value) + +input2.value;
+  //   printResult(res);
+  // } else if (action == '-') {
+  //   res = Number(input1.value) - +input2.value;
+  //   printResult(res);
+  // }
+  const result = computeNumbersWithAction(input1, input2, action);
+  printResult(result);
 };
