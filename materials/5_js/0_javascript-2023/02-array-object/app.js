@@ -69,5 +69,11 @@ function getNoteTemplate(title) {
 const person = {
   firstName: "John",
   secondName: "Smith",
+  year: 1990,
+  hasPartner: true,
+  languages: ['ru', 'en', 'es'],
+  getFullName: function() {
+    console.log(person.firstName + ' ' + person.secondName)
+  }
 };
 console.log(typeof person);
