@@ -26,7 +26,7 @@ const listElement = document.getElementById("list");
 
 console.log(inputElement.value);
 
-const notes = ["note 1", "note 2"];
+// const notes = ["note 1", "note 2"];
 
 function render() {
   // for (let i = 0; i < notes.length; i++) {
@@ -65,7 +65,7 @@ function getNoteTemplate(title) {
 
 /**
  * Object Theory
- */
+ 
 const person = {
   firstName: "John",
   secondName: "Smith",
@@ -77,3 +77,21 @@ const person = {
   }
 };
 console.log(typeof person);
+person.getFullName();
+
+console.log(person.firstName);
+console.log(person['secondName']);
+const key = 'hasPartner';
+console.log(person[key]);
+person.hasPartner = false;
+console.log(person.hasPartner);
+*/
+
+const notes = [{
+  title: 'записать блок про массивы',
+  completed: false
+},
+{
+  title: 'рассказать теорию объектов',
+  completed: false
+}]
