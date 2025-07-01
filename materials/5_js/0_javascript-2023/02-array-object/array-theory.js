@@ -1,16 +1,16 @@
-const names = ['Bill', 'Mamba', 'John', 'Garry'];
+const names = ["Bill", "Mamba", "John", "Garry"];
 
-names.push('Dean');
+names.push("Dean");
 
-console.log('Names: ', names);
+console.log("Names: ", names);
 
-names.unshift('Chuck');
+names.unshift("Chuck");
 
-console.log('Names: ', names);
+console.log("Names: ", names);
 
 names.shift();
 
-console.log('Names: ', names);
+console.log("Names: ", names);
 
 const firstName = names.shift();
 
@@ -26,14 +26,16 @@ console.log(names.toReversed());
 
 console.log(names.sort());
 
-const letters = ['s', 'q', 'z', 'a', 'y', 'c'];
+const letters = ["s", "q", "z", "a", "y", "c"];
 console.log(letters);
 
 console.log(letters.sort());
 
-console.log(letters.sort(function (a, b) {
-  return b.charCodeAt(0) - a.charCodeAt(0);
-}));
+console.log(
+  letters.sort(function (a, b) {
+    return b.charCodeAt(0) - a.charCodeAt(0);
+  })
+);
 
 console.log(letters.toSorted());
 
@@ -45,12 +47,30 @@ console.log(names.toSpliced(1, 1));
 
 console.log(names);
 
-names.push('Mamba');
+names.push("Mamba");
 
-const greatWoman = 'Mamba';
+const greatWoman = "Mamba";
 
 const index = names.indexOf(greatWoman);
 
 console.log(names);
 
 console.log(index);
+
+console.log("Momba was ?", names.indexOf("Momba"));
+
+names[index] = "Beatriss";
+
+console.log(names);
+
+names.with(index, "Sambur");
+
+console.log(names.with(index, "Sambur"));
+
+console.log(names);
+
+const arrLetters = letters.map(function(letter) {
+  return letter.toUpperCase();
+});
+
+console.log(arrLetters);
