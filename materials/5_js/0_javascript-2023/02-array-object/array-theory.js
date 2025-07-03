@@ -69,8 +69,23 @@ console.log(names.with(index, "Sambur"));
 
 console.log(names);
 
-const arrLetters = letters.map(function(letter) {
+const arrLetters = letters.map(function (letter) {
   return letter.toUpperCase();
 });
 
 console.log(arrLetters);
+
+console.log("actual names:", names);
+
+const newNames = names.map(function (name, index) {
+  if (index === 1) {
+    return "Kiddo";
+  }
+  return name
+});
+console.log('newNames:', newNames);
+
+console.log(newNames.includes('Bill'));
+console.log(newNames.includes('Kiddo'));
+
+console.log(newNames.indexOf('Kiddo') !== -1);
