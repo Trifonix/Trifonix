@@ -29,3 +29,10 @@ console.log(myName.charAt(0));
 console.log(myName.indexOf('e'));
 console.log(myName.startsWith('Ne'));
 console.log(myName.toLowerCase().startsWith('ne'));
+console.log(myName.endsWith('o'));
+console.log(myName.repeat(2));
+
+const password = '    my super pass    ';
+
+console.log(password);
+console.log(password.trim());
