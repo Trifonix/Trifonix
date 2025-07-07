@@ -81,5 +81,28 @@ const pow3 = (num, exp) => Math.pow(num, exp);
 console.log(pow3(2, 4));
 
 // ======== Default Parameters
-const sum = (a, b) => a + b;
+const sum = (a = 20, b = a / 2) => a + b;
 console.log(sum(40, 2));
+console.log(sum(40));
+
+// остаточный параметр rest
+function sumAll( ... numbers ) {
+  //console.log(numbers);
+  // let res = 0;
+  // for (let num of numbers) {
+  //   res += num;
+  // }
+  // return res;
+  return numbers.reduce((acc, cur) => acc += cur, 0);
+}
+console.log('sum was ===', sumAll(1, 2, 3, 4, 5, 6));
+
+// Closures - Замыкания
+function createPerson(name) {
+  return function(lastName) {
+    console.log(name + ' ' + lastName);
+  }
+}
+const addLastName = createPerson('agent');
+addLastName('Smith');
+addLastName('Neo');
