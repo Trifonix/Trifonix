@@ -26,5 +26,60 @@ console.dir(greet2.toString());
 setTimeout(greet, 1500);
 
 setTimeout(function () {
-  console.log('TimeOut!');
+  console.log("TimeOut!");
 }, 2500);
+
+setTimeout(function () {
+  greet2(name);
+}, 3000);
+
+// clearTimeout
+
+setInterval(function () {
+  console.log(911);
+}, 2000);
+
+setInterval(function () {
+  console.log(Math.random());
+}, 2100);
+
+let counter = 0;
+const interval = setInterval(function () {
+  if (counter === 5) {
+    console.log("it was 5");
+    clearInterval(interval);
+  } else {
+    console.log(++counter);
+  }
+}, 1000);
+
+let counter2 = 0;
+const interval2 = setInterval(function () {
+  console.log(++counter2);
+}, 2500);
+
+// Arrow Functions
+function greet(name) {
+  console.log('Hello - ', name);
+}
+const arrow = (name, age) => {
+  console.log('Hello - ', name, age);
+}
+
+arrow('Megauser', 25);
+
+const name2 = 'hacker';
+const arrow2 = (name2) => console.log('qhello, ', name2);
+arrow2(name2);
+
+function pow2(num, exp) {
+  return Math.pow(num, exp);
+}
+console.log(pow2(2, 3));
+
+const pow3 = (num, exp) => Math.pow(num, exp);
+console.log(pow3(2, 4));
+
+// ======== Default Parameters
+const sum = (a, b) => a + b;
+console.log(sum(40, 2));
