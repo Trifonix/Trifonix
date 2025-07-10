@@ -27,28 +27,28 @@ let my-num = 0;
 let false = '';
 */
 //alert(num);
-console.log(num);
-console.log("Test:", firstName);
-console.log(num + 10);
+// console.log(num);
+// console.log("Test:", firstName);
+// console.log(num + 10);
 //number
 //string
 //boolean
 // - * / минус умножить делить
 // 4.2 float
 let num2 = num + 2;
-console.log(num, num2);
+// console.log(num, num2);
 num = num2 - num;
-console.log(num, num2);
+// console.log(num, num2);
 let num3 = (num + num2) * 2;
-console.log(num3);
+// console.log(num3);
 const fullName = firstName + " " + "Doo";
-console.log(fullName);
+// console.log(fullName);
 
 // Начинаем разрабатывать калькулятор
 
 const resultElement = document.getElementById("result");
-console.log(resultElement);
-console.log(resultElement.textContent);
+// console.log(resultElement);
+// console.log(resultElement.textContent);
 resultElement.textContent = 18;
 // const input1 = document.getElementById("input1");
 // const input2 = document.getElementById("input2");
@@ -78,6 +78,7 @@ minusBtn.onclick = function () {
 };
 
 function printResult(result) {
+  console.log('Result to print', result);
   if (result < 0) {
     resultElement.style.color = 'red';
   } else {
@@ -87,14 +88,26 @@ function printResult(result) {
 }
 
 function computeNumbersWithAction(input1, input2, actionSymbol) {
-  const value1 = Number(input1.value);
-  const value2 = Number(input2.value);
+  // const value1 = +input1.value;
+  // const value2 = +input2.value;
+  const value1 = +input1.value;
+  const value2 = +input2.value;
   // if (actionSymbol == '+') {
   //   return value1 + value2;
   // } else if (actionSymbol == '-') {
   //   return value1 - value2;
   // }
-  return (actionSymbol == '+') ? value1 + value2 : value1 - value2;
+
+  // return (actionSymbol == '+') ? value1 + value2 : value1 - value2;
+
+  // console.log(value1, value2);
+  // console.log(typeof value1, typeof value2);
+
+  // debugger
+
+  const result = actionSymbol == '+' ? value1 + value2 : value1 - value2;
+  // console.log(result);
+  return result;
 }
 
 submitBtn.onclick = function () {
