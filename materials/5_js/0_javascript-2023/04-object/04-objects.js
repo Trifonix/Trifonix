@@ -34,3 +34,24 @@ person.arrow();
 person.info();
 
 person.greet();
+
+// window === this --- True
+
+console.log(person.address);
+console.log(person['address']);
+console.log(person['complex key']);
+const addressKey = 'address';
+console.log(person[addressKey]);
+
+person.age++;
+console.log(person.age);
+
+person.languages.push('de');
+console.log(person.languages);
+
+person.address = undefined;
+console.log(person.address);
+
+delete person.address;
+console.log((person.address));
+console.log(person);
