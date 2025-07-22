@@ -3,26 +3,30 @@ from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QApplication, QMainWindow
 import sys
 
-def add_label():
-  print("123")
+class Window(QMainWindow):
+  def __init__(self):
+    super(Window, self).__init__()
+
+    self.setWindowTitle("Простая программа")
+    self.setGeometry(300, 250, 350, 200)
+
+    self.main_text = QtWidgets.QLabel(self)
+    self.main_text.setText("Это базовая надпись")
+    self.main_text.move(100, 100)
+    self.main_text.adjustSize()
+
+    self.btn = QtWidgets.QPushButton(self)
+    self.btn.move(70, 150)
+    self.btn.setText("Нажми на меня")
+    self.btn.setFixedWidth(200)
+    self.btn.clicked.connect(self.add_label)
+
+  def add_label(self):
+    print("123")
 
 def application():
   app = QApplication(sys.argv)
-  window = QMainWindow()
-
-  window.setWindowTitle("Простая программа")
-  window.setGeometry(300, 250, 350, 200)
-
-  main_text = QtWidgets.QLabel(window)
-  main_text.setText("Это базовая надпись")
-  main_text.move(100, 100)
-  main_text.adjustSize()
-
-  btn = QtWidgets.QPushButton(window)
-  btn.move(70, 150)
-  btn.setText("Нажми на меня")
-  btn.setFixedWidth(200)
-  btn.clicked.connect(add_label)
+  window = Window()
 
   window.show()
   sys.exit(app.exec_())
