@@ -10,6 +10,8 @@ class Window(QMainWindow):
     self.setWindowTitle("Простая программа")
     self.setGeometry(300, 250, 350, 200)
 
+    self.new_text = QtWidgets.QLabel(self)
+
     self.main_text = QtWidgets.QLabel(self)
     self.main_text.setText("Это базовая надпись")
     self.main_text.move(100, 100)
@@ -22,7 +24,9 @@ class Window(QMainWindow):
     self.btn.clicked.connect(self.add_label)
 
   def add_label(self):
-    print("123")
+    self.new_text.setText("Вторая надпись")
+    self.new_text.move(100, 50)
+    self.new_text.adjustSize()
 
 def application():
   app = QApplication(sys.argv)
