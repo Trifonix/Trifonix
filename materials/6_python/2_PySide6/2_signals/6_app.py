@@ -4,9 +4,10 @@ from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton, QLabel, QV
 class MainWindow(QMainWindow):
   def __init__(self):
     super().__init__()
-
     self.count = 0
+    self.interface_init()
 
+  def interface_init(self):
     self.setWindowTitle("Приложение 6")
     self.setFixedSize(260, 140)
 
@@ -28,10 +29,11 @@ class MainWindow(QMainWindow):
     if (self.count < 5):
       self.count += 1
       self.label.setText(f"Нажали раз: {self.count}")
-    else:
-      self.btn.setEnabled(False)
-      self.btn.setText("Хватит это терпеть!")
-      self.label.setText("Хватит клацать!!! 👀")
+      return
+    
+    self.btn.setEnabled(False)
+    self.btn.setText("Хватит это терпеть!")
+    self.label.setText("Хватит клацать!!! 👀")
 
 app = QApplication([])
 
