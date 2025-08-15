@@ -20,6 +20,7 @@ class MainWindow(QMainWindow):
     super().__init__()
     self.n_times_clicked = 0
     self.setWindowTitle("My 11th app")
+    self.setFixedWidth(400)
 
     self.button = QPushButton("Press Me!")
     self.button.clicked.connect(self.the_button_was_clicked)
