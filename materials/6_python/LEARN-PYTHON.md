@@ -9,3 +9,7 @@ ____
 ____
 
 The complete PySide6 tutorial — Create GUI applications with Python : https://www.pythonguis.com/pyside6-tutorial/
+
+___
+
+Learn Python GUI Development for Desktop – PySide6 and Qt Tutorial : https://www.youtube.com/watch?v=Z1N9JzNax2k
