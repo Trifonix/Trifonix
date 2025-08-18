@@ -2,7 +2,15 @@
 
 ### мультипарадигменный высокоуровневый язык программирования общего назначения с динамической строгой типизацией и автоматическим управлением памятью
 
+___
+
+Программирование на Python с нуля за 8 часов : https://www.youtube.com/watch?v=Qkpk-AiW0yc
+
 ____
+
+Python Программирование с Нуля! Полный Курс Python для Начинающих с нуля! [*12 часов из 41] : https://www.youtube.com/watch?v=lYMLLI-MJek
+
+___
 
 Изучение PyQt5 для начинающих : https://www.youtube.com/playlist?list=PL0lO_mIqDDFXeDkOLHmEsL_HAEhw4-xDX
 
