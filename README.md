@@ -2,9 +2,9 @@
 
 # Great day👋 
 
-There are over `47.200.000` developers🤓 in the world
+There are over `47.200.000` devs🤓 in the world
 
-## I'm world's top programmer #`268.847`😎
+## I'm top programmer😎 #`268.847`
 
 ### ✨You can track my `skills` below :
 
