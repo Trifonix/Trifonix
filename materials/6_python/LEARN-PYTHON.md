@@ -4,7 +4,7 @@
 
 ___
 
-Лекция 78. Красота Программирования : https://www.youtube.com/watch?v=dA7yYt4Kkl8
+✅ Лекция 78. Красота Программирования : https://www.youtube.com/watch?v=dA7yYt4Kkl8
 
 ___
 
