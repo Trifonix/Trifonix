@@ -7,7 +7,7 @@ from PySide6.QtWidgets import (
   QStatusBar,
 )
 from PySide6.QtCore import Qt, QSize
-from PySide6.QtGui import QAction, QIcon
+from PySide6.QtGui import QAction, QIcon, QKeySequence
 
 class MainWindow(QMainWindow):
   def __init__(self):
@@ -26,6 +26,7 @@ class MainWindow(QMainWindow):
     btn_action.setStatusTip("Это Ваша кнопка")
     btn_action.triggered.connect(self.tb_btn_clicked)
     btn_action.setCheckable(True)
+    btn_action.setShortcut(QKeySequence("Ctrl+p"))
     toolbar.addAction(btn_action)
 
     toolbar.addSeparator()
@@ -34,6 +35,7 @@ class MainWindow(QMainWindow):
     btn_action2.setStatusTip("Это Ваша кнопка 2")
     btn_action2.triggered.connect(self.tb_btn_clicked)
     btn_action2.setCheckable(True)
+    btn_action2.setShortcut(QKeySequence("Ctrl+o"))
     toolbar.addAction(btn_action2)
 
     toolbar.addWidget(QLabel("Чекбокс"))
