@@ -22,7 +22,7 @@ class MainWindow(QMainWindow):
     toolbar.setIconSize(QSize(16, 16))
     self.addToolBar(toolbar)
 
-    btn_action = QAction(QIcon("materials//6_python//2_PySide6//5_menus//bug.png"), "&Ваша кнопка", self)
+    btn_action = QAction(QIcon("materials//6_python//2_PySide6//5_menus//bug.svg"), "&Ваша кнопка", self)
     btn_action.setStatusTip("Это Ваша кнопка")
     btn_action.triggered.connect(self.tb_btn_clicked)
     btn_action.setCheckable(True)
