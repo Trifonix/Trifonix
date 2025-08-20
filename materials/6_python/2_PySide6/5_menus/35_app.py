@@ -32,6 +32,19 @@ class MainWindow(QMainWindow):
     button_action.setCheckable(True)
     toolbar.addAction(button_action)
 
+    toolbar.addSeparator()
+
+    button_action2 = QAction(QIcon("materials//6_python//2_PySide6//5_menus//bug.png"), "Ваша кнопка 2", self)
+    button_action2.setStatusTip("Это - Ваша кнопка 2")
+    button_action2.triggered.connect(self.toolbar_button_clicked)
+    button_action2.setCheckable(True)
+    toolbar.addAction(button_action2)
+
+    toolbar.addSeparator()
+
+    toolbar.addWidget(QLabel("Справа - чекбокс "))
+    toolbar.addWidget(QCheckBox())
+
     self.setStatusBar(QStatusBar(self))
 
   def toolbar_button_clicked(self, s):
