@@ -23,15 +23,15 @@ class MainWindow(QMainWindow):
   def button_clicked(self, s):
     print("Клац!", s)
 
-    dlg = CustomDialog()
+    dlg = CustomDialog(self)
     if dlg.exec():
       print("Принято!")
     else:
       print("Отмена!")
 
 class CustomDialog(QDialog):
-  def __init__(self):
-    super().__init__()
+  def __init__(self, parent=None):
+    super().__init__(parent)
 
     self.setWindowTitle("Привет!")
 
