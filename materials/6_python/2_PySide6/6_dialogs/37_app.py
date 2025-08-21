@@ -1,6 +1,6 @@
 import sys
 
-from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton
+from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton, QDialog
 
 class MainWindow(QMainWindow):
   def __init__(self):
@@ -14,6 +14,10 @@ class MainWindow(QMainWindow):
 
   def button_clicked(self, s):
     print("Клац!", s)
+
+    dlg = QDialog(self)
+    dlg.setWindowTitle("Привет!")
+    dlg.exec()
 
 app = QApplication(sys.argv)
 window = MainWindow()
