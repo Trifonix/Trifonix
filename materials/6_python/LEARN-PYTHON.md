@@ -12,6 +12,14 @@ ___
 
 ___
 
+Эффективное обучение Python : https://www.youtube.com/watch?v=ELsSvIJnu_Q
+
+___
+
+Лучший курс по Python : https://www.youtube.com/playlist?list=PLbr8rVGhPD0WQgO97Ao67Q-QVuSbm_Zpz
+
+___
+
 Python Программирование с Нуля! Полный Курс Python для Начинающих с нуля! [*12 часов из 41] : https://www.youtube.com/watch?v=lYMLLI-MJek
 
 ___
