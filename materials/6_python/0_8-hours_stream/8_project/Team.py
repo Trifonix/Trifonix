@@ -1,6 +1,9 @@
 from datetime import datetime
 from Task import Task
 
+class Employee:
+  pass
+
 class Team:
   class TaskManager:
     def __init__(self, task_list=[]):
