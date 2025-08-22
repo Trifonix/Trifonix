@@ -8,7 +8,7 @@ ___
 
 ___
 
-Программирование на Python с нуля за 8 часов : https://www.youtube.com/watch?v=Qkpk-AiW0yc
+✅ Программирование на Python с нуля за 8 часов : https://www.youtube.com/watch?v=Qkpk-AiW0yc
 
 ___
 
