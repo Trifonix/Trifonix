@@ -5,4 +5,5 @@ def b():
   print('hello world')
   return 'Thx!'
 
-print('it was PRINT')
+if __name__ == "__main__":
+  print('it was PRINT')

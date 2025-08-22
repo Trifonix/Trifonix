@@ -1,5 +1,5 @@
-import funcs
+from funcs import a as first, b as second
 
-print(funcs.b())
+print(second())
 
-print(funcs.a(7))
+print(first(7))
