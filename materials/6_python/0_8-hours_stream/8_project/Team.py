@@ -9,14 +9,14 @@ class Team:
       self.task_list = task_list
 
     def new_task(self, *args, **kwargs):
-      t = Task(*args, **kwargs)
+      if isinstance(args[0], Task):
+        t = args[0]
+      else:
+        t = Task(*args, **kwargs)
       self.task_list.append(t)
 
-    def del_task(self, id):
-      for x in self.task_list:
-        if x.id == id:
-          self.task_list.remove(x)
-          break
+    def del_task(self, t):
+      self.task_list.remove(t)
     
     def show_all(self):
       for x in self.task_list:
@@ -51,7 +51,7 @@ class Team:
   def get_name(self):
     return self.name
   def get_desc(self):
-    return self.desk
+    return self.desc
   def get_list(self):
     return self.list
   def get_task_mngr(self):
@@ -60,7 +60,7 @@ class Team:
   def set_name(self, value):
     self.name = value
   def set_desc(self, value):
-    self.desk = value
+    self.desc = value
   def set_list(self, value):
     self.list = []
     for x in value:
@@ -77,6 +77,6 @@ class Team:
     tm = self.get_task_mngr()
     tm.new_task(*args, **kwargs)
 
-  def del_task(self, id):
+  def del_task(self, t):
     tm = self.get_task_mngr()
-    tm.del_task(id)
+    tm.del_task(t)
