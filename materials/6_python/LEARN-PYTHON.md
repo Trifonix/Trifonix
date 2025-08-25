@@ -12,7 +12,7 @@ ___
 
 ___
 
-Эффективное обучение Python : https://www.youtube.com/watch?v=ELsSvIJnu_Q
+✅ Эффективное обучение Python : https://www.youtube.com/watch?v=ELsSvIJnu_Q
 
 ___
 
