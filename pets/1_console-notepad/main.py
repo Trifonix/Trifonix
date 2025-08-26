@@ -19,7 +19,8 @@ while True:
     print('\nМеню:')
     print('1. Добавить заметку')
     print('2. Показать все заметки')
-    print('3. Выйти')
+    print('3. Удалить заметку')
+    print('4. Выйти')
 
     choice = input('Выберите действие: ')
 
@@ -35,6 +36,10 @@ while True:
         notebook.show_notes()
 
     elif '3' == choice:
+        note_for_delete = input('\nВведите номер заметки для удаления: ')
+        notebook.delete_note(int(note_for_delete))
+
+    elif '4' == choice:
         print('Выход...')
         break
 
