@@ -18,3 +18,7 @@ class Notebook:
             print(f'Заметка "{removed.title}" была удалена')
         else:
             print('Неверный номер заметки.')
+
+    def sort_notes(self, rev=True):
+        self.notes.sort(key=lambda note: note.created_at, reverse=rev)
+        print('Заметки отсортированы по дате создания.')

@@ -20,7 +20,8 @@ while True:
     print('1. Добавить заметку')
     print('2. Показать все заметки')
     print('3. Удалить заметку')
-    print('4. Выйти')
+    print('4. Сортировать заметки по дате')
+    print('5. Выйти')
 
     choice = input('Выберите действие: ')
 
@@ -40,6 +41,10 @@ while True:
         notebook.delete_note(int(note_for_delete))
 
     elif '4' == choice:
+        order = input('Сортировать от новых к старым? (Да/Нет) ').lower()
+        notebook.sort_notes(rev=(order == 'да'))
+
+    elif '5' == choice:
         print('Выход...')
         break
 
