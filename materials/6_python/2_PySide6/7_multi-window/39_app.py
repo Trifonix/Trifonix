@@ -33,7 +33,9 @@ class MainWindow(QMainWindow):
     def show_new_window(self, checked):
         if self.w is None:
             self.w = AnotherWindow()
-        self.w.show()
+            self.w.show()
+        else:
+            self.w = None
 
 app = QApplication(sys.argv)
 window = MainWindow()
