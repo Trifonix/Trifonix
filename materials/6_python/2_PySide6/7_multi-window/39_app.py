@@ -1,3 +1,5 @@
+from random import randint
+
 import sys
 
 from PySide6.QtWidgets import (
@@ -18,7 +20,7 @@ class AnotherWindow(QWidget):
     def __init__(self):
         super().__init__()
         layout = QVBoxLayout()
-        self.label = QLabel("Иное Окно")
+        self.label = QLabel("Иное Окно % d" % randint(0, 100))
         layout.addWidget(self.label)
         self.setLayout(layout)
 
