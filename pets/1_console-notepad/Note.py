@@ -7,4 +7,4 @@ class Note:
         self.created_at = datetime.now()
 
     def __str__(self):
-        return f'[{self.created_at}] {self.title}: {self.content}'
+        return f'[{self.created_at.strftime("%Y-%m-%d_%H:%M")}] {self.title}: {self.content}'
