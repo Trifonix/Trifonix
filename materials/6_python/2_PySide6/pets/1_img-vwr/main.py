@@ -58,9 +58,9 @@ class MainWindow(QMainWindow):
         
         it_was_best = self.db_manager.get_image(path)
         if it_was_best:
-            self.to_best_button.setText("В Избранном")
+            self.to_best_button.setText("В Избранном⭐")
         else:
-            self.to_best_button.setText("В Избранное⭐")
+            self.to_best_button.setText("В Избранное")
 
         pixmap = QPixmap(path)
         self.image_label.setPixmap(
