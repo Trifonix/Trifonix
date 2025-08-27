@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MiniSocial - Главная</title>
+</head>
+<body>
+    <h1>Все посты</h1>
+    <ul>
+        {% for post in posts %}
+            <li>
+                <b>{{ post.author.username }}:</b> {{ post.content }}
+            </li>
+        {% else %}
+            <li>Постов пока нет</li>
+        {% endfor %}
+    </ul>
+    <a href="/register">Регистрация</a> | <a href="/login">Логин</a>
+</body>
+</html>

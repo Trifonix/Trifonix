@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Создать пост</title>
+</head>
+<body>
+    <h1>Создать новый пост</h1>
+    <form action="/posts/create" method="post">
+        <label>Ваш username:</label><br>
+        <input type="text" name="author_username" required><br>
+        <label>Текст поста:</label><br>
+        <textarea name="content" rows="3" cols="40" required></textarea><br>
+        <button type="submit">Создать</button>
+    </form>
+    <a href="/">На главную</a>
+</body>
+</html>

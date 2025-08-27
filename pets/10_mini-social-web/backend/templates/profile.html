@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Профиль {{ user.username }}</title>
+</head>
+<body>
+    <h1>Профиль: {{ user.username }}</h1>
+    <h2>Посты:</h2>
+    <ul>
+        {% for post in posts %}
+            <li>{{ post.content }}</li>
+        {% else %}
+            <li>Постов пока нет</li>
+        {% endfor %}
+    </ul>
+    <a href="/posts/create">Создать пост</a> | <a href="/">На главную</a>
+</body>
+</html>
