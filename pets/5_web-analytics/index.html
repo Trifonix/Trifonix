@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Статистика посещений</title>
+</head>
+<body>
+    <h1>График посещений</h1>
+    <button onclick="loadStats()">Обновить график</button>
+    <br><br>
+    <img id="visitsGraph" src="" alt="График посещений">
+    <script>
+        async function loadStats() {
+            try {
+                const response = await fetch('http://127.0.0.1:8000/stats');
+                const data = await response.json();
+                const imgBase64 = data.graph_base64;
+                document.getElementById('visitsGraph').src = 'data:image/png;base64,' + imgBase64;
+            } catch (error) {
+                console.error('Ошибка при загрузке статистики:', error);
+            }
+        }
+        loadStats();
+    </script>
+</body>
+</html>
