@@ -18,28 +18,36 @@ class MainWindow(QMainWindow):
         super().__init__()
         self.setWindowTitle("Просмотрщик картинок")
         self.setGeometry(100, 100, 800, 600)
+
+        self.image_manager = ImageManager()
         
         self.image_label = QLabel(self)
         self.image_label.setAlignment(Qt.AlignCenter)
         
         self.next_button = QPushButton("Следующая")
         self.prev_button = QPushButton("Предыдущая")
+        self.open_button = QPushButton("Открыть папку")
         
-        layout = QVBoxLayout()
-        layout.addWidget(self.image_label)
+        main_layout = QVBoxLayout()
+        main_layout.addWidget(self.image_label)
         
         buttons_layout = QHBoxLayout()
+        buttons_layout.addWidget(self.open_button)
+        buttons_layout.addStretch()
         buttons_layout.addWidget(self.prev_button)
         buttons_layout.addWidget(self.next_button)
         
-        layout.addLayout(buttons_layout)
+        main_layout.addLayout(buttons_layout)
         
         container = QWidget()
-        container.setLayout(layout)
+        container.setLayout(main_layout)
         self.setCentralWidget(container)
         
         self.next_button.clicked.connect(self.show_next_image)
         self.prev_button.clicked.connect(self.show_prev_image)
+        self.open_button.clicked.connect(self.open_directory)
+
+        self.image_label.setScaledContents(True)
         
     def show_image(self, path):
         pixmap = QPixmap(path)
