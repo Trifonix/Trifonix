@@ -1,4 +1,4 @@
-import sys
+import sys, os
 from PySide6.QtWidgets import (
     QApplication, 
     QMainWindow, 
@@ -17,7 +17,7 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Просмотрщик картинок")
-        self.setGeometry(100, 100, 800, 600)
+        self.setGeometry(100, 100, 600, 600)
 
         self.image_manager = ImageManager()
         
@@ -46,10 +46,12 @@ class MainWindow(QMainWindow):
         self.next_button.clicked.connect(self.show_next_image)
         self.prev_button.clicked.connect(self.show_prev_image)
         self.open_button.clicked.connect(self.open_directory)
-
-        self.image_label.setScaledContents(True)
         
     def show_image(self, path):
+        if not os.path.exists(path):
+            print(f"Ошибка: Файл не найден по пути: {path}")
+            return
+            
         pixmap = QPixmap(path)
         self.image_label.setPixmap(
             pixmap.scaled(
@@ -58,12 +60,26 @@ class MainWindow(QMainWindow):
                 Qt.SmoothTransformation
             )
         )
+    
+    def open_directory(self):
+        directory = QFileDialog.getExistingDirectory(self, "Выберите папку с картинками")
+        if directory:
+            self.image_manager.scan_directory(directory)
+            current_path = self.image_manager.get_current_image()
+            if current_path:
+                self.show_image(current_path)
 
     def show_next_image(self):
-        print("Следующая картинка")
+        self.image_manager.next_image()
+        current_path = self.image_manager.get_current_image()
+        if current_path:
+            self.show_image(current_path)
     
     def show_prev_image(self):
-        print("Предыдущая картинка")
+        self.image_manager.prev_image()
+        current_path = self.image_manager.get_current_image()
+        if current_path:
+            self.show_image(current_path)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
