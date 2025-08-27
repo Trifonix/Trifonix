@@ -12,6 +12,7 @@ from PySide6.QtWidgets import (
 from PySide6.QtGui import QPixmap, QTransform
 from PySide6.QtCore import Qt
 from ImageManager import ImageManager
+from DatabaseManager import DatabaseManager
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -19,7 +20,8 @@ class MainWindow(QMainWindow):
         self.setWindowTitle("Просмотрщик картинок")
         self.setGeometry(100, 100, 600, 600)
 
-        self.image_manager = ImageManager()
+        self.db_manager = DatabaseManager()
+        self.image_manager = ImageManager(self.db_manager)
         
         self.image_label = QLabel(self)
         self.image_label.setAlignment(Qt.AlignCenter)
@@ -27,12 +29,14 @@ class MainWindow(QMainWindow):
         self.next_button = QPushButton("Следующая")
         self.prev_button = QPushButton("Предыдущая")
         self.open_button = QPushButton("Открыть папку")
+        self.to_best_button = QPushButton("В Избранное")
         
         main_layout = QVBoxLayout()
         main_layout.addWidget(self.image_label)
         
         buttons_layout = QHBoxLayout()
         buttons_layout.addWidget(self.open_button)
+        buttons_layout.addWidget(self.to_best_button)
         buttons_layout.addStretch()
         buttons_layout.addWidget(self.prev_button)
         buttons_layout.addWidget(self.next_button)
@@ -46,6 +50,7 @@ class MainWindow(QMainWindow):
         self.next_button.clicked.connect(self.show_next_image)
         self.prev_button.clicked.connect(self.show_prev_image)
         self.open_button.clicked.connect(self.open_directory)
+        self.to_best_button.clicked.connect(self.put_to_best_images)
         
     def show_image(self, path):
         if not os.path.exists(path):
@@ -80,6 +85,9 @@ class MainWindow(QMainWindow):
         current_path = self.image_manager.get_current_image()
         if current_path:
             self.show_image(current_path)
+    
+    def put_to_best_images(self):
+        pass
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

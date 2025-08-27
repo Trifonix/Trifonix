@@ -2,7 +2,7 @@ import sqlite3
 import hashlib
 
 class DatabaseManager:
-    def __init__(self, db_name="images.db"):
+    def __init__(self, db_name="materials/6_python/2_PySide6/pets/1_img-vwr/images.db"):
         self.conn = sqlite3.connect(db_name)
         self.cursor = self.conn.cursor()
         self.create_tables()

@@ -1,7 +1,7 @@
 import os
 
 class ImageManager:
-    def __init__(self):
+    def __init__(self, db_manager):
         self.images = []
         self.current_index = -1
 
