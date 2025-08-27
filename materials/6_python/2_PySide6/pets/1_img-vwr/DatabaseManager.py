@@ -39,4 +39,17 @@ class DatabaseManager:
         return md5_hash
 
     # TODO
-    # Методы для добавления/удаления тегов, избранного и т.д.
+    # Методы для добавления/удаления тегов
+
+    def update_best_image(self, path, it_was_best):
+        md5_hash = self.add_image(path)
+        it_was_best = int(not it_was_best)
+        self.cursor.execute("UPDATE images SET is_favorite = ? WHERE md5_hash = ?", (it_was_best, md5_hash,))
+        self.conn.commit()
+        return md5_hash
+
+    def get_image(self, path):
+        md5_hash = self.add_image(path)
+        self.cursor.execute("SELECT is_favorite FROM images WHERE md5_hash = ?", (md5_hash,))
+        is_best = self.cursor.fetchone()
+        return is_best[0]

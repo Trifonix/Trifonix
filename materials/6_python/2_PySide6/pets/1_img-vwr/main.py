@@ -54,9 +54,14 @@ class MainWindow(QMainWindow):
         
     def show_image(self, path):
         if not os.path.exists(path):
-            print(f"Ошибка: Файл не найден по пути: {path}")
             return
-            
+        
+        it_was_best = self.db_manager.get_image(path)
+        if it_was_best:
+            self.to_best_button.setText("В Избранном")
+        else:
+            self.to_best_button.setText("В Избранное⭐")
+
         pixmap = QPixmap(path)
         self.image_label.setPixmap(
             pixmap.scaled(
@@ -87,7 +92,11 @@ class MainWindow(QMainWindow):
             self.show_image(current_path)
     
     def put_to_best_images(self):
-        pass
+        current_path = self.image_manager.get_current_image()
+        it_was_best = self.db_manager.get_image(current_path)
+        if current_path:
+            self.db_manager.update_best_image(current_path, it_was_best)
+            self.show_image(current_path)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
