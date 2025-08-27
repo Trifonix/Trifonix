@@ -16,14 +16,14 @@ from ImageManager import ImageManager
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Просмотрщик изображений")
+        self.setWindowTitle("Просмотрщик картинок")
         self.setGeometry(100, 100, 800, 600)
         
         self.image_label = QLabel(self)
         self.image_label.setAlignment(Qt.AlignCenter)
         
-        self.next_button = QPushButton("Следующее")
-        self.prev_button = QPushButton("Предыдущее")
+        self.next_button = QPushButton("Следующая")
+        self.prev_button = QPushButton("Предыдущая")
         
         layout = QVBoxLayout()
         layout.addWidget(self.image_label)
@@ -43,7 +43,13 @@ class MainWindow(QMainWindow):
         
     def show_image(self, path):
         pixmap = QPixmap(path)
-        self.image_label.setPixmap(pixmap.scaled(self.image_label.size(), Qt.KeepAspectRatio, Qt.SmoothTransformation))
+        self.image_label.setPixmap(
+            pixmap.scaled(
+                self.image_label.size(), 
+                Qt.KeepAspectRatio, 
+                Qt.SmoothTransformation
+            )
+        )
 
     def show_next_image(self):
         print("Следующая картинка")
