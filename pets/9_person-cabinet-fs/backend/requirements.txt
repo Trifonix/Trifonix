@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+passlib[bcrypt]
+python-multipart
+jinja2
+
+# pip install -r requirements.txt

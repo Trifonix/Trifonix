@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Личный кабинет</title>
+</head>
+<body>
+    <h1>Все пользователи</h1>
+    <ul>
+        {% for user in users %}
+            <li><a href="/profile/{{ user.username }}">{{ user.username }}</a> ({{ user.email }})</li>
+        {% else %}
+            <li>Пользователей нет</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Регистрация</h1>
+    <form action="/register" method="post">
+        <label>Username:</label><br>
+        <input type="text" name="username" required><br>
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br>
+        <label>Password:</label><br>
+        <input type="password" name="password" required><br>
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+
+    <h1>Логин</h1>
+    <form action="/login" method="post">
+        <label>Username:</label><br>
+        <input type="text" name="username" required><br>
+        <label>Password:</label><br>
+        <input type="password" name="password" required><br>
+        <button type="submit">Войти</button>
+    </form>
+</body>
+</html>
