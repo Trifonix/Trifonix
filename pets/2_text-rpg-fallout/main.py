@@ -1,10 +1,11 @@
+from Hero import Hero
 from Character import Character
+from Battle import Battle
 
-player = Character(name="Игрок", hp=100, attack_power=20)
-enemy = Character(name="Гоблин", hp=50, attack_power=10)
+player = Hero(name="Выживший", hp=120, attack_power=5)
+player.add_item("Аптечка")
 
-print(player)
-print(enemy)
+enemy = Character(name="Супермутант", hp=80, attack_power=15)
 
-player.attack(enemy)
-enemy.attack(player)
+battle = Battle(player, enemy)
+battle.start()

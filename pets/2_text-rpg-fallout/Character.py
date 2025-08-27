@@ -1,3 +1,5 @@
+from random import randint
+
 class Character:
     def __init__(self, name: str, hp: int, attack_power: int):
         self.name = name
@@ -9,10 +11,11 @@ class Character:
 
     def take_damage(self, damage: int):
         self._hp = max(self._hp - damage, 0)
-        print(f"{self.name} получил {damage} урона. Осталось {self._hp} HP.\n")
+        print(f"{self.name} получил {damage} урона. Осталось {self._hp} HP.")
 
     def attack(self, other: "Character"):
-        print(f"{self.name} атакует {other.name}!")
+        self.attack_power += randint(1, 10)
+        print(f"\n{self.name} атакует {other.name}!")
         other.take_damage(self.attack_power)
 
     def __str__(self):
