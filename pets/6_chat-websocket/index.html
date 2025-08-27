@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Чат WebSocket</title>
+</head>
+<body>
+    <h1>Чат WebSocket</h1>
+    <input type="text" id="nicknameInput" placeholder="Введите ник">
+    <button onclick="connectChat()">Подключиться</button>
+    <br><br>
+    <input type="text" id="messageInput" placeholder="Введите сообщение">
+    <button onclick="sendMessage()">Отправить</button>
+    <ul id="messages"></ul>
+
+    <script>
+        let ws;
+
+        function connectChat() {
+            const nickname = document.getElementById("nicknameInput").value;
+            ws = new WebSocket(`ws://127.0.0.1:8000/ws/${nickname}`);
+            
+            ws.onmessage = function(event) {
+                const li = document.createElement("li");
+                li.innerHTML = event.data;
+                document.getElementById("messages").appendChild(li);
+            };
+        }
+
+        function sendMessage() {
+            const input = document.getElementById("messageInput");
+            if (ws && ws.readyState === WebSocket.OPEN) {
+                ws.send(input.value);
+                input.value = "";
+            }
+        }
+    </script>
+</body>
+</html>
