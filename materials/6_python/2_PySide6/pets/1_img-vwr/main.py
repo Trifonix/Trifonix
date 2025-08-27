@@ -11,6 +11,7 @@ from PySide6.QtWidgets import (
 )
 from PySide6.QtGui import QPixmap, QTransform
 from PySide6.QtCore import Qt
+from ImageManager import ImageManager
 
 class MainWindow(QMainWindow):
     def __init__(self):
