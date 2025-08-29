@@ -1,18 +1,6 @@
 from Note import Note
 from Notebook import Notebook
 
-'''
-first_note = Note('Моя заметка', 'Описание моей заметки')
-second_note = Note('Моя заметка2', 'Описание моей заметки2')
-
-first_notebook = Notebook()
-
-first_notebook.add_note(first_note)
-first_notebook.add_note(second_note)
-
-first_notebook.show_notes()
-'''
-
 notebook = Notebook()
 
 while True:
@@ -38,7 +26,10 @@ while True:
 
     elif '3' == choice:
         note_for_delete = input('\nВведите номер заметки для удаления: ')
-        notebook.delete_note(int(note_for_delete))
+        try:
+            notebook.delete_note(int(note_for_delete))
+        except:
+            print('\nВведите число, пожалуйста - номер заметки')
 
     elif '4' == choice:
         order = input('Сортировать от новых к старым? (Да/Нет) ').lower()
