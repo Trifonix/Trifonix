@@ -39,8 +39,13 @@ for (let key in person) {
 // })
 
 const logger = {
-    keys() {
-        console.log('Object keys', Object.keys(this));
+
+    keys(withText = true) {
+        if (withText) {
+            console.log('Object keys: ', Object.keys(this));
+        } else {
+            console.log(Object.keys(this));
+        }
     },
 
     keysAndValues() {
@@ -50,3 +55,16 @@ const logger = {
         })
     }
 }
+
+// logger.keys()
+// logger.keysAndValues()
+// logger.keys(person)
+
+const bound = logger.keys.bind(person)
+bound(false)
+
+// logger.keys.bind(person)()
+
+logger.keys.call(person, false)
+
+logger.keys.apply(person, [true])
