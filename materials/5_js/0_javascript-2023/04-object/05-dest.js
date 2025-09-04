@@ -27,8 +27,26 @@ const {age, name: firstname = 'TEST', languages} = person
 for (let key in person) {
     // console.log(key);
     if (person.hasOwnProperty(key)) {
-        console.log(person[key]);
+        // console.log(person[key]);
     }
 }
 // console.log([1, 2]);
 
+// console.dir(Object);
+
+// Object.keys(person).forEach((key) => {
+//     console.log(person[key] + '!!');
+// })
+
+const logger = {
+    keys() {
+        console.log('Object keys', Object.keys(this));
+    },
+
+    keysAndValues() {
+        Object.keys(this).forEach((key) => {
+            console.log('Key: ', key);
+            console.log('Value: ', this[key]);
+        })
+    }
+}
