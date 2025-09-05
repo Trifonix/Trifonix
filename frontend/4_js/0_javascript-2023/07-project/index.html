@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="app.js" defer></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      color: whitesmoke
+    }
+    body {
+      background-color: darkslategrey;
+    }
+    .container {
+      width: 60%;
+      margin: 4em auto;
+    }
+    h1 {
+      font-size: 3em;
+    }
+    #filter {
+      width: 400px;
+      padding: 1em;
+      border-radius: 1em;
+      margin-bottom: 10px;
+      color: #141414;
+    }
+    .list-group-item {
+      background-color: lightcoral;
+      color: darkred;
+      padding: 0.2em 0.6em;
+      border-radius: 0.4em;
+      font-weight: bold;
+      list-style: none;
+      text-align: center;
+      margin: 0.2em 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Users list</h1>
+    <input type="text" placeholder="Username" id="filter">
+    <ul id="list"></ul>
+  </div>
+</body>
+</html>

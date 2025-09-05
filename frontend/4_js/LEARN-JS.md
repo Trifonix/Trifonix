@@ -4,7 +4,7 @@
 
 ---
 
-JavaScript c Нуля - Курс для начинающих С ПРАКТИКОЙ (2025) : https://www.youtube.com/watch?v=fcMcf_4PjfI
+✅ JavaScript c Нуля - Курс для начинающих С ПРАКТИКОЙ (2025) : https://www.youtube.com/watch?v=fcMcf_4PjfI
 
 ---
 
