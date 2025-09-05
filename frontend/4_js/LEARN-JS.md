@@ -48,8 +48,18 @@ Chrome DevTools. Полный ГАЙД для Тестировщиков : https
 
 Современный учебник JavaScript : https://learn.javascript.ru/
 
+---
+
 Дока : https://doka.guide/js/
 
-ЛитКод : https://leetcode.com/
+MDN : https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference
+
+---
+
+LeetCode : https://leetcode.com/
+
+Грокаем алгоритмы - Бхаргава Адитья
+
+---
 
 Выразительный JavaScript - Марейн Хавербеке
