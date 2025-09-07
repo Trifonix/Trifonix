@@ -1,0 +1,3 @@
+# String
+
+String.prototype.split()
