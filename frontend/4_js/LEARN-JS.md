@@ -54,6 +54,8 @@ Chrome DevTools. Полный ГАЙД для Тестировщиков : https
 
 MDN : https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference
 
+JavaScript. Подробное руководство - Дэвид Флэнаган
+
 ---
 
 LeetCode : https://leetcode.com/
