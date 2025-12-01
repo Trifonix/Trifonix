@@ -45,7 +45,7 @@ class AndroidDeveloper(IDeveloper):
   def get_phone(self) -> Phone:
     return self.__phone
 
-# Создание класса разрабочика Iphone-телефона
+# Создание класса разработчика Iphone-телефона
 class IphoneDeveloper(IDeveloper):
   def __init__(self):
     self.__phone = Phone()
