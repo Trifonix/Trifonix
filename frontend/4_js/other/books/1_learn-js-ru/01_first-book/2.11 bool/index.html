@@ -12,15 +12,40 @@
     // тут 1 -> true, 0 -> false
     // if (1 || 0) {
     //   alert('истинно!');
-    // }
+    // }p[]
 
     // let fn = "";
     // let ln = "";
     // let nn = "2";
     // alert(fn || ln || nn || "text");
 
-    true || alert('no');
-    false || alert('yes');
+    // true || alert('no');
+    // false || alert('yes');
+
+    let johnHasCar;
+    console.log(johnHasCar);
+    johnHasCar ||= "John has not car";
+    console.log(johnHasCar);
+
+    let hour = 12;
+    let minute = 42;
+    if (12 === hour && 42 === minute) {
+      console.log('It\'s 12:42');
+    }
+
+    console.log(null && 5) // null
+    console.log(0 && "text"); // 0
+
+    let x = 42;
+    if (x > 0) console.log('more than 42');
+    x > 0 && console.log('more than 42 too');
+
+    let greeting = "Hello";
+    greeting &&= greeting + " World!";
+    console.log(greeting);
+
+    console.log(!true); // false
+    console.log(!!42); // true
   </script>
 </body>
 

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let value = NaN;
+
+    value &&= 10; // NaN
+    value ||= 20; // 20
+    value &&= 30; // 30
+    value ||= 40; // 30
+
+    alert(value); // 30
+  </script>
+</body>
+
+</html>

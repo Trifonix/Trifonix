@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let login, pass;
+    login = prompt('Ваш логин?');
+    if (login == 'Админ') {
+
+      pass = prompt('Введите пароль');
+      if (pass == 'Я главный') {
+        alert('Здравствуйте!');
+      } else if (pass == '' || pass == null) {
+        alert('Отменено');
+      } else {
+        alert('Неверный пароль');
+      }
+
+    } else if (login == '' || login == null) {
+      alert('Отменено');
+    } else {
+      alert('Я Вас не знаю!');
+    }
+
+  </script>
+</body>
+
+</html>
