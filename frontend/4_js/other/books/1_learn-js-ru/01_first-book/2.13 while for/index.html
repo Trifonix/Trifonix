@@ -9,11 +9,32 @@
 
 <body>
   <script>
-    let i = 0;
-    while (i < 3) {
-      console.log(i);
-      i++;
+    // let i = 0;
+    // while (i < 3) {
+    //   console.log(i);
+    //   i++;
+    // }
+
+    let i = 5;
+    do {
+      console.log('i =', i);
+      i--;
+    } while (i !== 0);
+
+    // for (let x = 0; x <= 10; x++) {
+    //   console.log('Привет');
+    //   console.log(`Сейчас x равно ${x}`);
+    // }
+
+    let y = 10;
+    console.log('заходим');
+    firstlabel: for (; y > 0; y--) {
+      console.log('итерация первого цикла №', y);
+      for (let j = 0; j <= 5; j++) {
+        if (j === 4 && y === 6) break firstlabel;
+      }
     }
+    console.log('вышли');
   </script>
 </body>
 
