@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // let num = 0;
+    // while (num < 100) {
+    //   num = prompt('Введите число больше 100');
+    //   if (num === null) {
+    //     break;
+    //   }
+    // }
+
+    let num;
+    do {
+      num = prompt('Введите число больше 100', 0);
+    } while (num <= 100 && num);
+    console.log(num);
+  </script>
+</body>
+
+</html>
