@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // Перепишите с использованием функции-стрелки
+    // function ask(question, yes, no) {
+    //   if (confirm(question)) yes()
+    //   else no();
+    // }
+
+    // ask(
+    //   "Вы согласны?",
+    //   function() { alert("Вы согласились."); },
+    //   function() { alert("Вы отменили выполнение."); }
+    // );
+
+    // arrow function
+    let ask = (q, y, n) => confirm(q) ? y() : n();
+    ask('Вы согласны?', () => alert('Сказали ДА'), () => alert('Отменили'));
+
+    // Правильный ответ
+    // function ask(question, yes, no) {
+    //   if (confirm(question)) yes()
+    //   else no();
+    // }
+
+    // ask(
+    //   "Вы согласны?",
+    //   () => alert("Вы согласились."),
+    //   () => alert("Вы отменили выполнение.")
+    // );
+  </script>
+</body>
+</html>
