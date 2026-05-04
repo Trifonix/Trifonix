@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Плохой стиль
+
+        function pow(x,n) // тут первую {
+        {
+            let result=1; // пробелы вокруг =
+            for(let i=0;i<n;i++) {result*=x;} // пробел после for и for не на одной строке бы и мало пробелов
+            return result;
+        }
+
+        let x=prompt("x?",''), n=prompt("n?",'') // забыли ; и мало пробелов
+        if (n<=0) // {
+        {
+            alert(`Степень ${n} не поддерживается, введите целую степень, большую 0`); // на 2 строки лучше разделить
+        }
+        else
+        {
+            alert(pow(x,n)) // забыли ; и мало пробелов
+        }
+
+        // ОТВЕТ
+
+        // function pow(x, n) {
+        //     let result = 1;
+
+        //     for (let i = 0; i < n; i++) {
+        //         result *= x;
+        //     }
+
+        //     return result;
+        // }
+
+        // let x = prompt("x?", "");
+        // let n = prompt("n?", "");
+
+        // if (n <= 0) {
+        //     alert(`Степень ${n} не поддерживается,
+        //         введите целую степень, большую 0`);
+        // } else {
+        //     alert( pow(x, n) );
+        // }
+    </script>
+</body>
+</html>
