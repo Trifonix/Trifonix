@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Напишите функцию isEmpty(obj), которая возвращает true, если у объекта нет свойств, иначе false.
+        
+        function isEmpty(obj) {
+            for (let key in obj) {
+                if (key !== undefined) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        
+        let schedule = {};
+        alert( isEmpty(schedule) ); // true
+        schedule["8:30"] = "get up";
+        alert( isEmpty(schedule) ); // false
+
+        // Правильный ответ
+        // Просто в цикле перебираем свойства объекта и возвращаем false, как только встречаем свойство.
+        function isEmpty(obj) {
+            for (let key in obj) {
+                // если тело цикла начнет выполняться - значит в объекте есть свойства
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

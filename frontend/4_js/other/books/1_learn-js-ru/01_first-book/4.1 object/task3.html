@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Можно ли изменить объект, объявленный с помощью const? Как вы думаете?
+        const user = {
+            name: "John"
+        };
+
+        // это будет работать?
+        user.name = "Pete";
+
+        // Сам объект user тут изменить нельзя, а изменить его содержимое можно
+        // user = null; - нельзя
+        // user.name = "Pete" - можно
+
+        // ПРАВИЛЬНЫЙ ОТВЕТ
+        // Конечно, это сработает без проблем.
+        // Объявление const защищает только саму переменную от изменений.
+        // Другими словами, user хранит ссылку на объект. И это не может быть изменено. Но содержимое объекта менять можно.
+        const user = {
+            name: "John"
+        };
+
+        // Работает!
+        user.name = "Pete";
+
+        // Ошибка
+        user = 123;
+    </script>
+</body>
+</html>

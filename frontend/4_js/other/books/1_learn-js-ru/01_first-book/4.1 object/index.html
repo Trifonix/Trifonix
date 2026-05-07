@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user = new Object(); // конструктор объекта
+        let admin = {}; // литерал объекта
+
+        let person = {
+            name: "Neo",
+            age: 28,
+            isAgent: false,
+            "kill Smith": true,
+        };
+
+        // alert(person.isAgent);
+        delete person.name;
+        // alert(person.name);
+
+        // alert(person["kill Smith"]);
+
+        function makeAgent(name, age, alive) {
+            return {
+                name,
+                age,
+                alive,
+            };
+        }
+        let agent = makeAgent("Smith", 33, false);
+        // alert("Создан агент: " + agent.name + " : " + agent.age + " - " + agent.alive);
+
+        // for (let key in agent) {
+        //     alert(`Ключ: ${key} , Значение: ${agent[key]}`);
+        // }
+
+        // Math.trunc - встроенная функция, которая удаляет десятичную часть
+        alert( String(Math.trunc(Number("49"))) ); // "49", то же самое ⇒ свойство целочисленное
+        alert( String(Math.trunc(Number("+49"))) ); // "49", не то же самое, что "+49" ⇒ свойство не целочисленное
+        alert( String(Math.trunc(Number("1.2"))) ); // "1", не то же самое, что "1.2" ⇒ свойство не целочисленное
+    </script>
+</body>
+</html>
