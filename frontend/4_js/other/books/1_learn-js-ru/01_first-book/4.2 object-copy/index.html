@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let user = {
+      name: "John",
+      sizes: {
+        height: 182,
+        width: 50
+      }
+    };
+
+    let clone = Object.assign({}, user);
+
+    alert( user.sizes === clone.sizes ); // true, тот же объект
+
+    // user и clone обладают общим свойством sizes
+    user.sizes.width++;       // изменяем свойства в первом объекте
+    user.sizes.width++; 
+    alert(clone.sizes.width); // 52, видим результат в другом
+  </script>
+</body>
+</html>
