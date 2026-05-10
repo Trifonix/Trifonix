@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // Использование "this" в литерале объекта
+    // Здесь функция makeUser возвращает объект.
+    // Каким будет результат при обращении к свойству объекта ref? Почему?
+    function makeUser() {
+      return {
+        name: "John",
+        ref: this
+      };
+    }
+    let user = makeUser();
+    alert( user.ref.name ); // Каким будет результат?
+
+    // В ref запишется ссылка на текущий объект - user
+    // При выводе user.ref.name - будет Johm - аналогично user.name
+
+    // ПРАВИЛЬНЫЙ ОТВЕТ
+    // Ответ: ошибка.
+
+    // Значение this одно для всей функции, блоки кода и объектные литералы на него не влияют.
+    // Таким образом, ref: this фактически принимает текущее this функции makeUser().
+
+    // Вот противоположный случай:
+    function makeAdmin() {
+      return {
+        name: "Smith",
+        ref() {
+          return this;
+        }
+      };
+    }
+    let admin = makeAdmin();
+    alert( admin.ref().name ); // Smith
+  </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let user = {
+      name: "Neo",
+      age: 28,
+    };
+    user.sayHi = function() {
+      alert("Hi");
+    };
+    // user.sayHi();
+
+    let admin = {
+      sayHello() {
+        alert("I am admin!");
+      }
+    };
+    // admin.sayHello();
+
+    let agent = {
+      name: "Smith",
+      sayHola() {
+        alert(this.name + " is my name!");
+      }
+    }
+    // agent.sayHola();
+  </script>
+</body>
+</html>

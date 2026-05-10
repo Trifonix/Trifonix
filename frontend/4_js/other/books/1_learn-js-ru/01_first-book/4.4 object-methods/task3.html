@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // Цепь вызовов
+    // У нас есть объект ladder (лестница), который позволяет подниматься и спускаться:
+    let ladder = {
+      step: 0,
+      up() {
+        this.step++;
+        return this;
+      },
+      down() {
+        this.step--;
+        return this;
+      },
+      showStep: function() { // показывает текущую ступеньку
+        alert( this.step );
+        return this;
+      }
+    };
+
+    // Измените код методов up, down и showStep таким образом, чтобы их вызов можно было сделать по цепочке, например так:  
+    ladder.up().up().down().showStep().down().showStep(); // показывает 1 затем 0
+
+    // ПРАВИЛЬНЫЙ ОТВЕТ
+    // Решение состоит в том, чтобы возвращать сам объект из каждого вызова.
+  </script>
+</body>
+</html>
