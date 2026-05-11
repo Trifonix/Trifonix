@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // Две функции - один объект
+    // Возможно ли создать функции A и B, чтобы new A() == new B()?
+
+    // function A() { ... }
+    // function B() { ... }
+
+    let a = new A();
+    let b = new B();
+
+    alert( a == b ); // true
+
+    // Нет, потому что смысл конструктора создать НОВЫЙ объект
+    // Вызов new B() создаст другой объект
+
+    // ПРАВИЛЬНЫЙ ОТВЕТ
+    // Да, возможно.
+    // Если функция возвращает объект, то new вернёт его вместо this.
+
+    let obj = {};
+    function A() { return obj; }
+    function B() { return obj; }
+    alert( new A() == new B() ); // true
+  </script>
+</body>
+</html>
