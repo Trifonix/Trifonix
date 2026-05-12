@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user = {}; // пользователь без адреса
+        alert( user?.address?.street ); // undefined (без ошибки)
+
+        let html = document.querySelector('.elem')?.innerHTML; // будет undefined, если элемента нет
+        document.body.innerHTML = html;
+
+        // Если мы хотим, чтобы некоторые из них были необязательными, тогда нам нужно будет заменить больше . на ?.
+
+        
+    </script>
+</body>
+</html>
