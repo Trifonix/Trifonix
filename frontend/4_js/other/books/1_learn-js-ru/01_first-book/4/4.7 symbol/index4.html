@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sym = Symbol.for("name");
+        let sym2 = Symbol.for("id");
+
+        document.body.innerHTML = Symbol.keyFor(sym) + '<br>' + Symbol.keyFor(sym2);
+    </script>
+</body>
+</html>
