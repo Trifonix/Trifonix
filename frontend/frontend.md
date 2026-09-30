@@ -128,7 +128,55 @@ text-align: center;
 text-decoration: none;
 ```
 
-## Flex
+## Flexbox
+
+Flexible Box Layout. Гибкий одномерный макет. Одна ось - или горизонталь или вертикаль. Используется для выравнивания элементов в строке/столбце. Для включения элементу-родителю присваивается свойство `display: flex;`. После этого все прямые потомки становятся flex-элементами.
+
+### Направление оси
+
+Может быть: row, row-reverse, column, column-reverse.
+
+```css
+flex-direction: row;
+```
+
+### Выравнивание по главной оси
+
+Может быть: flex-start, flex-end, center, space-between, space-around, space-evenly.
+
+```css
+justify-content: flex-start;
+```
+
+### Выравнивание по поперечной оси
+
+Возможные значения: stretch, flex-start, flex-end, center, baseline.
+
+```css
+align-items: stretch;
+```
+
+### Отступы между элементами
+
+Удобное свойство при котором не надо детям задавать margin. Возможные свойства: gap, column-gap, row-gap.
+
+```css
+gap: 16px;
+```
+
+### Перенос на новую строку
+
+Обычно элементы умещаются в одну строку. Возможные значения: nowrap, wrap, wrap-reverse.
+
+```css
+flex-wrap: nowrap;
+```
+
+Часто используют сокращённо. То же, что flex-direction + flex-wrap.
+
+```css
+flex-flow: row wrap;
+```
 
 ## Grid
 
