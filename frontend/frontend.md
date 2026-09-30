@@ -199,6 +199,132 @@ align-content
 
 ## Grid
 
+Двумерные макеты. На родителе задать: `display: grid;`, потомки станут grid-элементами.
+
+### Ширина колонок
+
+```css
+grid-template-columns: 200px 1fr 1fr;
+```
+
+### Высота колонок
+
+```css
+grid-template-rows: 100px auto 1fr;
+```
+
+### Отступы между ячейками
+
+```css
+gap: 16px;
+```
+
+fr - доля свободного места
+
+1fr - оставшееся место
+
+repeat() - чтобы не писать много раз
+
+minmax() - гибкая ширина
+
+### Размещение элементов
+
+#### По линиям
+
+У сетки есть линии (номера). Элемент можно "натянуть" между ними.
+
+```css
+.item {
+  grid-column: 1 / 3;   /* от линии 1 до линии 3 (занимает 2 колонки) */
+  grid-row: 2 / 4;      /* от линии 2 до линии 4 (занимает 2 строки) */
+}
+```
+
+Можно использовать span, чтобы указать количество ячеек.
+
+```css
+.item {
+  grid-column: span 2;  /* занимает 2 колонки */
+}
+```
+
+#### По областям
+
+Самый наглядный способ для макетов типа «шапка, контент, сайдбар, подвал».
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+}
+
+.header { grid-area: header; }
+.sidebar { grid-area: sidebar; }
+.main { grid-area: main; }
+.footer { grid-area: footer; }
+```
+
+Grid отличается от Flex тем, что Flex - это одномерный макет (либо строки, либо столбцы), а Grid - это двумерный макет (сразу и строки и столбцы). Flex подходит для выравнивания элементов внутри строки. Grid больше подходит для структуры всей страницы, для сложной сетки. Их часто используют вместе - Grid для общего каркаса страницы, Flex для выравнивания контента внутри ячеек.
+
+### Grid Garden
+
+Определение начальной позиции grid-элемента внутри grid-столбцов
+
+```css
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+  grid-column-start: 3;
+}
+```
+
+```css
+grid-column-end: 4;
+grid-column: 4 / 6;
+```
+
+```css
+grid-row-start: 3;
+grid-row: 3 / 6;
+```
+
+```css
+grid-column: 2;
+grid-row: 5;
+```
+
+```css
+grid-column: 2 / 6;
+grid-row: 1 / 6;
+
+grid-area: 1 / 2 / 4 / 6;
+```
+
+```css
+grid-template-columns: repeat(8, 12.5%);
+grid-template-columns: 100px 3em 40%;
+grid-template-columns: 1fr 5fr;
+
+grid-template-rows: repeat(4, 12.5px) 1fr;
+
+grid-template: 60% / 200px;
+
+grid: 1fr 50px / 20% 1fr;
+```
+
+https://codepip.com/games/grid-garden/#ru
+
+Вы победили! Благодаря силе CSS Grid Layout вы смогли вырастить достаточно моркови для Froggy, чтобы испечь его знаменитый 20-морковный пирог. Что, ожидали другого прыгучего друга?
+
 
 
 # CMD
