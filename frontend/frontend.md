@@ -178,6 +178,25 @@ flex-wrap: nowrap;
 flex-flow: row wrap;
 ```
 
+### Flexbox Froggy
+
+https://flexboxfroggy.com/#ru
+
+Доставь лягушат домой в последний раз, используя свойства CSS, которые ты выучил:
+
+```css
+justify-content
+align-items
+flex-direction
+order
+align-self
+flex-wrap
+flex-flow
+align-content
+```
+
+Ты выиграл! Благодарим тебя за мастерство flexbox, ты смог помочь всем лягушатам добраться до своих лилий. Просто взгляни, как они счастливы!
+
 ## Grid
 
 
